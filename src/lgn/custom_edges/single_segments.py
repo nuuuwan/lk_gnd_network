@@ -130,17 +130,17 @@ def get_best_incr(network):
             if d_per_distance > best_d_per_distance:
                 best_d_per_distance = d_per_distance
                 best_edge_pair = edge_pair
-
             network.edge_pair_list = previous_edge_pair_list
 
     return best_edge_pair
 
 
-def rebuild_incr(network, n_segments):
+def rebuild_incr(network, max_network_length):
     network.edge_pair_list = []
     prev_network_length = 0
     prev_average_meet_time = compute_average_meet_time(network)
-    for i_segment in range(n_segments):
+    i_segment = 0
+    while True:
         best_edge_pair = get_best_incr(network)
         network.edge_pair_list.append(best_edge_pair)
         average_meet_time = compute_average_meet_time(network)
@@ -151,11 +151,14 @@ def rebuild_incr(network, n_segments):
         reduction = 60 * d_average_meet_time / d_network_length
 
         log.debug(
-            f'rebuild_incr: { i_segment + 1}/{n_segments} {format_time(average_meet_time)} {network_length:.1f}km {reduction:.1f}min/km {best_edge_pair}'
+            f'rebuild_incr: { i_segment + 1} {format_time(average_meet_time)} {network_length:.1f}km {reduction:.1f}min/km {best_edge_pair}'
         )
 
         prev_network_length = network_length
         prev_average_meet_time = average_meet_time
+        if network_length > max_network_length:
+            break
+        i_segment += 1
 
     average_meet_time = compute_average_meet_time(network)
     log.info(f'average_meet_time = {format_time(average_meet_time)}')
@@ -169,8 +172,14 @@ def expand(*node_list):
     return edge_pair_list
 
 
-def rebuild_actual(network):
+def rebuild_actual_districts(network):
     network.edge_pair_list = expand(
         'Colombo', 'Gampaha', 'Kegalle', 'Kandy', "Nuwara Eliya", "Badulla"
-    ) + expand('Colombo', 'Kalutara', "Galle", "Matara", "Hambantota")
+    ) + expand('Colombo', 'Kalutara', "Galle", "Matara", "Hambantota"
+    ) +  expand('Gampaha', 'Puttalam'
+    ) + expand('Kegalle', 'Kurunegala', 'Anuradhapura', 'Vavuniya', 'Kilinochchi','Jaffna'
+    ) + expand('Anuradhapura', 'Polonnaruwa', 'Batticaloa'
+    ) + expand('Polonnaruwa', 'Trincomalee'
+    ) + expand('Anuradhapura', 'Mannar'
+    ) + expand('Kandy', 'Matale')
     return network

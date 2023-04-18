@@ -1,112 +1,141 @@
 <?xml version="1.0" ?>
-<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="3000" padding="100">
-  <line x1="938" y1="2326" x2="936" y2="2126" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="936" y1="2126" x2="1192" y2="2141" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1192" y1="2141" x2="1482" y2="2008" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1482" y1="2008" x2="1483" y2="2244" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1483" y1="2244" x2="1746" y2="2164" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="938" y1="2326" x2="1022" y2="2557" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1022" y1="2557" x2="1121" y2="2836" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1121" y1="2836" x2="1348" y2="2900" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1348" y1="2900" x2="1789" y2="2807" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" padding="100">
+  <line fill="none" stroke="#e5e5e5" stroke-width="14" stroke-opacity="1" x1="888" y1="759" x2="1149" y2="961"/>
+  <line fill="none" stroke="#e1e2e1" stroke-width="14" stroke-opacity="1" x1="756" y1="1859" x2="915" y2="1674"/>
+  <line fill="none" stroke="#dde0dc" stroke-width="14" stroke-opacity="1" x1="907" y1="365" x2="782" y2="240"/>
+  <line fill="none" stroke="#d9ded8" stroke-width="14" stroke-opacity="1" x1="999" y1="1126" x2="748" y2="1128"/>
+  <line fill="none" stroke="#d5dbd3" stroke-width="14" stroke-opacity="1" x1="1382" y1="1063" x2="1149" y2="961"/>
+  <line fill="none" stroke="#d1dace" stroke-width="14" stroke-opacity="1" x1="989" y1="1478" x2="802" y2="1412"/>
+  <line fill="none" stroke="#ced8c9" stroke-width="14" stroke-opacity="1" x1="1185" y1="1840" x2="1289" y2="1573"/>
+  <line fill="none" stroke="#cbd6c3" stroke-width="14" stroke-opacity="1" x1="999" y1="1126" x2="888" y2="759"/>
+  <line fill="none" stroke="#c8d5be" stroke-width="14" stroke-opacity="1" x1="638" y1="1531" x2="802" y2="1412"/>
+  <line fill="none" stroke="#c6d4b8" stroke-width="14" stroke-opacity="1" x1="989" y1="1478" x2="1158" y2="1427"/>
+  <line fill="none" stroke="#c4d3b2" stroke-width="14" stroke-opacity="1" x1="902" y1="1900" x2="915" y2="1674"/>
+  <line fill="none" stroke="#c3d2ac" stroke-width="14" stroke-opacity="1" x1="748" y1="1128" x2="888" y2="759"/>
+  <line fill="none" stroke="#c2d1a6" stroke-width="14" stroke-opacity="1" x1="989" y1="1478" x2="915" y2="1674"/>
+  <line fill="none" stroke="#c2d1a0" stroke-width="14" stroke-opacity="1" x1="988" y1="1326" x2="802" y2="1412"/>
+  <line fill="none" stroke="#c3d199" stroke-width="14" stroke-opacity="1" x1="673" y1="513" x2="865" y2="525"/>
+  <line fill="none" stroke="#c5d192" stroke-width="14" stroke-opacity="1" x1="865" y1="525" x2="907" y2="365"/>
+  <line fill="none" stroke="#c7d18b" stroke-width="14" stroke-opacity="1" x1="865" y1="525" x2="888" y2="759"/>
+  <line fill="none" stroke="#cbd184" stroke-width="14" stroke-opacity="1" x1="678" y1="100" x2="782" y2="240"/>
+  <line fill="none" stroke="#cfd27c" stroke-width="14" stroke-opacity="1" x1="1182" y1="678" x2="1149" y2="961"/>
+  <line fill="none" stroke="#d2d075" stroke-width="14" stroke-opacity="1" x1="999" y1="1126" x2="1149" y2="961"/>
+  <line fill="none" stroke="#d3cb6d" stroke-width="14" stroke-opacity="1" x1="988" y1="1326" x2="999" y2="1126"/>
+  <line fill="none" stroke="#d4c565" stroke-width="14" stroke-opacity="1" x1="678" y1="100" x2="888" y2="759"/>
+  <line fill="none" stroke="#d5bf5d" stroke-width="14" stroke-opacity="1" x1="902" y1="1900" x2="1185" y2="1840"/>
+  <line fill="none" stroke="#d7b755" stroke-width="14" stroke-opacity="1" x1="1158" y1="1427" x2="1289" y2="1573"/>
+  <line fill="none" stroke="#d8af4c" stroke-width="14" stroke-opacity="1" x1="1382" y1="1063" x2="1414" y2="1344"/>
+  <line fill="none" stroke="#daa543" stroke-width="14" stroke-opacity="1" x1="638" y1="1402" x2="802" y2="1412"/>
+  <line fill="none" stroke="#dc9b3b" stroke-width="14" stroke-opacity="1" x1="988" y1="1326" x2="989" y2="1478"/>
+  <line fill="none" stroke="#de8f31" stroke-width="14" stroke-opacity="1" x1="1414" y1="1344" x2="1158" y2="1427"/>
+  <line fill="none" stroke="#e18228" stroke-width="14" stroke-opacity="1" x1="585" y1="971" x2="888" y2="759"/>
+  <line fill="none" stroke="#e3741f" stroke-width="14" stroke-opacity="1" x1="988" y1="1326" x2="1158" y2="1427"/>
+  <line fill="none" stroke="#e46517" stroke-width="14" stroke-opacity="1" x1="988" y1="1326" x2="748" y2="1128"/>
+  <line fill="none" stroke="#e15613" stroke-width="14" stroke-opacity="1" x1="693" y1="1679" x2="915" y2="1674"/>
+  <line fill="none" stroke="#de4710" stroke-width="14" stroke-opacity="1" x1="748" y1="1128" x2="585" y2="971"/>
+  <line fill="none" stroke="#db390c" stroke-width="14" stroke-opacity="1" x1="756" y1="1859" x2="902" y2="1900"/>
+  <line fill="none" stroke="#d72a09" stroke-width="14" stroke-opacity="1" x1="693" y1="1679" x2="756" y2="1859"/>
+  <line fill="none" stroke="#d31c05" stroke-width="14" stroke-opacity="1" x1="638" y1="1531" x2="693" y2="1679"/>
+  <line fill="none" stroke="#d00d02" stroke-width="14" stroke-opacity="1" x1="638" y1="1402" x2="748" y2="1128"/>
+  <line fill="none" stroke="#cc0000" stroke-width="14" stroke-opacity="1" x1="638" y1="1531" x2="638" y2="1402"/>
   <g>
-    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="938" cy="2326"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="952" y="2326">Colombo</text>
+    <circle r="28" fill="white" stroke="black" stroke-width="3.5" cx="638" cy="1531"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="652" y="1531">Colombo</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="936" cy="2126"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="950" y="2126">Gampaha</text>
+    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="638" cy="1402"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="652" y="1402">Gampaha</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1022" cy="2557"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1036" y="2557">Kalutara</text>
+    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="693" cy="1679"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="707" y="1679">Kalutara</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1482" cy="2008"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1496" y="2008">Kandy</text>
+    <circle r="42" fill="white" stroke="black" stroke-width="3.5" cx="988" cy="1326"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1002" y="1326">Kandy</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1499" cy="1697"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1513" y="1697">Matale</text>
+    <circle r="28" fill="white" stroke="black" stroke-width="3.5" cx="999" cy="1126"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1013" y="1126">Matale</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1483" cy="2244"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1497" y="2244">Nuwara Eliya</text>
+    <circle r="28" fill="white" stroke="black" stroke-width="3.5" cx="989" cy="1478"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1003" y="1478">Nuwara Eliya</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1121" cy="2836"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1135" y="2836">Galle</text>
+    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="756" cy="1859"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="770" y="1859">Galle</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1348" cy="2900"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1362" y="2900">Matara</text>
+    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="902" cy="1900"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="916" y="1900">Matara</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1789" cy="2807"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1803" y="2807">Hambantota</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1185" cy="1840"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1199" y="1840">Hambantota</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="999" cy="100"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1013" y="100">Jaffna</text>
+    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="678" cy="100"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="692" y="100">Jaffna</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="992" cy="742"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1006" y="742">Mannar</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="673" cy="513"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="687" y="513">Mannar</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1291" cy="762"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1305" y="762">Vavuniya</text>
+    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="865" cy="525"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="879" y="525">Vavuniya</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1355" cy="513"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1369" y="513">Mullaitivu</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="907" cy="365"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="921" y="365">Mullaitivu</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1161" cy="317"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1175" y="317">Kilinochchi</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="782" cy="240"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="796" y="240">Kilinochchi</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="2095" cy="1598"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2109" y="1598">Batticaloa</text>
+    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="1382" cy="1063"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1396" y="1063">Batticaloa</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="2145" cy="2036"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2159" y="2036">Ampara</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1414" cy="1344"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1428" y="1344">Ampara</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1783" cy="1000"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1797" y="1000">Trincomalee</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1182" cy="678"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1196" y="678">Trincomalee</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1109" cy="1699"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1123" y="1699">Kurunegala</text>
+    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="748" cy="1128"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="762" y="1128">Kurunegala</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="854" cy="1455"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="868" y="1455">Puttalam</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="585" cy="971"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="599" y="971">Puttalam</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1327" cy="1125"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1341" y="1125">Anuradhapura</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="888" cy="759"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="902" y="759">Anuradhapura</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1731" cy="1439"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1745" y="1439">Polonnaruwa</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1149" cy="961"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1163" y="961">Polonnaruwa</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1746" cy="2164"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1760" y="2164">Badulla</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1158" cy="1427"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1172" y="1427">Badulla</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1951" cy="2391"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1965" y="2391">Moneragala</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1289" cy="1573"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1303" y="1573">Moneragala</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1369" cy="2549"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1383" y="2549">Ratnapura</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="915" cy="1674"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="929" y="1674">Ratnapura</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1192" cy="2141"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1206" y="2141">Kegalle</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="802" cy="1412"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="816" y="1412">Kegalle</text>
   </g>
 </svg>
