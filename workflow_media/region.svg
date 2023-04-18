@@ -2,67 +2,102 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="3000" height="3000" padding="100">
   <line x1="938" y1="2326" x2="936" y2="2126" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
   <line x1="938" y1="2326" x2="1022" y2="2557" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="938" y1="2326" x2="1192" y2="2141" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="938" y1="2326" x2="1369" y2="2549" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="936" y1="2126" x2="938" y2="2326" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
   <line x1="936" y1="2126" x2="1109" y2="1699" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="936" y1="2126" x2="854" y2="1455" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="936" y1="2126" x2="1192" y2="2141" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="936" y1="2126" x2="1022" y2="2557" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="938" y1="2326" x2="1192" y2="2141" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="938" y1="2326" x2="1109" y2="1699" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="936" y1="2126" x2="1482" y2="2008" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="938" y1="2326" x2="1369" y2="2549" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="938" y1="2326" x2="1482" y2="2008" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1482" y1="2008" x2="1109" y2="1699" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="938" y1="2326" x2="1121" y2="2836" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
   <line x1="1022" y1="2557" x2="1121" y2="2836" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1482" y1="2008" x2="1483" y2="2244" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="936" y1="2126" x2="1369" y2="2549" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1022" y1="2557" x2="1369" y2="2549" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
   <line x1="1121" y1="2836" x2="1348" y2="2900" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1348" y1="2900" x2="1789" y2="2807" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1192" y1="2141" x2="1482" y2="2008" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1192" y1="2141" x2="1483" y2="2244" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
   <line x1="1482" y1="2008" x2="1746" y2="2164" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1482" y1="2008" x2="1499" y2="1697" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1369" y1="2549" x2="1951" y2="2391" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1482" y1="2008" x2="1192" y2="2141" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1109" y1="1699" x2="854" y2="1455" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="936" y1="2126" x2="1121" y2="2836" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1121" y1="2836" x2="1369" y2="2549" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1109" y1="1699" x2="1192" y2="2141" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="938" y1="2326" x2="1483" y2="2244" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="936" y1="2126" x2="1483" y2="2244" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1482" y1="2008" x2="1369" y2="2549" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="938" y1="2326" x2="1348" y2="2900" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="936" y1="2126" x2="854" y2="1455" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1348" y1="2900" x2="1369" y2="2549" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1483" y1="2244" x2="1369" y2="2549" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1022" y1="2557" x2="1482" y2="2008" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="936" y1="2126" x2="1746" y2="2164" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="938" y1="2326" x2="1746" y2="2164" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1022" y1="2557" x2="1109" y2="1699" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1022" y1="2557" x2="1192" y2="2141" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
   <line x1="1109" y1="1699" x2="1327" y2="1125" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1746" y1="2164" x2="2145" y2="2036" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="854" y1="1455" x2="992" y2="742" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1499" y1="1697" x2="1731" y2="1439" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="2145" y1="2036" x2="2095" y2="1598" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="2095" y1="1598" x2="1783" y2="1000" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1783" y1="1000" x2="1355" y2="513" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1327" y1="1125" x2="1291" y2="762" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="992" y1="742" x2="1161" y2="317" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
-  <line x1="1161" y1="317" x2="999" y2="100" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="936" y1="2126" x2="1348" y2="2900" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1482" y1="2008" x2="1499" y2="1697" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1483" y1="2244" x2="1746" y2="2164" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1022" y1="2557" x2="1348" y2="2900" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1369" y1="2549" x2="1192" y2="2141" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="938" y1="2326" x2="854" y2="1455" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1499" y1="1697" x2="1109" y2="1699" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1109" y1="1699" x2="1369" y2="2549" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1483" y1="2244" x2="1192" y2="2141" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="936" y1="2126" x2="1327" y2="1125" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1483" y1="2244" x2="1109" y2="1699" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1109" y1="1699" x2="1746" y2="2164" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1746" y1="2164" x2="1369" y2="2549" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1482" y1="2008" x2="1121" y2="2836" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="938" y1="2326" x2="1327" y2="1125" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="936" y1="2126" x2="1499" y2="1697" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1022" y1="2557" x2="1483" y2="2244" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1121" y1="2836" x2="1109" y2="1699" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="938" y1="2326" x2="1789" y2="2807" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1482" y1="2008" x2="2145" y2="2036" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="938" y1="2326" x2="1499" y2="1697" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1789" y1="2807" x2="1369" y2="2549" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1482" y1="2008" x2="1327" y2="1125" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1121" y1="2836" x2="1192" y2="2141" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
   <g>
-    <circle r="28" fill="white" stroke="black" stroke-width="3.5" cx="938" cy="2326"/>
+    <circle r="105" fill="white" stroke="black" stroke-width="3.5" cx="938" cy="2326"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="952" y="2326">Colombo</text>
   </g>
   <g>
-    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="936" cy="2126"/>
+    <circle r="91" fill="white" stroke="black" stroke-width="3.5" cx="936" cy="2126"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="950" y="2126">Gampaha</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1022" cy="2557"/>
+    <circle r="56" fill="white" stroke="black" stroke-width="3.5" cx="1022" cy="2557"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1036" y="2557">Kalutara</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1482" cy="2008"/>
+    <circle r="70" fill="white" stroke="black" stroke-width="3.5" cx="1482" cy="2008"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1496" y="2008">Kandy</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1499" cy="1697"/>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1499" cy="1697"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1513" y="1697">Matale</text>
   </g>
   <g>
-    <circle r="0" fill="white" stroke="black" stroke-width="3.5" cx="1483" cy="2244"/>
+    <circle r="35" fill="white" stroke="black" stroke-width="3.5" cx="1483" cy="2244"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1497" y="2244">Nuwara Eliya</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1121" cy="2836"/>
+    <circle r="35" fill="white" stroke="black" stroke-width="3.5" cx="1121" cy="2836"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1135" y="2836">Galle</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1348" cy="2900"/>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1348" cy="2900"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1362" y="2900">Matara</text>
   </g>
   <g>
-    <circle r="0" fill="white" stroke="black" stroke-width="3.5" cx="1789" cy="2807"/>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1789" cy="2807"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1803" y="2807">Hambantota</text>
   </g>
   <g>
-    <circle r="0" fill="white" stroke="black" stroke-width="3.5" cx="999" cy="100"/>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="999" cy="100"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1013" y="100">Jaffna</text>
   </g>
   <g>
@@ -70,11 +105,11 @@
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1006" y="742">Mannar</text>
   </g>
   <g>
-    <circle r="0" fill="white" stroke="black" stroke-width="3.5" cx="1291" cy="762"/>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1291" cy="762"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1305" y="762">Vavuniya</text>
   </g>
   <g>
-    <circle r="0" fill="white" stroke="black" stroke-width="3.5" cx="1355" cy="513"/>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1355" cy="513"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1369" y="513">Mullaitivu</text>
   </g>
   <g>
@@ -94,7 +129,7 @@
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1797" y="1000">Trincomalee</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1109" cy="1699"/>
+    <circle r="42" fill="white" stroke="black" stroke-width="3.5" cx="1109" cy="1699"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1123" y="1699">Kurunegala</text>
   </g>
   <g>
@@ -106,23 +141,23 @@
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1341" y="1125">Anuradhapura</text>
   </g>
   <g>
-    <circle r="0" fill="white" stroke="black" stroke-width="3.5" cx="1731" cy="1439"/>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1731" cy="1439"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1745" y="1439">Polonnaruwa</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1746" cy="2164"/>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1746" cy="2164"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1760" y="2164">Badulla</text>
   </g>
   <g>
-    <circle r="0" fill="white" stroke="black" stroke-width="3.5" cx="1951" cy="2391"/>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1951" cy="2391"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1965" y="2391">Moneragala</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1369" cy="2549"/>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1369" cy="2549"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1383" y="2549">Ratnapura</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1192" cy="2141"/>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1192" cy="2141"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1206" y="2141">Kegalle</text>
   </g>
 </svg>

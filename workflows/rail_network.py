@@ -1,7 +1,7 @@
 from gig import EntType
 
 from lgn import Draw, Network, Styler
-from lgn.custom_edges import road_network
+from lgn.custom_edges import single_segments
 
 def is_close_enough(centroid):
     x1, y1 = centroid
@@ -11,7 +11,7 @@ def is_close_enough(centroid):
 
 if __name__ == '__main__':
     network = Network.from_type(EntType.DISTRICT, lambda ent: is_close_enough(ent.centroid))
-    network = road_network.rebuild(network)
+    network = single_segments.rebuild(network, n_segments=60)
 
     styler = Styler()
     draw = Draw(network, styler)

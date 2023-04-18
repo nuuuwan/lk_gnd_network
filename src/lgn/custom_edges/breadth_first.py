@@ -1,6 +1,6 @@
 from utils import Log
 
-log = Log('road_network')
+log = Log('breadth_first')
 
 
 def node_cmp(network, id):

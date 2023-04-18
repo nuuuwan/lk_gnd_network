@@ -99,6 +99,10 @@ class Network:
     def loc_list(self):
         return [node['centroid'] for node in self.node_idx.values()]
 
+    @cached_property
+    def node_list(self):
+        return list(self.node_idx.keys())
+
     @property
     def neighbor_idx(self):
         neighbor_idx = {}
@@ -112,3 +116,5 @@ class Network:
     @property 
     def junction_set(self):
         return set([id for id, neighbor_list in self.neighbor_idx.items() if len(neighbor_list) > 2])
+
+    

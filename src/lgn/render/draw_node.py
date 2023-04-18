@@ -13,7 +13,7 @@ class DrawNode:
             | dict(
                 cx=sx,
                 cy=sy,
-                r=self.styler.RADIUS * n_neighbors,
+                r=self.styler.RADIUS * (n_neighbors + 1),
             ),
         )
 
