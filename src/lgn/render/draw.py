@@ -25,12 +25,12 @@ class Draw(DrawNode, DrawLine):
 
     def draw_nodes(self):
         t = self.get_t()
-        junction_set = self.network.junction_set
+        neighbor_idx = self.network.neighbor_idx
         nodes = []
         for id, node in self.network.node_idx.items():
             x, y = node['centroid']
-            is_junction = id in junction_set
-            nodes.append(self.draw_node(id, x, y, t, is_junction))
+            n_neighbors = len(neighbor_idx.get(id, []))
+            nodes.append(self.draw_node(id, x, y, t, n_neighbors))
         return nodes
 
     def draw_lines(self):

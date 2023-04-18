@@ -15,7 +15,7 @@ class Styler:
     def __init__(
         self,
         RADIUS=7,
-        DIM=5000,
+        DIM=3000,
         OPACITY=1,
         PADDING=100,
         FONT_FAMILY=DEFAULT_FONT_FAMILY,

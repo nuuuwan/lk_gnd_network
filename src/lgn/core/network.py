@@ -75,11 +75,11 @@ class Network:
         self.edge_pair_list = edge_pair_list
 
     @staticmethod
-    def from_type(ent_type: str):
+    def from_type(ent_type: str, func_filter_ent=None):
         ent_list = Ent.list_from_type(ent_type)
-        ent_list = [ent for ent in ent_list if filter_ent(ent)]
-        print(ent_list[0].d)
-
+        if func_filter_ent is not None:
+            ent_list = [ent for ent in ent_list if func_filter_ent(ent)]
+        
         node_idx = build_node_idx(ent_list)
         key_to_ent_set = build_key_to_ent_set(ent_list)
         neighbor_idx = buiid_neighbor_idx(key_to_ent_set)

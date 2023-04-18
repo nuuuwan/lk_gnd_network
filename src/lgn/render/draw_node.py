@@ -5,10 +5,7 @@ log = Log(__name__)
 
 
 class DrawNode:
-    def draw_node_circle(self, sx, sy, is_junction):
-        if not is_junction:
-            return _('g')
-        
+    def draw_node_circle(self, sx, sy, n_neighbors):
         return _(
             'circle',
             None,
@@ -16,6 +13,7 @@ class DrawNode:
             | dict(
                 cx=sx,
                 cy=sy,
+                r=self.styler.RADIUS * n_neighbors,
             ),
         )
 
@@ -30,12 +28,12 @@ class DrawNode:
             ),
         )
 
-    def draw_node(self, id, x, y, t, is_junction):
+    def draw_node(self, id, x, y, t, n_neighbors):
         sx, sy = t(x, y)
         return _(
             'g',
             [
-                self.draw_node_circle(sx, sy, c),
+                self.draw_node_circle(sx, sy, n_neighbors),
                 self.draw_node_text(id, sx, sy),
             ],
         )
