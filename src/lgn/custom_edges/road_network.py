@@ -17,7 +17,13 @@ def node_cmp2(network, id0, id):
 
 def rebuild(network, origin_node=None):
     if not origin_node:
-        origin_node = list(network.node_idx.keys())[0]
+        nodes = list(network.node_idx.keys())
+        sorted_nodes = sorted(
+            nodes,
+            key=lambda node: node_cmp(network, node)
+        )
+        origin_node = sorted_nodes[0]
+        
     neighbor_idx =network.neighbor_idx
 
     to_visit_nodes = set()
