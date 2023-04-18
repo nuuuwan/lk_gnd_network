@@ -1,4 +1,5 @@
 from functools import cached_property
+
 from gig import Ent
 from utils import List, Log
 
@@ -79,7 +80,7 @@ class Network:
         ent_list = Ent.list_from_type(ent_type)
         if func_filter_ent is not None:
             ent_list = [ent for ent in ent_list if func_filter_ent(ent)]
-        
+
         node_idx = build_node_idx(ent_list)
         key_to_ent_set = build_key_to_ent_set(ent_list)
         neighbor_idx = buiid_neighbor_idx(key_to_ent_set)
@@ -112,10 +113,16 @@ class Network:
             if id1 != id2:
                 neighbor_idx[id1].append(id2)
         return neighbor_idx
-    
-    @property 
+
+    @property
     def junction_set(self):
-        return set([id for id, neighbor_list in self.neighbor_idx.items() if len(neighbor_list) > 2])
+        return set(
+            [
+                id
+                for id, neighbor_list in self.neighbor_idx.items()
+                if len(neighbor_list) > 2
+            ]
+        )
 
     @property
     def distance_matrix(self):
@@ -123,13 +130,13 @@ class Network:
 
         nodes = self.node_list
         for node1 in nodes:
-            dist[node1] = {} 
+            dist[node1] = {}
             for node2 in nodes:
                 dist[node1][node2] = 0 if node1 == node2 else float('inf')
 
         for node1, node2 in self.edge_pair_list:
             distance = shape_utils.compute_distance(
-                self.node_idx[node1]['centroid'], 
+                self.node_idx[node1]['centroid'],
                 self.node_idx[node2]['centroid'],
             )
             dist[node1][node2] = distance
@@ -139,20 +146,19 @@ class Network:
             for node1 in nodes:
                 for node3 in nodes:
                     dist[node1][node3] = min(
-                        dist[node1][node3], 
+                        dist[node1][node3],
                         dist[node1][node2] + dist[node2][node3],
                     )
 
         return dist
-    
+
     @property
     def network_length(self):
         network_length = 0
         for node1, node2 in self.edge_pair_list:
             distance = shape_utils.compute_distance(
-                self.node_idx[node1]['centroid'], 
+                self.node_idx[node1]['centroid'],
                 self.node_idx[node2]['centroid'],
             )
             network_length += distance
         return network_length
-            

@@ -7,9 +7,9 @@ from svglib.svglib import svg2rlg
 from utils import Log
 from utils.xmlx import _
 
-from lgn.utils import shape_utils
 from lgn.render.draw_line import DrawLine
 from lgn.render.draw_node import DrawNode
+from lgn.utils import shape_utils
 
 log = Log(__name__)
 

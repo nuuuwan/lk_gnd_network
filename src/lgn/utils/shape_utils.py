@@ -6,6 +6,7 @@ log = Log(__name__)
 
 DISTANCE_PER_UNIT_COORD = 110
 
+
 def computer_area_for_polygon(polygon):
     return shapely.Polygon(polygon).area
 

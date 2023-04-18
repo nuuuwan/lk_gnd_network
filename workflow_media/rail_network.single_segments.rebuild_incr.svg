@@ -3,8 +3,14 @@
   <line x1="938" y1="2326" x2="936" y2="2126" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
   <line x1="936" y1="2126" x2="1192" y2="2141" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
   <line x1="1192" y1="2141" x2="1482" y2="2008" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1482" y1="2008" x2="1483" y2="2244" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1483" y1="2244" x2="1746" y2="2164" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="938" y1="2326" x2="1022" y2="2557" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1022" y1="2557" x2="1121" y2="2836" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1121" y1="2836" x2="1348" y2="2900" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
+  <line x1="1348" y1="2900" x2="1789" y2="2807" fill="none" stroke="red" stroke-width="14" stroke-opacity="1"/>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="938" cy="2326"/>
+    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="938" cy="2326"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="952" y="2326">Colombo</text>
   </g>
   <g>
@@ -12,11 +18,11 @@
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="950" y="2126">Gampaha</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1022" cy="2557"/>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1022" cy="2557"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1036" y="2557">Kalutara</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1482" cy="2008"/>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1482" cy="2008"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1496" y="2008">Kandy</text>
   </g>
   <g>
@@ -24,15 +30,15 @@
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1513" y="1697">Matale</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1483" cy="2244"/>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1483" cy="2244"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1497" y="2244">Nuwara Eliya</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1121" cy="2836"/>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1121" cy="2836"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1135" y="2836">Galle</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1348" cy="2900"/>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1348" cy="2900"/>
     <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1362" y="2900">Matara</text>
   </g>
   <g>

@@ -6,6 +6,7 @@ log = Log('breadth_first')
 def node_cmp(network, id):
     return -network.node_idx[id]['population_density']
 
+
 def node_cmp2(network, id0, id):
     x1, y1 = network.node_idx[id0]['centroid']
     x2, y2 = network.node_idx[id]['centroid']
@@ -18,13 +19,10 @@ def node_cmp2(network, id0, id):
 def rebuild(network, origin_node=None):
     if not origin_node:
         nodes = list(network.node_idx.keys())
-        sorted_nodes = sorted(
-            nodes,
-            key=lambda node: node_cmp(network, node)
-        )
+        sorted_nodes = sorted(nodes, key=lambda node: node_cmp(network, node))
         origin_node = sorted_nodes[0]
-        
-    neighbor_idx =network.neighbor_idx
+
+    neighbor_idx = network.neighbor_idx
 
     to_visit_nodes = set()
     to_visit_nodes.add(origin_node)
@@ -34,8 +32,7 @@ def rebuild(network, origin_node=None):
     new_edge_pair_list = []
     while to_visit_nodes:
         to_visit_nodes_sorted = sorted(
-            to_visit_nodes,
-            key=lambda node: node_cmp(network, node)
+            to_visit_nodes, key=lambda node: node_cmp(network, node)
         )
         node = to_visit_nodes_sorted[0]
         to_visit_nodes.remove(node)
@@ -45,8 +42,7 @@ def rebuild(network, origin_node=None):
 
         neighbors = neighbor_idx[node]
         sorted_neighbors = sorted(
-            neighbors,
-            key=lambda id2: node_cmp2(network, node, id2)
+            neighbors, key=lambda id2: node_cmp2(network, node, id2)
         )
 
         for node2 in sorted_neighbors:
@@ -55,6 +51,6 @@ def rebuild(network, origin_node=None):
             if node2 not in connected_nodes:
                 new_edge_pair_list.append([node, node2])
                 connected_nodes.add(node2)
-        
+
     network.edge_pair_list = new_edge_pair_list
     return network
