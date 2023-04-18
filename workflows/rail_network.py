@@ -10,7 +10,7 @@ log = Log('rail_network')
 
 def is_close_enough(centroid):
     distance = shape_utils.compute_distance(centroid, [6.92, 79.86])
-    return distance <3000
+    return distance < 3000
 
 
 if __name__ == '__main__':
@@ -23,7 +23,7 @@ if __name__ == '__main__':
     # draw = Draw(network, styler)
     # draw.draw(f'workflow_media/rail_network.single_segments.rebuild_actual.png')
 
-    # 
+    #
 
     network = single_segments.rebuild_incr(network, max_network_length=2000)
 

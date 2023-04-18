@@ -37,7 +37,9 @@ class Draw(DrawNode, DrawLine):
         t = self.get_t()
         lines = []
         n_edges = len(self.network.edge_pair_list)
-        for i_edge, [id1, id2] in enumerate(reversed(self.network.edge_pair_list)):
+        for i_edge, [id1, id2] in enumerate(
+            reversed(self.network.edge_pair_list)
+        ):
             lines.append(self.draw_line(i_edge, n_edges, id1, id2, t))
         return lines
 
