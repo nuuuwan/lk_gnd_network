@@ -4,6 +4,8 @@ from utils import Log
 log = Log(__name__)
 
 
+DISTANCE_PER_UNIT_COORD = 110
+
 def computer_area_for_polygon(polygon):
     return shapely.Polygon(polygon).area
 
@@ -12,6 +14,12 @@ def compute_area(polygon_list):
     return sum(
         [computer_area_for_polygon(polygon) for polygon in polygon_list]
     )
+
+
+def compute_distance(loc1, loc2):
+    x1, y1 = loc1
+    x2, y2 = loc2
+    return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5 * DISTANCE_PER_UNIT_COORD
 
 
 def get_bbox(loc_list: list) -> tuple[float, float, float, float]:

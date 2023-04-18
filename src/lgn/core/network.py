@@ -18,8 +18,9 @@ def filter_ent(ent):
 
 def build_node_idx(ent_list):
     node_idx = {}
-    for ent in ent_list:
-        log.debug(f'build_node_idx: {ent.id} ({ent.name})')
+    for i, ent in enumerate(ent_list):
+        if i % 100 == 0:
+            log.debug(f'build_node_idx: {ent.id} ({ent.name})')
         raw_geo = ent.get_raw_geo()
         area = shape_utils.compute_area(raw_geo)
         population = ent.population
@@ -34,7 +35,6 @@ def build_node_idx(ent_list):
 
 
 def build_key_to_ent_set(ent_list):
-    log.debug('build_key_to_ent_set...')
     key_to_ent_set = {}
     for ent in ent_list:
         raw_geo = ent.get_raw_geo()
@@ -117,4 +117,42 @@ class Network:
     def junction_set(self):
         return set([id for id, neighbor_list in self.neighbor_idx.items() if len(neighbor_list) > 2])
 
+    @property
+    def distance_matrix(self):
+        dist = {}
+
+        nodes = self.node_list
+        for node1 in nodes:
+            dist[node1] = {} 
+            for node2 in nodes:
+                dist[node1][node2] = 0 if node1 == node2 else float('inf')
+
+        for node1, node2 in self.edge_pair_list:
+            distance = shape_utils.compute_distance(
+                self.node_idx[node1]['centroid'], 
+                self.node_idx[node2]['centroid'],
+            )
+            dist[node1][node2] = distance
+            dist[node2][node1] = distance
+
+        for node2 in nodes:
+            for node1 in nodes:
+                for node3 in nodes:
+                    dist[node1][node3] = min(
+                        dist[node1][node3], 
+                        dist[node1][node2] + dist[node2][node3],
+                    )
+
+        return dist
     
+    @property
+    def network_length(self):
+        network_length = 0
+        for node1, node2 in self.edge_pair_list:
+            distance = shape_utils.compute_distance(
+                self.node_idx[node1]['centroid'], 
+                self.node_idx[node2]['centroid'],
+            )
+            network_length += distance
+        return network_length
+            
