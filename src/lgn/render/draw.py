@@ -2,13 +2,14 @@ import os
 import webbrowser
 from functools import cache
 
-from lgn.render import bbox_utils
-from lgn.render.draw_line import DrawLine
-from lgn.render.draw_node import DrawNode
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
 from utils import Log
 from utils.xmlx import _
+
+from lgn.render import bbox_utils
+from lgn.render.draw_line import DrawLine
+from lgn.render.draw_node import DrawNode
 
 log = Log(__name__)
 

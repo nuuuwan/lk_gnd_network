@@ -14,12 +14,12 @@ svglib.register_font(
 class Styler:
     def __init__(
         self,
-        RADIUS=14,
-        DIM=2880,
-        OPACITY=0.7,
-        PADDING=288,
+        RADIUS=10,
+        DIM=5000,
+        OPACITY=1,
+        PADDING=100,
         FONT_FAMILY=DEFAULT_FONT_FAMILY,
-        FONT_SIZE=40,
+        FONT_SIZE=30,
     ):
         self.RADIUS = RADIUS
         self.DIM = DIM
@@ -35,7 +35,6 @@ class Styler:
             height=self.DIM,
             padding=self.PADDING,
         )
-
 
     @cached_property
     def node_circle(self):

@@ -4,15 +4,18 @@ from utils import List, Log
 log = Log('network')
 
 
+
 def point_to_key(point):
     lng, lat = point
     return f'{lng:.2f}_{lat:.2f}'
 
 
+def filter_ent(ent):
+    return True
+
 def build_node_idx(ent_list):
     node_idx = {}
     for ent in ent_list:
-        print(ent.d)
         node_idx[ent.name] = dict(
             centroid=ent.centroid,
             population=ent.population,
@@ -20,12 +23,14 @@ def build_node_idx(ent_list):
     return node_idx
 
 def build_key_to_ent_set(ent_list):
+    log.debug('build_key_to_ent_set...')
     key_to_ent_set = {}
     for ent in ent_list:
         raw_geo = ent.get_raw_geo()
         point_list = List(raw_geo).flatten()
         key_list = [point_to_key(point) for point in point_list]
         ent_id = ent.name
+        log.debug(f'build_key_to_ent_set: {ent_id}')
         for key in key_list:
             if key not in key_to_ent_set:
                 key_to_ent_set[key] = set()
@@ -59,6 +64,10 @@ class Network:
     @staticmethod
     def from_type(ent_type: str):
         ent_list = Ent.list_from_type(ent_type)
+        ent_list = [ent for ent in ent_list if filter_ent(ent)]
+        print(ent_list[0].d)
+
+
         node_idx = build_node_idx(ent_list)
         key_to_ent_set = build_key_to_ent_set(ent_list)
         neighbor_idx = buiid_neighbor_idx(key_to_ent_set)
