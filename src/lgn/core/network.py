@@ -1,3 +1,4 @@
+from functools import cached_property
 from gig import Ent
 from utils import List, Log
 
@@ -85,7 +86,7 @@ class Network:
         edge_pair_list = build_edge_pair_list(neighbor_idx)
         return Network(node_idx, edge_pair_list)
 
-    @property
+    @cached_property
     def d(self):
         return dict(
             node_idx=self.node_idx, edge_pair_list=self.edge_pair_list
@@ -94,6 +95,20 @@ class Network:
     def __str__(self):
         return str(self.d)
 
-    @property
+    @cached_property
     def loc_list(self):
         return [node['centroid'] for node in self.node_idx.values()]
+
+    @property
+    def neighbor_idx(self):
+        neighbor_idx = {}
+        for id1, id2 in self.edge_pair_list:
+            if id1 not in neighbor_idx:
+                neighbor_idx[id1] = []
+            if id1 != id2:
+                neighbor_idx[id1].append(id2)
+        return neighbor_idx
+    
+    @property 
+    def junction_set(self):
+        return set([id for id, neighbor_list in self.neighbor_idx.items() if len(neighbor_list) > 2])

@@ -15,20 +15,10 @@ def node_cmp2(network, id0, id):
     return -network.node_idx[id]['population'] / distance
 
 
-def ordered_neighbor_idx(network):
-    neighbor_idx = {}
-    for id1, id2 in network.edge_pair_list:
-        if id1 not in neighbor_idx:
-            neighbor_idx[id1] = []
-        neighbor_idx[id1].append(id2)
-
-    return neighbor_idx
-
-
 def rebuild(network, origin_node=None):
     if not origin_node:
         origin_node = list(network.node_idx.keys())[0]
-    neighbor_idx = ordered_neighbor_idx(network)
+    neighbor_idx =network.neighbor_idx
 
     to_visit_nodes = set()
     to_visit_nodes.add(origin_node)

@@ -14,7 +14,7 @@ svglib.register_font(
 class Styler:
     def __init__(
         self,
-        RADIUS=10,
+        RADIUS=7,
         DIM=5000,
         OPACITY=1,
         PADDING=100,
