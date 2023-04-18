@@ -3,6 +3,7 @@ from functools import cached_property
 from gig import Ent
 from utils import List, Log
 
+from lgn.utils import distance_matrix
 from lgn.utils import shape_utils
 
 log = Log('network')
@@ -126,32 +127,7 @@ class Network:
 
     @property
     def distance_matrix(self):
-        dist = {}
-
-        def _dist(node1, node2):
-            return dist[node1].get(node2, float('inf'))
-
-        nodes = self.node_list
-        for node in nodes:
-            dist[node] = {}
-            dist[node][node] = 0
-
-        for node1, node2 in self.edge_pair_list:
-            distance = shape_utils.compute_distance(
-                self.node_idx[node1]['centroid'],
-                self.node_idx[node2]['centroid'],
-            )
-            dist[node1][node2] = distance
-            dist[node2][node1] = distance
-
-        for node2 in nodes:
-            for node1 in nodes:
-                for node3 in nodes:
-                    distance_via = _dist(node1, node2) + _dist(node2, node3)
-                    if distance_via < _dist(node1, node3):
-                        dist[node1][node3] = distance_via
-
-        return dist
+        return distance_matrix.build_distance_matrix(self)
 
     @property
     def network_length(self):

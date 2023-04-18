@@ -61,12 +61,9 @@ def get_best_incr(network):
     n = len(node_list)
     best_d_per_distance = -float('inf')
     best_edge_pair = None
-    n_pairs = n * (n + 1) // 2
-    i_pair = 0
     for i in range(n - 1):
         node_i = node_list[i]
         for j in range(i + 1, n):
-            i_pair += 1
             node_j = node_list[j]
             edge_pair = [node_i, node_j]
             if (
@@ -85,15 +82,11 @@ def get_best_incr(network):
             d_average_meet_time = before_average_meet_time - average_meet_time
             d_per_distance = d_average_meet_time / distance
 
-            logger = None
             if d_per_distance > best_d_per_distance:
                 best_d_per_distance = d_per_distance
                 best_edge_pair = edge_pair
-                logger = log.debug
-
-            if logger:
-                logger(
-                    f'\t({i_pair}/{n_pairs}) {format_time(average_meet_time)}'
+                log.debug(
+                    f'{format_time(average_meet_time)}'
                     + f'\t{format_time(d_average_meet_time)}\t{distance:.2f}km'
                     + f'\t{d_per_distance:.2f}hr/km'
                     + f'\t{str(edge_pair)}'
@@ -134,5 +127,3 @@ def rebuild_incr(network, max_network_length):
         i_segment += 1
 
     return network
-
-
