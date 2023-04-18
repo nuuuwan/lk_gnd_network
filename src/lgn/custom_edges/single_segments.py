@@ -75,6 +75,8 @@ def get_best_incr(network):
                 network.node_idx[node_i]['centroid'],
                 network.node_idx[node_j]['centroid'],
             )
+            # if distance > 10:
+            #     continue
 
             previous_edge_pair_list = network.edge_pair_list
             network.edge_pair_list = network.edge_pair_list + [edge_pair]
@@ -96,11 +98,9 @@ def get_best_incr(network):
     return best_edge_pair
 
 
-def rebuild_incr(network, max_network_length):
-    network.edge_pair_list = []
-    prev_network_length = 0
+def rebuild_incr(network, max_network_length, max_segments):
+    prev_network_length = network.network_length
     prev_average_meet_time = compute_average_meet_time(network)
-    i_segment = 0
     while True:
         best_edge_pair = get_best_incr(network)
         network.edge_pair_list.append(best_edge_pair)
@@ -111,8 +111,10 @@ def rebuild_incr(network, max_network_length):
         d_average_meet_time = prev_average_meet_time - average_meet_time
         reduction = 60 * d_average_meet_time / d_network_length
 
+        n_segments = len(network.edge_pair_list)
+
         log.info(
-            f'rebuild_incr: { i_segment + 1}'
+            f'rebuild_incr: { n_segments}'
             + f'\t{format_time(d_average_meet_time)}'
             + f'\t{network_length:.1f}km'
             + f'\t{reduction:.1f}min/km\t{best_edge_pair}'
@@ -122,8 +124,9 @@ def rebuild_incr(network, max_network_length):
 
         prev_network_length = network_length
         prev_average_meet_time = average_meet_time
-        if network_length > max_network_length:
+        if network_length >= max_network_length:
             break
-        i_segment += 1
+        if n_segments >= max_segments:
+            break
 
     return network

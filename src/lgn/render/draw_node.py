@@ -1,3 +1,5 @@
+import math
+
 from utils import Log
 from utils.xmlx import _
 
@@ -13,7 +15,7 @@ class DrawNode:
             | dict(
                 cx=sx,
                 cy=sy,
-                r=self.styler.RADIUS * (n_neighbors + 1),
+                r=self.styler.RADIUS * math.sqrt(n_neighbors + 1),
             ),
         )
 

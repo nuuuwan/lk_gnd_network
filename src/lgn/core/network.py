@@ -3,8 +3,7 @@ from functools import cached_property
 from gig import Ent
 from utils import List, Log
 
-from lgn.utils import distance_matrix
-from lgn.utils import shape_utils
+from lgn.utils import distance_matrix, shape_utils
 
 log = Log('network')
 
@@ -148,3 +147,12 @@ class Network:
     def total_people_pairs(self):
         total_population = self.total_population
         return total_population * (total_population - 1) / 2
+
+    @property
+    def info(self):
+        return f'{self.network_length:,.0f}km'
+
+    @property
+    def info2(self):
+        node1, node2 = self.edge_pair_list[-1]
+        return f'with {node1} to {node2}'

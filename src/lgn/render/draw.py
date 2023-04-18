@@ -2,6 +2,7 @@ import os
 import webbrowser
 from functools import cache
 
+import imageio
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
 from utils import Log
@@ -43,10 +44,27 @@ class Draw(DrawNode, DrawLine):
             lines.append(self.draw_line(i_edge, n_edges, id1, id2, t))
         return lines
 
+    def draw_text(self):
+        return [
+            _('text', 'Sri Lanka', self.styler.text_supertitle),
+            _(
+                'text',
+                'Population Optimized Hypothetical Railway Network',
+                self.styler.text_title,
+            ),
+            _(
+                'text',
+                'music by @bensound ~ visualization by @nuuuwan',
+                self.styler.text_footer,
+            ),
+            _('text', self.network.info, self.styler.text_network_info),
+            _('text', self.network.info2, self.styler.text_network_info2),
+        ]
+
     def draw(self, png_path, do_open=True):
         svg = _(
             'svg',
-            self.draw_lines() + self.draw_nodes(),
+            self.draw_text() + self.draw_lines() + self.draw_nodes(),
             self.styler.svg,
         )
         svg_path = png_path[:-3] + 'svg'
@@ -67,3 +85,18 @@ class Draw(DrawNode, DrawLine):
         log.info(f'Saved {png_path}')
 
         return png_path
+
+    @staticmethod
+    def build_animated_gif(png_path_list, gif_path):
+        png_path_list.sort()
+        last_png_path = png_path_list[-1]
+        for i in range(0, 5):
+            png_path_list.append(last_png_path)
+
+        images = []
+        for png_path in png_path_list:
+            images.append(imageio.imread(png_path))
+        DURATION = 55.70 / 24
+        imageio.mimwrite(gif_path, images, duration=DURATION)
+        log.info(f'Built {gif_path} (from {len(png_path_list)} png files)')
+        webbrowser.open(os.path.abspath(gif_path))
