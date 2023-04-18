@@ -1,141 +1,184 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" padding="100">
-  <line fill="none" stroke="#e5e5e5" stroke-width="14" stroke-opacity="1" x1="888" y1="759" x2="1149" y2="961"/>
-  <line fill="none" stroke="#e1e2e1" stroke-width="14" stroke-opacity="1" x1="756" y1="1859" x2="915" y2="1674"/>
-  <line fill="none" stroke="#dde0dc" stroke-width="14" stroke-opacity="1" x1="907" y1="365" x2="782" y2="240"/>
-  <line fill="none" stroke="#d9ded8" stroke-width="14" stroke-opacity="1" x1="999" y1="1126" x2="748" y2="1128"/>
-  <line fill="none" stroke="#d5dbd3" stroke-width="14" stroke-opacity="1" x1="1382" y1="1063" x2="1149" y2="961"/>
-  <line fill="none" stroke="#d1dace" stroke-width="14" stroke-opacity="1" x1="989" y1="1478" x2="802" y2="1412"/>
-  <line fill="none" stroke="#ced8c9" stroke-width="14" stroke-opacity="1" x1="1185" y1="1840" x2="1289" y2="1573"/>
-  <line fill="none" stroke="#cbd6c3" stroke-width="14" stroke-opacity="1" x1="999" y1="1126" x2="888" y2="759"/>
-  <line fill="none" stroke="#c8d5be" stroke-width="14" stroke-opacity="1" x1="638" y1="1531" x2="802" y2="1412"/>
-  <line fill="none" stroke="#c6d4b8" stroke-width="14" stroke-opacity="1" x1="989" y1="1478" x2="1158" y2="1427"/>
-  <line fill="none" stroke="#c4d3b2" stroke-width="14" stroke-opacity="1" x1="902" y1="1900" x2="915" y2="1674"/>
-  <line fill="none" stroke="#c3d2ac" stroke-width="14" stroke-opacity="1" x1="748" y1="1128" x2="888" y2="759"/>
-  <line fill="none" stroke="#c2d1a6" stroke-width="14" stroke-opacity="1" x1="989" y1="1478" x2="915" y2="1674"/>
-  <line fill="none" stroke="#c2d1a0" stroke-width="14" stroke-opacity="1" x1="988" y1="1326" x2="802" y2="1412"/>
-  <line fill="none" stroke="#c3d199" stroke-width="14" stroke-opacity="1" x1="673" y1="513" x2="865" y2="525"/>
-  <line fill="none" stroke="#c5d192" stroke-width="14" stroke-opacity="1" x1="865" y1="525" x2="907" y2="365"/>
-  <line fill="none" stroke="#c7d18b" stroke-width="14" stroke-opacity="1" x1="865" y1="525" x2="888" y2="759"/>
-  <line fill="none" stroke="#cbd184" stroke-width="14" stroke-opacity="1" x1="678" y1="100" x2="782" y2="240"/>
-  <line fill="none" stroke="#cfd27c" stroke-width="14" stroke-opacity="1" x1="1182" y1="678" x2="1149" y2="961"/>
-  <line fill="none" stroke="#d2d075" stroke-width="14" stroke-opacity="1" x1="999" y1="1126" x2="1149" y2="961"/>
-  <line fill="none" stroke="#d3cb6d" stroke-width="14" stroke-opacity="1" x1="988" y1="1326" x2="999" y2="1126"/>
-  <line fill="none" stroke="#d4c565" stroke-width="14" stroke-opacity="1" x1="678" y1="100" x2="888" y2="759"/>
-  <line fill="none" stroke="#d5bf5d" stroke-width="14" stroke-opacity="1" x1="902" y1="1900" x2="1185" y2="1840"/>
-  <line fill="none" stroke="#d7b755" stroke-width="14" stroke-opacity="1" x1="1158" y1="1427" x2="1289" y2="1573"/>
-  <line fill="none" stroke="#d8af4c" stroke-width="14" stroke-opacity="1" x1="1382" y1="1063" x2="1414" y2="1344"/>
-  <line fill="none" stroke="#daa543" stroke-width="14" stroke-opacity="1" x1="638" y1="1402" x2="802" y2="1412"/>
-  <line fill="none" stroke="#dc9b3b" stroke-width="14" stroke-opacity="1" x1="988" y1="1326" x2="989" y2="1478"/>
-  <line fill="none" stroke="#de8f31" stroke-width="14" stroke-opacity="1" x1="1414" y1="1344" x2="1158" y2="1427"/>
-  <line fill="none" stroke="#e18228" stroke-width="14" stroke-opacity="1" x1="585" y1="971" x2="888" y2="759"/>
-  <line fill="none" stroke="#e3741f" stroke-width="14" stroke-opacity="1" x1="988" y1="1326" x2="1158" y2="1427"/>
-  <line fill="none" stroke="#e46517" stroke-width="14" stroke-opacity="1" x1="988" y1="1326" x2="748" y2="1128"/>
-  <line fill="none" stroke="#e15613" stroke-width="14" stroke-opacity="1" x1="693" y1="1679" x2="915" y2="1674"/>
-  <line fill="none" stroke="#de4710" stroke-width="14" stroke-opacity="1" x1="748" y1="1128" x2="585" y2="971"/>
-  <line fill="none" stroke="#db390c" stroke-width="14" stroke-opacity="1" x1="756" y1="1859" x2="902" y2="1900"/>
-  <line fill="none" stroke="#d72a09" stroke-width="14" stroke-opacity="1" x1="693" y1="1679" x2="756" y2="1859"/>
-  <line fill="none" stroke="#d31c05" stroke-width="14" stroke-opacity="1" x1="638" y1="1531" x2="693" y2="1679"/>
-  <line fill="none" stroke="#d00d02" stroke-width="14" stroke-opacity="1" x1="638" y1="1402" x2="748" y2="1128"/>
-  <line fill="none" stroke="#cc0000" stroke-width="14" stroke-opacity="1" x1="638" y1="1531" x2="638" y2="1402"/>
+  <line fill="none" stroke="#e5e5e5" stroke-width="14" stroke-opacity="1" x1="648" y1="1031" x2="608" y2="1135"/>
+  <line fill="none" stroke="#dbdfdb" stroke-width="14" stroke-opacity="1" x1="608" y1="1135" x2="539" y2="1113"/>
+  <line fill="none" stroke="#d2dad0" stroke-width="14" stroke-opacity="1" x1="790" y1="1546" x2="782" y2="1786"/>
+  <line fill="none" stroke="#cbd6c4" stroke-width="14" stroke-opacity="1" x1="666" y1="1553" x2="790" y2="1546"/>
+  <line fill="none" stroke="#c5d3b7" stroke-width="14" stroke-opacity="1" x1="589" y1="1394" x2="666" y2="1553"/>
+  <line fill="none" stroke="#c2d2a9" stroke-width="14" stroke-opacity="1" x1="589" y1="1394" x2="678" y2="1344"/>
+  <line fill="none" stroke="#c3d19a" stroke-width="14" stroke-opacity="1" x1="712" y1="1216" x2="678" y2="1344"/>
+  <line fill="none" stroke="#c8d18a" stroke-width="14" stroke-opacity="1" x1="798" y1="1105" x2="712" y2="1216"/>
+  <line fill="none" stroke="#d2d279" stroke-width="14" stroke-opacity="1" x1="479" y1="365" x2="586" y2="410"/>
+  <line fill="none" stroke="#d4c667" stroke-width="14" stroke-opacity="1" x1="586" y1="410" x2="798" y2="505"/>
+  <line fill="none" stroke="#d7b654" stroke-width="14" stroke-opacity="1" x1="798" y1="505" x2="833" y2="705"/>
+  <line fill="none" stroke="#dba140" stroke-width="14" stroke-opacity="1" x1="833" y1="705" x2="887" y2="804"/>
+  <line fill="none" stroke="#e0852b" stroke-width="14" stroke-opacity="1" x1="887" y1="804" x2="797" y2="949"/>
+  <line fill="none" stroke="#e46417" stroke-width="14" stroke-opacity="1" x1="798" y1="1105" x2="797" y2="949"/>
+  <line fill="none" stroke="#dd420e" stroke-width="14" stroke-opacity="1" x1="519" y1="1006" x2="539" y2="1113"/>
+  <line fill="none" stroke="#d52006" stroke-width="14" stroke-opacity="1" x1="798" y1="1105" x2="888" y2="1273"/>
+  <line fill="none" stroke="#cc0000" stroke-width="14" stroke-opacity="1" x1="519" y1="1006" x2="798" y2="1105"/>
   <g>
-    <circle r="28" fill="white" stroke="black" stroke-width="3.5" cx="638" cy="1531"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="652" y="1531">Colombo</text>
+    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="519" cy="1006"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="533" y="1006">Colombo</text>
   </g>
   <g>
-    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="638" cy="1402"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="652" y="1402">Gampaha</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="648" cy="1031"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="662" y="1031">Kolonnawa</text>
   </g>
   <g>
-    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="693" cy="1679"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="707" y="1679">Kalutara</text>
+    <circle r="28" fill="white" stroke="black" stroke-width="3.5" cx="798" cy="1105"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="812" y="1105">Kaduwela</text>
   </g>
   <g>
-    <circle r="42" fill="white" stroke="black" stroke-width="3.5" cx="988" cy="1326"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1002" y="1326">Kandy</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="888" cy="1273"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="902" y="1273">Homagama</text>
   </g>
   <g>
-    <circle r="28" fill="white" stroke="black" stroke-width="3.5" cx="999" cy="1126"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1013" y="1126">Matale</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1201" cy="1059"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1215" y="1059">Seethawaka</text>
   </g>
   <g>
-    <circle r="28" fill="white" stroke="black" stroke-width="3.5" cx="989" cy="1478"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1003" y="1478">Nuwara Eliya</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1141" cy="1271"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1155" y="1271">Padukka</text>
   </g>
   <g>
-    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="756" cy="1859"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="770" y="1859">Galle</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="712" cy="1216"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="726" y="1216">Maharagama</text>
   </g>
   <g>
-    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="902" cy="1900"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="916" y="1900">Matara</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="608" cy="1135"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="622" y="1135">Sri Jayawardanapura Kotte</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1185" cy="1840"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1199" y="1840">Hambantota</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="539" cy="1113"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="553" y="1113">Thimbirigasyaya</text>
   </g>
   <g>
-    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="678" cy="100"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="692" y="100">Jaffna</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="552" cy="1213"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="566" y="1213">Dehiwala</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="673" cy="513"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="687" y="513">Mannar</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="559" cy="1288"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="573" y="1288">Ratmalana</text>
   </g>
   <g>
-    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="865" cy="525"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="879" y="525">Vavuniya</text>
+    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="589" cy="1394"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="603" y="1394">Moratuwa</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="907" cy="365"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="921" y="365">Mullaitivu</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="678" cy="1344"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="692" y="1344">Kesbewa</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="782" cy="240"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="796" y="240">Kilinochchi</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="479" cy="365"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="493" y="365">Negombo</text>
   </g>
   <g>
-    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="1382" cy="1063"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1396" y="1063">Batticaloa</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="586" cy="410"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="600" y="410">Katana</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1414" cy="1344"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1428" y="1344">Ampara</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="867" cy="268"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="881" y="268">Divulapitiya</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1182" cy="678"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1196" y="678">Trincomalee</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1145" cy="337"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1159" y="337">Mirigama</text>
   </g>
   <g>
-    <circle r="21" fill="white" stroke="black" stroke-width="3.5" cx="748" cy="1128"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="762" y="1128">Kurunegala</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="798" cy="505"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="812" y="505">Minuwangoda</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="585" cy="971"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="599" y="971">Puttalam</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="565" cy="790"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="579" y="790">Wattala</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="888" cy="759"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="902" y="759">Anuradhapura</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="632" cy="703"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="646" y="703">Ja-Ela</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1149" cy="961"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1163" y="961">Polonnaruwa</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="833" cy="705"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="847" y="705">Gampaha</text>
   </g>
   <g>
-    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="1158" cy="1427"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1172" y="1427">Badulla</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1112" cy="601"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1126" y="601">Attanagalla</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1289" cy="1573"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1303" y="1573">Moneragala</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1086" cy="897"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1100" y="897">Dompe</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="915" cy="1674"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="929" y="1674">Ratnapura</text>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="887" cy="804"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="901" y="804">Mahara</text>
   </g>
   <g>
-    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="802" cy="1412"/>
-    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="816" y="1412">Kegalle</text>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="634" cy="946"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="648" y="946">Kelaniya</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="797" cy="949"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="811" y="949">Biyagama</text>
+  </g>
+  <g>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="666" cy="1553"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="680" y="1553">Panadura</text>
+  </g>
+  <g>
+    <circle r="14" fill="white" stroke="black" stroke-width="3.5" cx="790" cy="1546"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="804" y="1546">Bandaragama</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="983" cy="1457"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="997" y="1457">Horana</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1212" cy="1441"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1226" y="1441">Ingiriya</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1268" cy="1714"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1282" y="1714">Bulathsinhala</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1078" cy="1712"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1092" y="1712">Madurawala</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="925" cy="1690"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="939" y="1690">Millaniya</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="782" cy="1786"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="796" y="1786">Kalutara</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="959" cy="1900"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="973" y="1900">Dodangoda</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="502" cy="100"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="516" y="100">Wennappuwa</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="625" cy="108"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="639" y="108">Dankotuwa</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1432" cy="1259"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1446" y="1259">Eheliyagoda</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1484" cy="1445"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1498" y="1445">Kiriella</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1372" cy="723"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1386" y="723">Ruwanwella</text>
+  </g>
+  <g>
+    <circle r="7" fill="white" stroke="black" stroke-width="3.5" cx="1520" cy="1020"/>
+    <text fill="black" stroke="none" font-size="30" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1534" y="1020">Dehiovita</text>
   </g>
 </svg>

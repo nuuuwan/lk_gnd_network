@@ -10,12 +10,12 @@ log = Log('rail_network')
 
 def is_close_enough(centroid):
     distance = shape_utils.compute_distance(centroid, [6.92, 79.86])
-    return distance < 3000
+    return distance < 50
 
 
 if __name__ == '__main__':
     network = Network.from_type(
-        EntType.DISTRICT, lambda ent: is_close_enough(ent.centroid)
+        EntType.DSD, lambda ent: is_close_enough(ent.centroid)
     )
 
     # network = single_segments.rebuild_actual(network)
@@ -25,7 +25,7 @@ if __name__ == '__main__':
 
     #
 
-    network = single_segments.rebuild_incr(network, max_network_length=2000)
+    network = single_segments.rebuild_incr(network, max_network_length=120)
 
     average_meet_time_str = single_segments.format_time(
         single_segments.compute_average_meet_time(network)
