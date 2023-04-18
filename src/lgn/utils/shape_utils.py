@@ -1,16 +1,21 @@
+import shapely
 from utils import Log
 
 log = Log(__name__)
 
 
+def computer_area_for_polygon(polygon):
+    return shapely.Polygon(polygon).area
+
+
+def compute_area(polygon_list):
+    return sum(
+        [computer_area_for_polygon(polygon) for polygon in polygon_list]
+    )
+
+
 def get_bbox(loc_list: list) -> tuple[float, float, float, float]:
-    y0, x0 = loc_list[0]
-    min_x, min_y, max_x, max_y = x0, y0, x0, y0
-    for y, x in loc_list:
-        min_x = min(min_x, x)
-        min_y = min(min_y, y)
-        max_x = max(max_x, x)
-        max_y = max(max_y, y)
+    min_y, min_x, max_y, max_x = shapely.Polygon(loc_list).bounds
     return min_x, min_y, max_x, max_y
 
 

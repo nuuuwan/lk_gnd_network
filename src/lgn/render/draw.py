@@ -7,7 +7,7 @@ from svglib.svglib import svg2rlg
 from utils import Log
 from utils.xmlx import _
 
-from lgn.render import bbox_utils
+from lgn.utils import shape_utils
 from lgn.render.draw_line import DrawLine
 from lgn.render.draw_node import DrawNode
 
@@ -21,7 +21,7 @@ class Draw(DrawNode, DrawLine):
 
     @cache
     def get_t(self):
-        return bbox_utils.get_t(self.styler, self.network.loc_list)
+        return shape_utils.get_t(self.styler, self.network.loc_list)
 
     def draw_nodes(self):
         t = self.get_t()

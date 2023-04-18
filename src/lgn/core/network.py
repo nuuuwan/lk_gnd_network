@@ -1,8 +1,9 @@
-from gig import Ent, EntType
+from gig import Ent
 from utils import List, Log
 
-log = Log('network')
+from lgn.utils import shape_utils
 
+log = Log('network')
 
 
 def point_to_key(point):
@@ -13,14 +14,23 @@ def point_to_key(point):
 def filter_ent(ent):
     return True
 
+
 def build_node_idx(ent_list):
     node_idx = {}
     for ent in ent_list:
+        log.debug(f'build_node_idx: {ent.id} ({ent.name})')
+        raw_geo = ent.get_raw_geo()
+        area = shape_utils.compute_area(raw_geo)
+        population = ent.population
+
         node_idx[ent.name] = dict(
             centroid=ent.centroid,
-            population=ent.population,
+            population=population,
+            area=area,
+            population_density=population / area,
         )
     return node_idx
+
 
 def build_key_to_ent_set(ent_list):
     log.debug('build_key_to_ent_set...')
@@ -30,12 +40,12 @@ def build_key_to_ent_set(ent_list):
         point_list = List(raw_geo).flatten()
         key_list = [point_to_key(point) for point in point_list]
         ent_id = ent.name
-        log.debug(f'build_key_to_ent_set: {ent_id}')
         for key in key_list:
             if key not in key_to_ent_set:
                 key_to_ent_set[key] = set()
             key_to_ent_set[key].add(ent_id)
     return key_to_ent_set
+
 
 def buiid_neighbor_idx(key_to_ent_set):
     neighbor_idx = {}
@@ -49,12 +59,14 @@ def buiid_neighbor_idx(key_to_ent_set):
             neighbor_idx[ent_id] |= ent_set
     return neighbor_idx
 
+
 def build_edge_pair_list(neighbor_idx):
     edge_pair_list = []
     for id, id_set in neighbor_idx.items():
         for id2 in id_set:
             edge_pair_list.append([id, id2])
     return edge_pair_list
+
 
 class Network:
     def __init__(self, node_idx, edge_pair_list):
@@ -67,7 +79,6 @@ class Network:
         ent_list = [ent for ent in ent_list if filter_ent(ent)]
         print(ent_list[0].d)
 
-
         node_idx = build_node_idx(ent_list)
         key_to_ent_set = build_key_to_ent_set(ent_list)
         neighbor_idx = buiid_neighbor_idx(key_to_ent_set)
@@ -76,7 +87,9 @@ class Network:
 
     @property
     def d(self):
-        return dict(node_idx=self.node_idx, edge_pair_list=self.edge_pair_list)
+        return dict(
+            node_idx=self.node_idx, edge_pair_list=self.edge_pair_list
+        )
 
     def __str__(self):
         return str(self.d)
@@ -84,4 +97,3 @@ class Network:
     @property
     def loc_list(self):
         return [node['centroid'] for node in self.node_idx.values()]
-
