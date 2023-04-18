@@ -1,3 +1,5 @@
+from functools import cache
+
 import shapely
 from utils import Log
 
@@ -17,10 +19,15 @@ def compute_area(polygon_list):
     )
 
 
+@cache
+def _compute_distance(x1, y1, x2, y2):
+    return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5 * DISTANCE_PER_UNIT_COORD
+
+
 def compute_distance(loc1, loc2):
     x1, y1 = loc1
     x2, y2 = loc2
-    return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5 * DISTANCE_PER_UNIT_COORD
+    return _compute_distance(x1, y1, x2, y2)
 
 
 def get_bbox(loc_list: list) -> tuple[float, float, float, float]:

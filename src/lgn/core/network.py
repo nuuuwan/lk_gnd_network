@@ -128,11 +128,13 @@ class Network:
     def distance_matrix(self):
         dist = {}
 
+        def _dist(node1, node2):
+            return dist[node1].get(node2, float('inf'))
+
         nodes = self.node_list
-        for node1 in nodes:
-            dist[node1] = {}
-            for node2 in nodes:
-                dist[node1][node2] = 0 if node1 == node2 else float('inf')
+        for node in nodes:
+            dist[node] = {}
+            dist[node][node] = 0
 
         for node1, node2 in self.edge_pair_list:
             distance = shape_utils.compute_distance(
@@ -145,10 +147,9 @@ class Network:
         for node2 in nodes:
             for node1 in nodes:
                 for node3 in nodes:
-                    dist[node1][node3] = min(
-                        dist[node1][node3],
-                        dist[node1][node2] + dist[node2][node3],
-                    )
+                    distance_via = _dist(node1, node2) + _dist(node2, node3)
+                    if distance_via < _dist(node1, node3):
+                        dist[node1][node3] = distance_via
 
         return dist
 
@@ -162,3 +163,12 @@ class Network:
             )
             network_length += distance
         return network_length
+
+    @cached_property
+    def total_population(self):
+        return sum([node['population'] for node in self.node_idx.values()])
+
+    @cached_property
+    def total_people_pairs(self):
+        total_population = self.total_population
+        return total_population * (total_population - 1) / 2
