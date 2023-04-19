@@ -16,13 +16,11 @@ SPEED_WALK = 4
 
 
 def get_d_per_distance_for_edge_pair(
-    network, before_average_travel_time, edge_pair
+    network, before_average_travel_time, edge_pair, distance
 ):
     node_i, node_j = edge_pair
     if network.is_edge(node_i, node_j):
         return None
-
-    distance = network.get_distance(node_i, node_j)
 
     network_copy = network + [edge_pair]
     average_travel_time = network_copy.average_travel_time
@@ -32,26 +30,27 @@ def get_d_per_distance_for_edge_pair(
 
 
 def get_edge_pair_and_d_per_distance_list(
-    network, before_average_travel_time, edge_pair_list
+    network, before_average_travel_time, close_node_pairs_and_distance_list
 ):
     t0 = time.time()
     MAX_THREADS = 8
 
-    def func_worker(edge_pair):
+    def func_worker(x):
+        edge_pair, distance = x
         d_per_distance = get_d_per_distance_for_edge_pair(
-            network, before_average_travel_time, edge_pair
+            network, before_average_travel_time, edge_pair, distance
         )
         return edge_pair, d_per_distance
 
     edge_pair_and_d_per_distance_list = map_parallel(
         func_worker,
-        edge_pair_list,
+        close_node_pairs_and_distance_list,
         max_threads=MAX_THREADS,
     )
    
     print()
     dt = time.time() - t0
-    n = len(edge_pair_list)
+    n = len(close_node_pairs_and_distance_list)
     dt_per_n = 1000.0 * dt / n
     log.debug(f'{n:,} pairs in {dt:,.1f}s ({dt_per_n:,.1f}ms per pair)')
 
@@ -64,8 +63,9 @@ def get_best_incr(network):
     best_d_per_distance = -float('inf')
     best_edge_pair = None
 
+    max_distance = 15
     edge_pair_and_d_per_distance_list = get_edge_pair_and_d_per_distance_list(
-        network, before_average_travel_time, network.all_node_pairs
+        network, before_average_travel_time, network.get_close_node_pairs_and_distance_list(max_distance)
     )
 
     for edge_pair, d_per_distance in edge_pair_and_d_per_distance_list:

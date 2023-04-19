@@ -61,8 +61,7 @@ class NetworkBase:
     @cache
     def get_node(self, i):
         return self.node_list[i]
-
-    @cache
+    
     def format_edge(self, edge):
         i, j = edge
         node_i = self.get_node(i)
