@@ -13,8 +13,8 @@ log = Log('network')
 
 class Network:
     def __init__(self, node_list, edge_list):
-        self.node_list = node_list
-        self.edge_list = edge_list
+        self.__node_list = node_list
+        self.__edge_list = edge_list
 
     @staticmethod
     def from_type(ent_type: str, func_filter_ent=None):
@@ -28,24 +28,24 @@ class Network:
 
     @cached_property
     def loc_list(self):
-        return [node.centroid for node in self.node_list]
+        return [node.centroid for node in self.__node_list]
 
     @cached_property
-    def node_list(self):
+    def __node_list(self):
         return list(self.node_idx.keys())
 
     @cache
     def __len__(self):
-        return len(self.node_list)
+        return len(self.__node_list)
 
     @cached_property
     def edge_and_distance_list(self):
         edge_and_distance_list = []
-        for i, j in self.edge_list:
+        for i, j in self.__edge_list:
             assert i < j
             distance = shape_utils.compute_distance(
-                self.node_list[i].centroid,
-                self.node_list[j].centroid,
+                self.__node_list[i].centroid,
+                self.__node_list[j].centroid,
             )
             edge_and_distance_list.append([[i, j], distance])
         return edge_and_distance_list
@@ -59,7 +59,7 @@ class Network:
                 neighbor_idx[i] = []
             neighbor_idx[i].append(j)
 
-        for i, j in self.edge_list:
+        for i, j in self.__edge_list:
             assert i < j
             add(i, j)
             add(j, i)
@@ -92,7 +92,7 @@ class Network:
 
     @cached_property
     def total_population(self):
-        return sum([node.population for node in self.node_list])
+        return sum([node.population for node in self.__node_list])
 
     @cached_property
     def total_people_pairs(self):
@@ -114,18 +114,19 @@ class Network:
                     node_pairs.append((i, j))
         return node_pairs
     
-    def __add__(self, edge):
-        assert(type(edge) == tuple and len(edge) == 2)
+    def __add__(self, edge_list):
+        if (type(edge_list) != list):
+            raise TypeError('edge_list must be a list')
 
-        edge_list_copy = copy.deepcopy(self.edge_list)
-        edge_list_copy.append(edge)                
-        return Network(self.node_list, edge_list_copy)
+        edge_list_copy = copy.deepcopy(self.__edge_list)
+        edge_list_copy += edge_list                
+        return Network(self.__node_list, edge_list_copy)
     
     def __str__(self):
         lines = ['', f'NETWORK ({len(self)})']
-        for i,j in self.edge_list:
-            node_i = self.node_list[i]
-            node_j = self.node_list[j]
+        for i,j in self.__edge_list:
+            node_i = self.__node_list[i]
+            node_j = self.__node_list[j]
             lines.append(f'{node_i} ↔️ {node_j}')
         lines.append('')
         return '\n'.join(lines)
@@ -139,10 +140,8 @@ if __name__ == '__main__':
     network = Network.from_type(EntType.PROVINCE)
     print(network)
     print(network.loc_list)
-    network.edge_list = [
-        [0, 2],
-        [0, 5],
-    ]
+    network = network + [(0, 2), (0,5)]
+    print(network)
 
     print(network.neighbor_idx)
     print_line()
@@ -159,4 +158,4 @@ if __name__ == '__main__':
 
     print(network.connected_node_pairs)
 
-    print(network + (0,8))
+    print(network + [(0,8)])
