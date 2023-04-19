@@ -175,5 +175,5 @@ class Network:
         for node1, node2_to_distance in distance_matrix.items():
             for node2, distance in node2_to_distance.items():
                 if distance != 0 and distance != float('inf'):
-                    node_pairs.append((node1, node2))
+                    node_pairs.append((node1, node2, distance))
         return node_pairs
