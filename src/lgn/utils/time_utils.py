@@ -1,6 +1,6 @@
 def format_time(t_hours_f):
     if t_hours_f < 0:
-        return '(-' + format_time(-t_hours_f) +')'
+        return '(-' + format_time(-t_hours_f) + ')'
 
     (int)(t_hours_f / 24)
     t_hours = (int)(t_hours_f % 24)

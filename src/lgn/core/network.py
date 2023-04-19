@@ -168,7 +168,7 @@ class Network:
             if node1 <= node2
         ]
 
-    @property 
+    @property
     def connected_node_pairs(self):
         node_pairs = []
         distance_matrix = self.distance_matrix
