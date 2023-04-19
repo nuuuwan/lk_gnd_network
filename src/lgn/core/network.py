@@ -158,3 +158,12 @@ class Network:
     def info2(self):
         node1, node2 = self.edge_pair_list[-1]
         return f'+ {node1} to {node2}'
+
+    @property
+    def all_node_pairs(self):
+        return [
+            (node1, node2)
+            for node1 in self.node_list
+            for node2 in self.node_list
+            if node1 <= node2
+        ]
