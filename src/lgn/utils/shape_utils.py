@@ -37,12 +37,10 @@ def get_bbox(loc_list: list) -> tuple[float, float, float, float]:
 
 def get_t(styler, loc_list: list):
     min_x, min_y, max_x, max_y = get_bbox(loc_list)
-    log.debug([min_x, min_y, max_x, max_y])
 
     x_span = max(0.00001, max_x - min_x)
     y_span = max(0.00001, max_y - min_y)
     max_span = max(x_span, y_span)
-    log.debug(f'{x_span=}, {y_span=}')
 
     padding = styler.svg['padding']
     diagram_width = styler.svg['width'] - 2 * padding

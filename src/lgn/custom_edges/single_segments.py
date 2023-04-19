@@ -1,6 +1,7 @@
 from utils import Log
 
 from lgn.utils import shape_utils
+from lgn.utils.console_utils import print_line, tab
 
 log = Log('single_segments')
 
@@ -55,6 +56,29 @@ def compute_average_meet_time(network):
     return average_meet_time
 
 
+def get_fitness_for_edge_pair(network, edge_pair, before_average_meet_time):
+    node_i, node_j = edge_pair
+    if [node_i, node_j] in network.edge_pair_list or [
+        node_j,
+        node_i,
+    ] in network.edge_pair_list:
+        return None
+
+    distance = shape_utils.compute_distance(
+        network.node_idx[node_i]['centroid'],
+        network.node_idx[node_j]['centroid'],
+    )
+
+    previous_edge_pair_list = network.edge_pair_list
+    network.edge_pair_list = network.edge_pair_list + [edge_pair]
+    average_meet_time = compute_average_meet_time(network)
+    d_average_meet_time = before_average_meet_time - average_meet_time
+    d_per_distance = d_average_meet_time / distance
+
+    network.edge_pair_list = previous_edge_pair_list
+    return d_per_distance
+
+
 def get_best_incr(network):
     before_average_meet_time = compute_average_meet_time(network)
     node_list = network.node_list
@@ -66,64 +90,38 @@ def get_best_incr(network):
         for j in range(i + 1, n):
             node_j = node_list[j]
             edge_pair = [node_i, node_j]
-            if (
-                edge_pair in network.edge_pair_list
-                or [node_j, node_i] in network.edge_pair_list
-            ):
-                continue
-            distance = shape_utils.compute_distance(
-                network.node_idx[node_i]['centroid'],
-                network.node_idx[node_j]['centroid'],
-            )
-            # if distance > 10:
-            #     continue
 
-            previous_edge_pair_list = network.edge_pair_list
-            network.edge_pair_list = network.edge_pair_list + [edge_pair]
-            average_meet_time = compute_average_meet_time(network)
-            d_average_meet_time = before_average_meet_time - average_meet_time
-            d_per_distance = d_average_meet_time / distance
+            d_per_distance = get_fitness_for_edge_pair(
+                network, edge_pair, before_average_meet_time
+            )
+            if d_per_distance is None:
+                continue
 
             if d_per_distance > best_d_per_distance:
                 best_d_per_distance = d_per_distance
                 best_edge_pair = edge_pair
-                log.debug(
-                    f'{format_time(average_meet_time)}'
-                    + f'\t{format_time(d_average_meet_time)}\t{distance:.2f}km'
-                    + f'\t{d_per_distance:.2f}hr/km'
-                    + f'\t{str(edge_pair)}'
-                )
-            network.edge_pair_list = previous_edge_pair_list
 
     return best_edge_pair
 
 
 def rebuild_incr(network, max_network_length, max_segments):
-    prev_network_length = network.network_length
-    prev_average_meet_time = compute_average_meet_time(network)
     while True:
         best_edge_pair = get_best_incr(network)
         network.edge_pair_list.append(best_edge_pair)
         average_meet_time = compute_average_meet_time(network)
         network_length = network.network_length
-
-        d_network_length = network_length - prev_network_length
-        d_average_meet_time = prev_average_meet_time - average_meet_time
-        reduction = 60 * d_average_meet_time / d_network_length
-
         n_segments = len(network.edge_pair_list)
 
         log.info(
-            f'rebuild_incr: { n_segments}'
-            + f'\t{format_time(d_average_meet_time)}'
-            + f'\t{network_length:.1f}km'
-            + f'\t{reduction:.1f}min/km\t{best_edge_pair}'
+            tab(
+                f'rebuild_incr: { n_segments})',
+                f'{format_time(average_meet_time)}',
+                f'{network_length:.1f}km',
+                f'{best_edge_pair[0]} -> {best_edge_pair[1]}',
+            )
         )
+        print_line()
 
-        log.debug('-' * 64)
-
-        prev_network_length = network_length
-        prev_average_meet_time = average_meet_time
         if network_length >= max_network_length:
             break
         if n_segments >= max_segments:
