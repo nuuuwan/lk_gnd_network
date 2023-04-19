@@ -34,6 +34,7 @@ def compute_average_meet_time(network):
 
 def get_fitness_for_edge_pair(network, edge_pair, before_average_meet_time):
     node_i, node_j = edge_pair
+   
     if [node_i, node_j] in network.edge_pair_list or [
         node_j,
         node_i,
@@ -71,6 +72,8 @@ def get_best_incr(network):
         if d_per_distance > best_d_per_distance:
             best_d_per_distance = d_per_distance
             best_edge_pair = edge_pair
+            print(f'get_best_incr: {best_edge_pair=}' + ' '*20, end="\r")
+    print()
 
     return best_edge_pair
 

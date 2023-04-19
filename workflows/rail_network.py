@@ -12,16 +12,16 @@ log = Log('rail_network')
 
 def is_close_enough(centroid):
     distance = shape_utils.compute_distance(centroid, [6.92, 79.86])
-    return distance < 100
+    return distance < 40
 
 
 def build_single():
     styler = Styler()
     max_network_length = 1048 * 2
-    max_segments = 5
+    max_segments = 15
 
     network = Network.from_type(
-        EntType.DISTRICT, lambda ent: is_close_enough(ent.centroid)
+        EntType.DSD, lambda ent: is_close_enough(ent.centroid)
     )
     network.edge_pair_list = []
     network = single_segments.rebuild_incr(
