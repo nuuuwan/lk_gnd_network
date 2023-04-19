@@ -11,8 +11,8 @@ log = Log('network')
 
 class NetworkBase:
     def __init__(self, node_list, edge_list):
-        self.__node_list = node_list
-        self.__edge_list = edge_list
+        self.node_list = node_list
+        self.edge_list = edge_list
 
     @classmethod
     def from_type(cls, ent_type: str, func_filter_ent=None):
@@ -26,23 +26,19 @@ class NetworkBase:
 
     @cached_property
     def loc_list(self):
-        return [node.centroid for node in self.__node_list]
-
-    @cached_property
-    def __node_list(self):
-        return list(self.node_idx.keys())
+        return [node.centroid for node in self.node_list]
 
     @cached_property
     def n_nodes(self):
-        return len(self.__node_list)
+        return len(self.node_list)
 
     @cached_property
     def n_edges(self):
-        return len(self.__edge_list)
+        return len(self.edge_list)
 
     @cached_property
     def total_population(self):
-        return sum([node.population for node in self.__node_list])
+        return sum([node.population for node in self.node_list])
 
     @cached_property
     def total_people_pairs(self):
@@ -51,28 +47,20 @@ class NetworkBase:
 
     def __str__(self):
         lines = ['', f'NETWORK ({self.n_nodes})']
-        for i, j in self.__edge_list:
-            node_i = self.__node_list[i]
-            node_j = self.__node_list[j]
+        for i, j in self.edge_list:
+            node_i = self.node_list[i]
+            node_j = self.node_list[j]
             lines.append(f'{node_i} ↔️ {node_j}')
         lines.append('')
         return '\n'.join(lines)
 
     @cache
     def is_edge(self, i, j):
-        return (i, j) in self.__edge_list or (j, i) in self.__edge_list
+        return (i, j) in self.edge_list or (j, i) in self.edge_list
 
     @cache
     def get_node(self, i):
-        return self.__node_list[i]
-
-    @cached_property
-    def edge_list(self):
-        return self.__edge_list
-
-    @cached_property
-    def node_list(self):
-        return self.__node_list
+        return self.node_list[i]
 
     @cache
     def format_edge(self, edge):
@@ -85,6 +73,6 @@ class NetworkBase:
         if not isinstance(edge_list, list):
             raise TypeError('edge_list must be a list')
 
-        edge_list_copy = copy.deepcopy(self.__edge_list)
+        edge_list_copy = copy.deepcopy(self.edge_list)
         edge_list_copy += edge_list
-        return self.__class__(self.__node_list, edge_list_copy)
+        return self.__class__(self.node_list, edge_list_copy)

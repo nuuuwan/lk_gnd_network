@@ -1,5 +1,6 @@
 import time
 
+import numpy as np
 from utils import Log
 
 from lgn.utils.console_utils import print_line, tab
@@ -12,62 +13,33 @@ SPEED_TRAIN = 60
 SPEED_WALK = 4
 
 
-def compute_pop_meet_time_for_edge(network, node_i, node_j, distance):
-    population_i = network.get_node(node_i).population
-    population_j = network.get_node(node_j).population
-
-    distance_walking = network.get_distance(node_i, node_j)
-    meet_time = distance / SPEED_TRAIN - distance_walking / SPEED_WALK
-    pop = population_i * population_j
-    return pop * meet_time
-
-
-def compute_average_meet_time_delta(network):
-    if network.n_edges == 0:
-        return 0
-    sum_pop_times_meet_time = 0
-    MAX_THREADS = 4
-
-    pop_meet_time_list = map_parallel(
-        lambda x: compute_pop_meet_time_for_edge(
-            network, x[0][0], x[0][1], x[1]
-        ),
-        network.connected_node_pairs,
-        max_threads=MAX_THREADS,
-    )
-
-    sum_pop_times_meet_time = sum(pop_meet_time_list)
-
-    average_meet_time = sum_pop_times_meet_time / network.total_people_pairs
-    return average_meet_time
 
 
 def get_d_per_distance_for_edge_pair(
-    network, before_average_meet_time, edge_pair
+    network, before_average_travel_time, edge_pair
 ):
     node_i, node_j = edge_pair
     if network.is_edge(node_i, node_j):
         return None
 
     distance = network.get_distance(node_i, node_j)
-    if distance > 15:
-        return None
+
     network_copy = network + [edge_pair]
-    average_meet_time = compute_average_meet_time_delta(network_copy)
-    d_average_meet_time = before_average_meet_time - average_meet_time
-    d_per_distance = d_average_meet_time / distance
+    average_travel_time = network_copy.average_travel_time
+    d_average_travel_time = before_average_travel_time - average_travel_time
+    d_per_distance = d_average_travel_time / distance
     return d_per_distance
 
 
 def get_edge_pair_and_d_per_distance_list(
-    network, before_average_meet_time, edge_pair_list
+    network, before_average_travel_time, edge_pair_list
 ):
     t0 = time.time()
     MAX_THREADS = 8
 
     def func_worker(edge_pair):
         d_per_distance = get_d_per_distance_for_edge_pair(
-            network, before_average_meet_time, edge_pair
+            network, before_average_travel_time, edge_pair
         )
         return edge_pair, d_per_distance
 
@@ -76,6 +48,7 @@ def get_edge_pair_and_d_per_distance_list(
         edge_pair_list,
         max_threads=MAX_THREADS,
     )
+   
     print()
     dt = time.time() - t0
     n = len(edge_pair_list)
@@ -86,13 +59,13 @@ def get_edge_pair_and_d_per_distance_list(
 
 
 def get_best_incr(network):
-    before_average_meet_time = compute_average_meet_time_delta(network)
+    before_average_travel_time = network.average_travel_time
 
     best_d_per_distance = -float('inf')
     best_edge_pair = None
 
     edge_pair_and_d_per_distance_list = get_edge_pair_and_d_per_distance_list(
-        network, before_average_meet_time, network.all_node_pairs
+        network, before_average_travel_time, network.all_node_pairs
     )
 
     for edge_pair, d_per_distance in edge_pair_and_d_per_distance_list:
@@ -112,14 +85,14 @@ def rebuild_incr(network, max_network_length, max_segments):
     while True:
         best_edge_pair = get_best_incr(network)
         network = network + [best_edge_pair]
-        average_meet_time = compute_average_meet_time_delta(network)
+        average_travel_time = network.average_travel_time
         network_length = network.network_length
         n_segments = network.n_edges
 
         log.info(
             tab(
                 f'rebuild_incr: { n_segments})',
-                f'{format_time(average_meet_time)}',
+                f'{format_time(average_travel_time)}',
                 f'{format_distance(network_length)}',
                 f'{network.format_edge(best_edge_pair)}',
             )

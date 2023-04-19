@@ -7,11 +7,12 @@ from lgn.core.network_vector import NetworkVector
 log = Log('network')
 
 
-class Network(NetworkBase, NetworkVector, NetworkDerived):
+class Network(NetworkBase, NetworkDerived, NetworkVector):
     pass
 
 
 if __name__ == '__main__':
+    import numpy as np
     from gig import EntType
 
     from lgn.utils.console_utils import print_line
@@ -38,3 +39,12 @@ if __name__ == '__main__':
     print(network.connected_node_pairs)
 
     print(network + [(0, 8)])
+
+    print_line()
+    print(network.m_distance_walking)
+    print(network.m_distance_railway)
+    print(network.v_population)
+    print(network.m_population_pairs)
+    
+    print_line()
+    print(network.average_travel_time)

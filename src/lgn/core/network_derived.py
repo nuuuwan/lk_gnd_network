@@ -19,7 +19,7 @@ class NetworkDerived:
     @cached_property
     def edge_and_distance_list(self):
         edge_and_distance_list = []
-        for i, j in self.__edge_list:
+        for i, j in self.edge_list:
             assert i < j
             distance = self.get_distance(i, j)
             edge_and_distance_list.append([[i, j], distance])
@@ -34,7 +34,7 @@ class NetworkDerived:
                 neighbor_idx[i] = []
             neighbor_idx[i].append(j)
 
-        for i, j in self.__edge_list:
+        for i, j in self.edge_list:
             assert i < j
             add(i, j)
             add(j, i)
