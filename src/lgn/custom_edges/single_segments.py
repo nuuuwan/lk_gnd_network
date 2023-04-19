@@ -38,9 +38,8 @@ def compute_average_meet_time(network):
 def get_d_per_distance_for_edge_pair(
     network_readonly, before_average_meet_time, edge_pair
 ):
-    network = network_readonly.deepcopy()
     node_i, node_j = edge_pair
-
+    network = network_readonly.deepcopy()
     if [node_i, node_j] in network.edge_pair_list or [
         node_j,
         node_i,
@@ -59,9 +58,7 @@ def get_d_per_distance_for_edge_pair(
     d_per_distance = d_average_meet_time / distance
 
     network.edge_pair_list = previous_edge_pair_list
-    print(
-        f'get_best_incr: {edge_pair} = {d_per_distance}' + ' ' * 20, end="\r"
-    )
+    print(f'END {node_i} {node_j} {d_per_distance:.2f}', end='\r')
     return d_per_distance
 
 
@@ -70,22 +67,23 @@ def get_edge_pair_and_d_per_distance_list(
 ):
     t0 = time.time()
     MAX_THREADS = 4
+
+    def func_worker(edge_pair):
+        d_per_distance = get_d_per_distance_for_edge_pair(
+            network, before_average_meet_time, edge_pair
+        )
+        return edge_pair, d_per_distance
+
     edge_pair_and_d_per_distance_list = map_parallel(
-        lambda edge_pair: (
-            edge_pair,
-            get_d_per_distance_for_edge_pair(
-                network, before_average_meet_time, edge_pair
-            ),
-        ),
+        func_worker,
         edge_pair_list,
         max_threads=MAX_THREADS,
     )
+    print()
     dt = time.time() - t0
     n = len(edge_pair_list)
     dt_per_n = 1000.0 * dt / n
-    log.debug(
-        f'get_edge_pair_and_d_per_distance_list: {n:,} pairs in {dt:,.1f}s ({dt_per_n:,.1f}ms per pair)'
-    )
+    log.debug(f'{n:,} pairs in {dt:,.1f}s ({dt_per_n:,.1f}ms per pair)')
 
     return edge_pair_and_d_per_distance_list
 
