@@ -1,3 +1,4 @@
+import copy
 from functools import cached_property
 
 from gig import Ent
@@ -183,3 +184,8 @@ class Network:
                 ):
                     node_pairs.append((node1, node2, distance))
         return node_pairs
+
+    def deepcopy(self):
+        return Network(
+            copy.deepcopy(self.node_idx), copy.deepcopy(self.edge_pair_list)
+        )

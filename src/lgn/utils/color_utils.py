@@ -2,7 +2,7 @@ import colorsys
 
 
 def p_to_color(p):
-    hue = p * 120 / 360.0
+    hue = p * 240 / 360.0
     lightness = 0.4 + 0.5 * p
     saturation = 1
 

@@ -4,78 +4,101 @@
   <text x="2000.0" y="250.0" fill="gray" stroke="none" font-size="120" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Population Optimized Hypothetical Railway Network</text>
   <text x="2000.0" y="3750.0" fill="gray" stroke="none" font-size="60" font-family="p22" text-anchor="middle" dominant-baseline="hanging">music by @bensound ~ visualization by @nuuuwan</text>
   <text x="3000.0" y="1000.0" fill="lightgrey" stroke="none" font-size="180" font-family="p22" text-anchor="start" dominant-baseline="hanging">10km</text>
-  <text x="3000.0" y="1120.0" fill="lightgrey" stroke="none" font-size="90.0" font-family="p22" text-anchor="start" dominant-baseline="hanging">+ Hunupitiya to Wekanda</text>
-  <path fill="none" stroke="#c1ffb2" stroke-width="40" stroke-opacity="1" d="M 1436.0,977.0 L 1308.0606601717798,1104.9393398282202 C 1308.0571246378738,1104.9428753621262 1307.0,1107.495 1307.0,1107.5 L 1307.0,1276.5 C 1307.0,1276.505 1305.9387700703128,1279.053003341085 1305.935220806334,1279.0565250913896 L 1178.0,1406.0"/>
-  <path fill="none" stroke="#c1ff99" stroke-width="40" stroke-opacity="1" d="M 1436.0,977.0 L 1471.9393398282202,941.0606601717798 C 1471.9428753621262,941.0571246378739 1474.495,940.0 1474.5,940.0 L 2057.5,940.0 C 2057.505,940.0 2060.057124637874,938.9428753621261 2060.06066017178,938.9393398282202 L 2096.0,903.0"/>
-  <path fill="none" stroke="#cbff7f" stroke-width="40" stroke-opacity="1" d="M 1589.0,3500.0 L 1861.9393398282202,3227.06066017178 C 1861.9428753621262,3227.057124637874 1864.495,3226.0 1864.5,3226.0 L 2212.5,3226.0 C 2212.505,3226.0 2215.057124637874,3224.942875362126 2215.06066017178,3224.93933982822 L 2488.0,2952.0"/>
-  <path fill="none" stroke="#e0ff65" stroke-width="40" stroke-opacity="1" d="M 2353.0,720.0 L 2262.06066017178,810.9393398282202 C 2262.057124637874,810.9428753621261 2259.505,812.0 2259.5,812.0 L 2188.5,812.0 C 2188.495,812.0 2185.942875362126,813.0571246378739 2185.93933982822,813.0606601717798 L 2096.0,903.0"/>
-  <path fill="none" stroke="#fefe4c" stroke-width="40" stroke-opacity="1" d="M 2451.0,1072.0 L 2403.06066017178,1024.0606601717798 C 2403.057124637874,1024.0571246378738 2402.0,1021.505 2402.0,1021.5 L 2402.0,770.5 C 2402.0,770.495 2400.942875362126,767.9428753621261 2400.93933982822,767.9393398282202 L 2353.0,720.0"/>
-  <path fill="none" stroke="#ffd633" stroke-width="40" stroke-opacity="1" d="M 3221.0,2747.0 L 3120.0554736621093,2848.9341785568895 C 3120.051955416569,2848.9377312950332 3117.505,2850.0 3117.5,2850.0 L 2591.5,2850.0 C 2591.495,2850.0 2588.942875362126,2851.057124637874 2588.93933982822,2851.06066017178 L 2488.0,2952.0"/>
-  <path fill="none" stroke="#ffa319" stroke-width="40" stroke-opacity="1" d="M 2353.0,720.0 L 2244.06066017178,611.0606601717798 C 2244.057124637874,611.0571246378739 2241.505,610.0 2241.5,610.0 L 2195.5,610.0 C 2195.495,610.0 2192.9381028636285,608.9476695044967 2192.934551368189,608.9441500045118 L 2083.0,500.0"/>
-  <path fill="none" stroke="#ff6500" stroke-width="40" stroke-opacity="1" d="M 2808.0,876.0 L 2731.06066017178,799.0606601717798 C 2731.057124637874,799.0571246378739 2728.505,798.0 2728.5,798.0 L 2432.5,798.0 C 2432.495,798.0 2429.942875362126,796.9428753621261 2429.93933982822,796.9393398282202 L 2353.0,720.0"/>
-  <path fill="none" stroke="#e52d00" stroke-width="40" stroke-opacity="1" d="M 3260.0,1357.0 L 3035.0253048327204,1132.0253048327204 C 3035.0218871499446,1132.0218871499449 3034.0,1129.5548333333334 3034.0,1129.55 L 3034.0,1103.3775 C 3034.0,1103.3729083333333 3033.0292072075526,1101.0292072075524 3033.0259604089156,1101.0259604089156 L 2808.0,876.0"/>
-  <path fill="none" stroke="#cc0000" stroke-width="40" stroke-opacity="1" d="M 3260.0,1357.0 L 2875.06066017178,1741.9393398282202 C 2875.057124637874,1741.9428753621262 2874.0,1744.495 2874.0,1744.5 L 2874.0,2564.5 C 2874.0,2564.505 2872.942875362126,2567.057124637874 2872.93933982822,2567.06066017178 L 2488.0,2952.0"/>
+  <text x="3000.0" y="1120.0" fill="lightgrey" stroke="none" font-size="90.0" font-family="p22" text-anchor="start" dominant-baseline="hanging">+ Narahenpita to Thimbirigasyaya</text>
+  <path fill="none" stroke="#b2d1ff" stroke-width="40" stroke-opacity="1" d="M 2836.0,2590.0 L 2756.06066017178,2669.93933982822 C 2756.057124637874,2669.942875362126 2753.505,2671.0 2753.5,2671.0 L 2340.5,2671.0 C 2340.495,2671.0 2337.942875362126,2672.057124637874 2337.93933982822,2672.06066017178 L 2259.0,2751.0"/>
+  <path fill="none" stroke="#99eaff" stroke-width="40" stroke-opacity="1" d="M 2718.0,3233.0 L 2489.7761210259587,3003.7795102007444 C 2489.773533955872,3003.7769118334086 2489.0,3001.9036666666666 2489.0,3001.9 L 2489.0,2982.045 C 2489.0,2982.0415166666667 2488.263536502281,2980.263536502281 2488.26107341366,2980.26107341366 L 2259.0,2751.0"/>
+  <path fill="none" stroke="#7fffe5" stroke-width="40" stroke-opacity="1" d="M 1921.0,500.0 L 1844.0606601717798,576.9393398282202 C 1844.0571246378738,576.9428753621261 1841.505,578.0 1841.5,578.0 L 1760.5,578.0 C 1760.495,578.0 1757.9428753621262,579.0571246378739 1757.9393398282202,579.0606601717798 L 1681.0,656.0"/>
+  <path fill="none" stroke="#65ffa3" stroke-width="40" stroke-opacity="1" d="M 1921.0,500.0 L 1930.5,508.55 C 1930.5016666666668,508.5515 1931.0,509.6704389316792 1931.0,509.67268120235366 L 1931.0,811.3636038969321 C 1931.0,811.3657252172757 1931.4485,812.4485 1931.45,812.45 L 1940.0,821.0"/>
+  <path fill="none" stroke="#4cfe4c" stroke-width="40" stroke-opacity="1" d="M 2152.0,995.0 L 2067.054511571389,909.066773333847 C 2067.0509965328174,909.063217422734 2064.505,908.0 2064.5,908.0 L 2028.5,908.0 C 2028.495,908.0 2025.9428753621262,906.9428753621261 2025.9393398282202,906.9393398282202 L 1940.0,821.0"/>
+  <path fill="none" stroke="#84ff33" stroke-width="40" stroke-opacity="1" d="M 2152.0,995.0 L 2186.93933982822,960.0606601717798 C 2186.942875362126,960.0571246378739 2188.0,957.505 2188.0,957.5 L 2188.0,807.5 C 2188.0,807.495 2189.057124637874,804.9428753621261 2189.06066017178,804.9393398282202 L 2223.0,771.0"/>
+  <path fill="none" stroke="#d1ff19" stroke-width="40" stroke-opacity="1" d="M 2510.0,1117.0 L 2450.06066017178,1057.0606601717798 C 2450.057124637874,1057.0571246378738 2447.505,1056.0 2447.5,1056.0 L 2215.5,1056.0 C 2215.495,1056.0 2212.9343160721996,1054.9515045226478 2212.930751911906,1054.9479978488107 L 2152.0,995.0"/>
+  <path fill="none" stroke="#ffcb00" stroke-width="40" stroke-opacity="1" d="M 2510.0,1117.0 L 2513.8,1120.8 C 2513.8006666666665,1120.8006666666668 2514.281899903433,1121.0 2514.2828427124746,1121.0 L 2880.787867965644,1121.0 C 2880.7885750724254,1121.0 2881.1495,1121.1495 2881.15,1121.15 L 2884.0,1124.0"/>
+  <path fill="none" stroke="#e55b00" stroke-width="40" stroke-opacity="1" d="M 2866.0,1496.0 L 2874.55,1487.45 C 2874.5515,1487.4485 2875.0,1486.3657252172757 2875.0,1486.363603896932 L 2875.0,1133.636396103068 C 2875.0,1133.6342747827243 2875.4485,1132.5515 2875.45,1132.55 L 2884.0,1124.0"/>
+  <path fill="none" stroke="#cc0000" stroke-width="40" stroke-opacity="1" d="M 2866.0,1496.0 L 2793.06066017178,1568.9393398282202 C 2793.057124637874,1568.9428753621262 2792.0,1571.495 2792.0,1571.5 L 2792.0,3157.5 C 2792.0,3157.505 2790.942875362126,3160.057124637874 2790.93933982822,3160.06066017178 L 2718.0,3233.0"/>
   <g>
-    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="779" y="932">Galle Face</text>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1921" cy="500"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1961" y="500">Aluthkade East</text>
   </g>
   <g>
-    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1090" y="938">Slave Island</text>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="923" y="1162">Galle Face</text>
   </g>
   <g>
-    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1436" cy="977"/>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1476" y="977">Hunupitiya</text>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1168" y="1167">Slave Island</text>
   </g>
   <g>
-    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1794" y="794">Suduwella</text>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1471" y="1197">Hunupitiya</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2123" y="500">Panchikawatta</text>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1721" y="1053">Suduwella</text>
   </g>
   <g>
-    <circle r="44.721359549995796" fill="white" stroke="gray" stroke-width="10.0" cx="2353" cy="720"/>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2393" y="720">Maligakanda</text>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1721" y="656">Keselwatta</text>
   </g>
   <g>
-    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="2096" cy="903"/>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2136" y="903">Maradana</text>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1940" cy="821"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1980" y="821">Panchikawatta</text>
   </g>
   <g>
-    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1752" y="1476">Ibbanwala</text>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2263" y="771">Maligawatta West</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1218" y="1406">Wekanda</text>
+    <circle r="40.0" fill="white" stroke="gray" stroke-width="10.0" cx="2152" cy="995"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2192" y="995">Maligakanda</text>
   </g>
   <g>
-    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1074" y="1773">Kollupitiya</text>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1990" y="1139">Maradana</text>
   </g>
   <g>
-    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1405" y="2596">Bambalapitiya</text>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1688" y="1589">Ibbanwala</text>
   </g>
   <g>
-    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2290" y="2077">Kurunduwatta</text>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1268" y="1535">Wekanda</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2491" y="1072">Kuppiyawatta West</text>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1154" y="1823">Kollupitiya</text>
   </g>
   <g>
-    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="2808" cy="876"/>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2848" y="876">Kuppiyawatta East</text>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1415" y="2471">Bambalapitiya</text>
   </g>
   <g>
-    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="3260" cy="1357"/>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3300" y="1357">Borella North</text>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2112" y="2063">Kurunduwatta</text>
   </g>
   <g>
-    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3236" y="1790">Borella South</text>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2270" y="1272">Kuppiyawatta West</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3261" y="2747">Narahenpita</text>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="2510" cy="1117"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2550" y="1117">Kuppiyawatta East</text>
   </g>
   <g>
-    <circle r="40.0" fill="white" stroke="gray" stroke-width="10.0" cx="2488" cy="2952"/>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2528" y="2952">Thimbirigasyaya</text>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="2884" cy="1124"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2924" y="1124">Wanathamulla</text>
   </g>
   <g>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1629" y="3500">Milagiriya</text>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="2866" cy="1496"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2906" y="1496">Borella North</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2855" y="1837">Borella South</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3156" y="2132">Gothamipura</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2876" y="2590">Narahenpita</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="2259" cy="2751"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2299" y="2751">Thimbirigasyaya</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1592" y="3182">Milagiriya</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1925" y="3500">Havelock Town</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="2718" cy="3233"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2758" y="3233">Kirula</text>
   </g>
 </svg>
