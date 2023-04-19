@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="4000" height="4000" padding="500">
+  <text x="2000.0" y="125.0" fill="gray" stroke="none" font-size="60" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Sri Lanka</text>
+  <text x="2000.0" y="250.0" fill="gray" stroke="none" font-size="120" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Population Optimized Hypothetical Railway Network</text>
+  <text x="2000.0" y="3750.0" fill="gray" stroke="none" font-size="60" font-family="p22" text-anchor="middle" dominant-baseline="hanging">music by @bensound ~ visualization by @nuuuwan</text>
+  <text x="3000.0" y="1000.0" fill="lightgrey" stroke="none" font-size="180" font-family="p22" text-anchor="start" dominant-baseline="hanging">9km</text>
+  <path fill="none" stroke="#99eaff" stroke-width="40" stroke-opacity="1" d="M 2680.0,2283.0 L 2843.942549065459,2447.9361402719164 C 2843.9460739019073,2447.9396864710097 2845.0,2450.495 2845.0,2450.5 L 2845.0,3332.5 C 2845.0,3332.505 2846.057124637874,3335.057124637874 2846.06066017178,3335.06066017178 L 3011.0,3500.0"/>
+  <path fill="none" stroke="#65ffa3" stroke-width="40" stroke-opacity="1" d="M 1449.0,3004.0 L 1695.9393398282202,3250.93933982822 C 1695.9428753621262,3250.942875362126 1698.495,3252.0 1698.5,3252.0 L 2761.5,3252.0 C 2761.505,3252.0 2764.057124637874,3253.057124637874 2764.06066017178,3253.06066017178 L 3011.0,3500.0"/>
+  <path fill="none" stroke="#84ff33" stroke-width="40" stroke-opacity="1" d="M 1449.0,3004.0 L 1807.9393398282202,2645.06066017178 C 1807.9428753621262,2645.057124637874 1810.495,2644.0 1810.5,2644.0 L 2318.5,2644.0 C 2318.505,2644.0 2321.055657430223,2642.941410188026 2321.05918805708,2642.9378697538723 L 2680.0,2283.0"/>
+  <path fill="none" stroke="#ffcb00" stroke-width="40" stroke-opacity="1" d="M 2960.0,886.0 L 2983.9603369256224,910.9187504026472 C 2983.9638024692035,910.9223545679718 2985.0,913.495 2985.0,913.5 L 2985.0,3472.5 C 2985.0,3472.505 2986.057124637874,3475.057124637874 2986.06066017178,3475.06066017178 L 3011.0,3500.0"/>
+  <path fill="none" stroke="#cc0000" stroke-width="40" stroke-opacity="1" d="M 2680.0,2283.0 L 2818.93933982822,2144.06066017178 C 2818.942875362126,2144.057124637874 2820.0,2141.505 2820.0,2141.5 L 2820.0,1027.5 C 2820.0,1027.495 2821.057124637874,1024.9428753621262 2821.06066017178,1024.9393398282202 L 2960.0,886.0"/>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1052" y="699">Slave Island</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1588" y="754">Hunupitiya</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2030" y="500">Suduwella</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2505" y="651">Maradana</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1972" y="1447">Ibbanwala</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1230" y="1351">Wekanda</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1028" y="1860">Kollupitiya</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1449" cy="3004"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1489" y="3004">Bambalapitiya</text>
+  </g>
+  <g>
+    <circle r="40.0" fill="white" stroke="gray" stroke-width="10.0" cx="2680" cy="2283"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2720" y="2283">Kurunduwatta</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="2960" cy="886"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3000" y="886">Kuppiyawatta West</text>
+  </g>
+  <g>
+    <circle r="40.0" fill="white" stroke="gray" stroke-width="10.0" cx="3011" cy="3500"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="3051" y="3500">Thimbirigasyaya</text>
+  </g>
+</svg>

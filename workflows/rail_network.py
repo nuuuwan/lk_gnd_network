@@ -12,18 +12,17 @@ log = Log('rail_network')
 
 def is_close_enough(centroid):
     distance = shape_utils.compute_distance(centroid, [6.91, 79.86])
-    return distance < 2.5
+    return distance < 3000
 
 
 def build_single():
     styler = Styler()
     max_network_length = 1048 * 2
-    max_segments = 5
+    max_segments = 10
 
     network = Network.from_type(
-        EntType.GND, lambda ent: is_close_enough(ent.centroid)
+        EntType.DISTRICT, lambda ent: is_close_enough(ent.centroid)
     )
-    network.edge_pair_list = []
     network = single_segments.rebuild_incr(
         network,
         max_network_length=max_network_length,
@@ -31,7 +30,7 @@ def build_single():
     )
 
     draw = Draw(network, styler)
-    draw.draw(f'workflow_media/rail_network.{max_segments}.png')
+    draw.draw(f'media/rail_network.{max_segments}.png')
 
 
 def build_animated_gif():
@@ -52,12 +51,12 @@ def build_animated_gif():
 
         draw = Draw(network, styler)
         png_path = draw.draw(
-            f'workflow_media/rail_network.{max_segments:03d}.png',
+            f'media/rail_network.{max_segments:03d}.png',
             do_open=False,
         )
         png_path_list.append(png_path)
 
-    gif_path = 'workflow_media/rail_network.single_segments.rebuild_incr.gif'
+    gif_path = 'media/rail_network.single_segments.rebuild_incr.gif'
     Draw.build_animated_gif(png_path_list, gif_path)
 
 

@@ -21,13 +21,13 @@ class DrawNode:
             ),
         )
 
-    def draw_node_text(self, id, sx, sy, n_neighbors):
+    def draw_node_text(self, label, sx, sy, n_neighbors):
         fill = self.styler.node_text['fill']
         if n_neighbors == 0:
             fill = '#ddd'
         return _(
             'text',
-            id,
+            label,
             self.styler.node_text
             | dict(
                 x=sx + self.styler.RADIUS * 2,
@@ -36,12 +36,12 @@ class DrawNode:
             ),
         )
 
-    def draw_node(self, id, x, y, t, n_neighbors):
+    def draw_node(self, label, x, y, t, n_neighbors):
         sx, sy = t(x, y)
         return _(
             'g',
             [
                 self.draw_node_circle(sx, sy, n_neighbors),
-                self.draw_node_text(id, sx, sy, n_neighbors),
+                self.draw_node_text(label, sx, sy, n_neighbors),
             ],
         )

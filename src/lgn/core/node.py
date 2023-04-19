@@ -18,7 +18,7 @@ class Node:
         population = ent.population
 
         return Node(
-            i = i,
+            i=i,
             name=ent.name,
             centroid=ent.centroid,
             population=population,
@@ -26,4 +26,4 @@ class Node:
         )
 
     def __str__(self):
-        return f'({self.i:d}) {self.name}'
+        return f'{self.i:02d}-{self.name}'

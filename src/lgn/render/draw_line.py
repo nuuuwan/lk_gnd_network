@@ -47,8 +47,9 @@ def smooth_path(d):
 
 class DrawLine:
     def draw_line(self, i_edge, n_edges, id1, id2, t):
-        x1, y1 = self.network.node_idx[id1]['centroid']
-        x2, y2 = self.network.node_idx[id2]['centroid']
+        x1, y1 = self.network.get_node(id1).centroid
+        x2, y2 = self.network.get_node(id2).centroid
+
         d = elaborate_path(x1, y1, x2, y2, t)
         smoothed_d = smooth_path(d)
 

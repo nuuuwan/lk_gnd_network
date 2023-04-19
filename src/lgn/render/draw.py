@@ -11,6 +11,7 @@ from utils.xmlx import _
 from lgn.render.draw_line import DrawLine
 from lgn.render.draw_node import DrawNode
 from lgn.utils import shape_utils
+from lgn.utils.format_utils import format_distance
 
 log = Log(__name__)
 
@@ -28,19 +29,17 @@ class Draw(DrawNode, DrawLine):
         t = self.get_t()
         neighbor_idx = self.network.neighbor_idx
         nodes = []
-        for id, node in self.network.node_idx.items():
-            x, y = node['centroid']
-            n_neighbors = len(neighbor_idx.get(id, []))
-            nodes.append(self.draw_node(id, x, y, t, n_neighbors))
+        for node in self.network.node_list:
+            x, y = node.centroid
+            n_neighbors = len(neighbor_idx.get(node.i, []))
+            nodes.append(self.draw_node(node.name, x, y, t, n_neighbors))
         return nodes
 
     def draw_lines(self):
         t = self.get_t()
         lines = []
-        n_edges = len(self.network.edge_pair_list)
-        for i_edge, [id1, id2] in enumerate(
-            reversed(self.network.edge_pair_list)
-        ):
+        n_edges = self.network.n_edges
+        for i_edge, [id1, id2] in enumerate(reversed(self.network.edge_list)):
             lines.append(self.draw_line(i_edge, n_edges, id1, id2, t))
         return lines
 
@@ -57,8 +56,11 @@ class Draw(DrawNode, DrawLine):
                 'music by @bensound ~ visualization by @nuuuwan',
                 self.styler.text_footer,
             ),
-            _('text', self.network.info, self.styler.text_network_info),
-            _('text', self.network.info2, self.styler.text_network_info2),
+            _(
+                'text',
+                format_distance(self.network.network_length),
+                self.styler.text_network_info,
+            ),
         ]
 
     def draw(self, png_path, do_open=True):

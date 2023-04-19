@@ -34,19 +34,27 @@ class Network:
     def __node_list(self):
         return list(self.node_idx.keys())
 
-    @cache
-    def __len__(self):
+    @cached_property
+    def n_nodes(self):
         return len(self.__node_list)
+
+    @cached_property
+    def n_edges(self):
+        return len(self.__edge_list)
+
+    @cache
+    def get_distance(self, node_i, node_j):
+        return shape_utils.compute_distance(
+            self.get_node(node_i).centroid,
+            self.get_node(node_j).centroid,
+        )
 
     @cached_property
     def edge_and_distance_list(self):
         edge_and_distance_list = []
         for i, j in self.__edge_list:
             assert i < j
-            distance = shape_utils.compute_distance(
-                self.__node_list[i].centroid,
-                self.__node_list[j].centroid,
-            )
+            distance = self.get_distance(i, j)
             edge_and_distance_list.append([[i, j], distance])
         return edge_and_distance_list
 
@@ -68,7 +76,7 @@ class Network:
 
     @cached_property
     def edge_dist_matrix(self):
-        n = len(self)
+        n = self.n_nodes
         edge_dist_matrix = lil_matrix((n, n), dtype=float)
         for i in range(n):
             edge_dist_matrix[i, i] = 0
@@ -101,7 +109,7 @@ class Network:
 
     @cached_property
     def all_node_pairs(self):
-        n = len(self)
+        n = self.n_nodes
         return [(i, j) for i in range(n) for j in range(i + 1, n)]
 
     @cached_property
@@ -111,27 +119,50 @@ class Network:
         for i, row in enumerate(dist_matrix.rows):
             for j, val in zip(row, dist_matrix.data[i]):
                 if val != float('inf') and i < j:
-                    node_pairs.append((i, j))
+                    node_pairs.append(([i, j], val))
         return node_pairs
-    
+
     def __add__(self, edge_list):
-        if (type(edge_list) != list):
+        if not isinstance(edge_list, list):
             raise TypeError('edge_list must be a list')
 
         edge_list_copy = copy.deepcopy(self.__edge_list)
-        edge_list_copy += edge_list                
+        edge_list_copy += edge_list
         return Network(self.__node_list, edge_list_copy)
-    
+
     def __str__(self):
-        lines = ['', f'NETWORK ({len(self)})']
-        for i,j in self.__edge_list:
+        lines = ['', f'NETWORK ({self.n_nodes})']
+        for i, j in self.__edge_list:
             node_i = self.__node_list[i]
             node_j = self.__node_list[j]
             lines.append(f'{node_i} ↔️ {node_j}')
         lines.append('')
         return '\n'.join(lines)
-        
-    
+
+    @cache
+    def is_edge(self, i, j):
+        return (i, j) in self.__edge_list or (j, i) in self.__edge_list
+
+    @cache
+    def get_node(self, i):
+        return self.__node_list[i]
+
+    @cached_property
+    def edge_list(self):
+        return self.__edge_list
+
+    @cached_property
+    def node_list(self):
+        return self.__node_list
+
+    @cache
+    def format_edge(self, edge):
+        i, j = edge
+        node_i = self.get_node(i)
+        node_j = self.get_node(j)
+        return f'{node_i} ↔️ {node_j}'
+
+
 if __name__ == '__main__':
     from gig import EntType
 
@@ -140,7 +171,7 @@ if __name__ == '__main__':
     network = Network.from_type(EntType.PROVINCE)
     print(network)
     print(network.loc_list)
-    network = network + [(0, 2), (0,5)]
+    network = network + [(0, 2), (0, 5)]
     print(network)
 
     print(network.neighbor_idx)
@@ -158,4 +189,4 @@ if __name__ == '__main__':
 
     print(network.connected_node_pairs)
 
-    print(network + [(0,8)])
+    print(network + [(0, 8)])
