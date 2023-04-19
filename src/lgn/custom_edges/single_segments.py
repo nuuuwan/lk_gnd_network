@@ -2,7 +2,7 @@ from utils import Log
 
 from lgn.utils import shape_utils
 from lgn.utils.console_utils import print_line, tab
-from lgn.utils.time_utils import format_time
+from lgn.utils.format_utils import format_time
 
 log = Log('single_segments')
 
