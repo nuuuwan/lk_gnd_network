@@ -2,25 +2,12 @@ from utils import Log
 
 from lgn.utils import shape_utils
 from lgn.utils.console_utils import print_line, tab
+from lgn.utils.time_utils import format_time
 
 log = Log('single_segments')
 
 SPEED_TRAIN = 60
 SPEED_WALK = 4
-
-
-def format_time(t_hours_f):
-    if t_hours_f < 0:
-        return '-' + format_time(-t_hours_f)
-
-    (int)(t_hours_f / 24)
-    t_hours = (int)(t_hours_f % 24)
-    t_minutes = (int)((t_hours_f % 1) * 60 + 0.5)
-
-    if t_hours > 0:
-        return f'{t_hours}h{t_minutes}m'
-
-    return f'{t_minutes}m'
 
 
 def compute_average_meet_time(network):
