@@ -2,11 +2,9 @@ import copy
 from functools import cache, cached_property
 
 from gig import Ent
-from scipy.sparse import csgraph, lil_matrix
 from utils import Log
 
 from lgn.core.node import Node
-from lgn.utils import shape_utils
 
 log = Log('network')
 
@@ -42,11 +40,6 @@ class NetworkBase:
     def n_edges(self):
         return len(self.__edge_list)
 
-
-
-   
-
-    
     @cached_property
     def total_population(self):
         return sum([node.population for node in self.__node_list])
@@ -55,8 +48,6 @@ class NetworkBase:
     def total_people_pairs(self):
         total_population = self.total_population
         return total_population * (total_population - 1) // 2
-
-   
 
     def __str__(self):
         lines = ['', f'NETWORK ({self.n_nodes})']
