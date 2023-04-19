@@ -26,19 +26,19 @@ class DrawNode:
         if n_neighbors in [0, 2]:
             fill = 'lightgrey'
         k_font_size = 0.75
-        if n_neighbors in [0,2]:
+        if n_neighbors in [0, 2]:
             k_font_size = 0.5
         if n_neighbors > 2:
             k_font_size = 1
-        
-        font_size=k_font_size * self.styler.node_text['font_size']
+
+        font_size = k_font_size * self.styler.node_text['font_size']
         return _(
             'text',
             label,
             self.styler.node_text
             | dict(
                 font_size=font_size,
-                x=sx + self.styler.RADIUS  +  font_size,
+                x=sx + self.styler.RADIUS + font_size,
                 y=sy,
                 fill=fill,
             ),

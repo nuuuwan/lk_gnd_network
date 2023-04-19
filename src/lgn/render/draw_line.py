@@ -44,9 +44,10 @@ def smooth_path(d):
             path,
         )
         return smoothed_path.d()
-    except:
+    except BaseException:
         log.error(f'Failed to smooth path: {d}')
         return d
+
 
 class DrawLine:
     def draw_line(self, i_edge, n_edges, id1, id2, t):

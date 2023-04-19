@@ -11,6 +11,7 @@ log = Log('single_segments')
 SPEED_TRAIN = 60
 SPEED_WALK = 4
 
+
 def compute_pop_meet_time_for_edge(network, node_i, node_j, distance):
     population_i = network.get_node(node_i).population
     population_j = network.get_node(node_j).population
@@ -26,9 +27,11 @@ def compute_average_meet_time_delta(network):
         return 0
     sum_pop_times_meet_time = 0
     MAX_THREADS = 4
-    
+
     pop_meet_time_list = map_parallel(
-        lambda x: compute_pop_meet_time_for_edge(network, x[0][0], x[0][1], x[1]),
+        lambda x: compute_pop_meet_time_for_edge(
+            network, x[0][0], x[0][1], x[1]
+        ),
         network.connected_node_pairs,
         max_threads=MAX_THREADS,
     )
