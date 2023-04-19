@@ -110,8 +110,10 @@ class Network:
         for id1, id2 in self.edge_pair_list:
             if id1 not in neighbor_idx:
                 neighbor_idx[id1] = []
-            if id1 != id2:
-                neighbor_idx[id1].append(id2)
+            if id2 not in neighbor_idx:
+                neighbor_idx[id2] = []
+            neighbor_idx[id1].append(id2)
+            neighbor_idx[id2].append(id1)
         return neighbor_idx
 
     @property
@@ -155,4 +157,4 @@ class Network:
     @property
     def info2(self):
         node1, node2 = self.edge_pair_list[-1]
-        return f'with {node1} to {node2}'
+        return f'+ {node1} to {node2}'

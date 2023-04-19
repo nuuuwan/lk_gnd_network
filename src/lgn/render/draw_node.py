@@ -8,6 +8,8 @@ log = Log(__name__)
 
 class DrawNode:
     def draw_node_circle(self, sx, sy, n_neighbors):
+        if n_neighbors <= 1:
+            return None
         return _(
             'circle',
             None,
@@ -19,7 +21,10 @@ class DrawNode:
             ),
         )
 
-    def draw_node_text(self, id, sx, sy):
+    def draw_node_text(self, id, sx, sy, n_neighbors):
+        fill = self.styler.node_text['fill']
+        if n_neighbors == 0:
+            fill = '#ddd'
         return _(
             'text',
             id,
@@ -27,6 +32,7 @@ class DrawNode:
             | dict(
                 x=sx + self.styler.RADIUS * 2,
                 y=sy,
+                fill=fill,
             ),
         )
 
@@ -36,6 +42,6 @@ class DrawNode:
             'g',
             [
                 self.draw_node_circle(sx, sy, n_neighbors),
-                self.draw_node_text(id, sx, sy),
+                self.draw_node_text(id, sx, sy, n_neighbors),
             ],
         )

@@ -82,7 +82,7 @@ class Styler:
             y=self.DIM * 1 / 4 + self.FONT_SIZE * 2,
             fill='lightgrey',
             stroke='none',
-            font_size=self.FONT_SIZE,
+            font_size=self.FONT_SIZE * 1.5,
             font_family=self.FONT_FAMILY,
             text_anchor='start',
             dominant_baseline='hanging',
