@@ -9,10 +9,7 @@ from lgn.utils.parallel_utils import map_parallel
 
 log = Log('single_segments')
 
-SPEED_TRAIN = 60
-SPEED_WALK = 4
-
-
+MAX_DISTANCE = 20
 
 
 def get_d_per_distance_for_edge_pair(
@@ -33,8 +30,7 @@ def get_edge_pair_and_d_per_distance_list(
     network, before_average_travel_time, close_node_pairs_and_distance_list
 ):
     t0 = time.time()
-    MAX_THREADS = 8
-
+   
     def func_worker(x):
         edge_pair, distance = x
         d_per_distance = get_d_per_distance_for_edge_pair(
@@ -42,11 +38,10 @@ def get_edge_pair_and_d_per_distance_list(
         )
         return edge_pair, d_per_distance
 
-    edge_pair_and_d_per_distance_list = map_parallel(
+    edge_pair_and_d_per_distance_list = list(map(
         func_worker,
         close_node_pairs_and_distance_list,
-        max_threads=MAX_THREADS,
-    )
+    ))
    
     print()
     dt = time.time() - t0
@@ -63,9 +58,8 @@ def get_best_incr(network):
     best_d_per_distance = -float('inf')
     best_edge_pair = None
 
-    max_distance = 15
     edge_pair_and_d_per_distance_list = get_edge_pair_and_d_per_distance_list(
-        network, before_average_travel_time, network.get_close_node_pairs_and_distance_list(max_distance)
+        network, before_average_travel_time, network.get_close_node_pairs_and_distance_list(MAX_DISTANCE)
     )
 
     for edge_pair, d_per_distance in edge_pair_and_d_per_distance_list:

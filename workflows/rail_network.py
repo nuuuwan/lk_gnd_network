@@ -19,9 +19,9 @@ def is_close_enough(centroid, max_distance):
 
 def build_single():
     ent_type = EntType.DSD
-    max_network_length = 1048 * 1.5
-    max_segments = 30
-    max_distance = 100
+    max_network_length = int(1048 * 2)
+    max_segments = 40
+    max_distance = 80
 
     network = Network.from_type(
         ent_type, lambda ent: is_close_enough(ent.centroid, max_distance)
@@ -36,7 +36,7 @@ def build_single():
     draw.draw(
         os.path.join(
             'media',
-            f'rail_network.{ent_type.name}.{max_distance}km.{max_segments}.png',
+            f'rail_network.{ent_type.name}.{max_network_length}km.{max_segments}.png',
         )
     )
 
