@@ -2,7 +2,7 @@ from utils import Log
 
 from lgn.utils import shape_utils
 from lgn.utils.console_utils import print_line, tab
-from lgn.utils.format_utils import format_time, format_distance
+from lgn.utils.format_utils import format_distance, format_time
 
 log = Log('single_segments')
 
@@ -34,7 +34,7 @@ def compute_average_meet_time(network):
 
 def get_fitness_for_edge_pair(network, edge_pair, before_average_meet_time):
     node_i, node_j = edge_pair
-   
+
     if [node_i, node_j] in network.edge_pair_list or [
         node_j,
         node_i,
@@ -72,13 +72,15 @@ def get_best_incr(network):
         if d_per_distance > best_d_per_distance:
             best_d_per_distance = d_per_distance
             best_edge_pair = edge_pair
-            print(f'get_best_incr: {best_edge_pair=}' + ' '*20, end="\r")
+            print(f'get_best_incr: {best_edge_pair=}' + ' ' * 20, end="\r")
     print()
 
     return best_edge_pair
 
 
 def rebuild_incr(network, max_network_length, max_segments):
+    n_nodes = len(network.node_list)
+    log.debug(f'{n_nodes=}')
     while True:
         best_edge_pair = get_best_incr(network)
         network.edge_pair_list.append(best_edge_pair)
