@@ -93,9 +93,9 @@ def rebuild_incr(network, max_network_length, max_segments):
         )
         print_line()
 
-        if network_length >= max_network_length:
-            break
-        if n_segments >= max_segments:
+        if any(
+            [network_length >= max_network_length, n_segments >= max_segments]
+        ):
             break
 
     return network
