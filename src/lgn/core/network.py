@@ -159,7 +159,7 @@ class Network:
         node1, node2 = self.edge_pair_list[-1]
         return f'+ {node1} to {node2}'
 
-    @property
+    @cached_property
     def all_node_pairs(self):
         return [
             (node1, node2)
@@ -167,3 +167,13 @@ class Network:
             for node2 in self.node_list
             if node1 <= node2
         ]
+
+    @property 
+    def connected_node_pairs(self):
+        node_pairs = []
+        distance_matrix = self.distance_matrix
+        for node1, node2_to_distance in distance_matrix.items():
+            for node2, distance in node2_to_distance.items():
+                if distance != 0 and distance != float('inf'):
+                    node_pairs.append((node1, node2))
+        return node_pairs

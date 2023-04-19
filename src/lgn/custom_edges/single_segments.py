@@ -24,16 +24,9 @@ def format_time(t_hours_f):
 
 
 def compute_average_meet_time(network):
-    # print('...')
     if len(network.edge_pair_list) == 0:
         return 0
-    # print(network.edge_pair_list)
-
     distance_matrix = network.distance_matrix
-    #  print('-' * 32)
-    #  print(network.edge_pair_list)
-    #  print()
-    #  print(distance_matrix)
     sum_pop_times_meet_time = 0
     for node_i, node_j_to_dist in distance_matrix.items():
         for node_j, distance in node_j_to_dist.items():
