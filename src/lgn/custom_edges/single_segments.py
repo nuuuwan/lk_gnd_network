@@ -13,24 +13,20 @@ SPEED_WALK = 4
 def compute_average_meet_time(network):
     if len(network.edge_pair_list) == 0:
         return 0
-    distance_matrix = network.distance_matrix
     sum_pop_times_meet_time = 0
-    for node_i, node_j_to_dist in distance_matrix.items():
-        for node_j, distance in node_j_to_dist.items():
-            if node_i >= node_j:
-                continue
 
-            population_i = network.node_idx[node_i]['population']
-            population_j = network.node_idx[node_j]['population']
+    for node_i, node_j, distance in network.connected_node_pairs:
+        population_i = network.node_idx[node_i]['population']
+        population_j = network.node_idx[node_j]['population']
 
-            distance_walking = shape_utils.compute_distance(
-                network.node_idx[node_i]['centroid'],
-                network.node_idx[node_j]['centroid'],
-            )
+        distance_walking = shape_utils.compute_distance(
+            network.node_idx[node_i]['centroid'],
+            network.node_idx[node_j]['centroid'],
+        )
 
-            meet_time = distance / SPEED_TRAIN - distance_walking / SPEED_WALK
-            pop = population_i * population_j
-            sum_pop_times_meet_time += pop * meet_time
+        meet_time = distance / SPEED_TRAIN - distance_walking / SPEED_WALK
+        pop = population_i * population_j
+        sum_pop_times_meet_time += pop * meet_time
 
     average_meet_time = sum_pop_times_meet_time / network.total_people_pairs
     return average_meet_time
