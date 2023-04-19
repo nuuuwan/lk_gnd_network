@@ -11,20 +11,29 @@ log = Log('single_segments')
 SPEED_TRAIN = 60
 SPEED_WALK = 4
 
+def compute_pop_meet_time_for_edge(network, node_i, node_j, distance):
+    population_i = network.get_node(node_i).population
+    population_j = network.get_node(node_j).population
+
+    distance_walking = network.get_distance(node_i, node_j)
+    meet_time = distance / SPEED_TRAIN - distance_walking / SPEED_WALK
+    pop = population_i * population_j
+    return pop * meet_time
+
 
 def compute_average_meet_time_delta(network):
     if network.n_edges == 0:
         return 0
     sum_pop_times_meet_time = 0
+    MAX_THREADS = 4
+    
+    pop_meet_time_list = map_parallel(
+        lambda x: compute_pop_meet_time_for_edge(network, x[0][0], x[0][1], x[1]),
+        network.connected_node_pairs,
+        max_threads=MAX_THREADS,
+    )
 
-    for [node_i, node_j], distance in network.connected_node_pairs:
-        population_i = network.get_node(node_i).population
-        population_j = network.get_node(node_j).population
-
-        distance_walking = network.get_distance(node_i, node_j)
-        meet_time = distance / SPEED_TRAIN - distance_walking / SPEED_WALK
-        pop = population_i * population_j
-        sum_pop_times_meet_time += pop * meet_time
+    sum_pop_times_meet_time = sum(pop_meet_time_list)
 
     average_meet_time = sum_pop_times_meet_time / network.total_people_pairs
     return average_meet_time
@@ -38,6 +47,8 @@ def get_d_per_distance_for_edge_pair(
         return None
 
     distance = network.get_distance(node_i, node_j)
+    if distance > 15:
+        return None
     network_copy = network + [edge_pair]
     average_meet_time = compute_average_meet_time_delta(network_copy)
     d_average_meet_time = before_average_meet_time - average_meet_time
@@ -49,7 +60,7 @@ def get_edge_pair_and_d_per_distance_list(
     network, before_average_meet_time, edge_pair_list
 ):
     t0 = time.time()
-    MAX_THREADS = 4
+    MAX_THREADS = 8
 
     def func_worker(edge_pair):
         d_per_distance = get_d_per_distance_for_edge_pair(

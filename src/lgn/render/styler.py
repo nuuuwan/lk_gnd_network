@@ -14,7 +14,7 @@ svglib.register_font(
 class Styler:
     def __init__(
         self,
-        RADIUS=20,
+        RADIUS=10,
         DIM=4000,
         OPACITY=1,
         PADDING=500,
@@ -106,8 +106,8 @@ class Styler:
         return dict(
             r=self.RADIUS * 2,
             fill='white',
-            stroke='gray',
-            stroke_width=self.RADIUS * 0.5,
+            stroke='black',
+            stroke_width=self.RADIUS * 0.9,
         )
 
     @cached_property
@@ -119,7 +119,7 @@ class Styler:
             font_family=self.FONT_FAMILY,
             font_weight="100",
             text_anchor='start',
-            dominant_baseline='central',
+            dominant_baseline='middle',
         )
 
     @cached_property

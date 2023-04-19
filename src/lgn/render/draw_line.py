@@ -28,7 +28,7 @@ def elaborate_path(x1, y1, x2, y2, t):
     if (sx1, sy1) != (sx3, sy3):
         d_list.append(f'L {sx3} {sy3}')
 
-    if (sx3, sy3) != (sx4, sy4):
+    if (sx3, sy3) != (sx4, sy4) and (sx4, sy4) != (sx2, sy2):
         d_list.append(f'L {sx4} {sy4}')
 
     d_list.append(f'L {sx2} {sy2}')
@@ -38,12 +38,15 @@ def elaborate_path(x1, y1, x2, y2, t):
 
 
 def smooth_path(d):
-    path = svgpathtools.parse_path(d)
-    smoothed_path = svgpathtools.smoothed_path(
-        path,
-    )
-    return smoothed_path.d()
-
+    try:
+        path = svgpathtools.parse_path(d)
+        smoothed_path = svgpathtools.smoothed_path(
+            path,
+        )
+        return smoothed_path.d()
+    except:
+        log.error(f'Failed to smooth path: {d}')
+        return d
 
 class DrawLine:
     def draw_line(self, i_edge, n_edges, id1, id2, t):

@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="4000" height="4000" padding="500">
+  <text x="2000.0" y="125.0" fill="gray" stroke="none" font-size="60" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Sri Lanka</text>
+  <text x="2000.0" y="250.0" fill="gray" stroke="none" font-size="120" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Population Optimized Hypothetical Railway Network</text>
+  <text x="2000.0" y="3750.0" fill="gray" stroke="none" font-size="60" font-family="p22" text-anchor="middle" dominant-baseline="hanging">music by @bensound ~ visualization by @nuuuwan</text>
+  <text x="3000.0" y="1000.0" fill="lightgrey" stroke="none" font-size="180" font-family="p22" text-anchor="start" dominant-baseline="hanging">80km</text>
+  <path fill="none" stroke="#c9deff" stroke-width="20" stroke-opacity="1" d="M 1638.0,2031.0 L 1593.9545941546019,2075.0454058453984 C 1593.9514121740865,2075.0485878259133 1593.0,2077.3455 1593.0,2077.35 L 1593.0,2101.7175 C 1593.0,2101.721775 1592.0961584346178,2103.903841565382 1592.0931355531281,2103.9068644468716 L 1549.0,2147.0"/>
+  <path fill="none" stroke="#adeeff" stroke-width="20" stroke-opacity="1" d="M 1305.0,1260.0 L 1327.9393398282202,1282.9393398282202 C 1327.9428753621262,1282.9428753621262 1330.495,1284.0 1330.5,1284.0 L 1391.5,1284.0 C 1391.505,1284.0 1394.0793723666475,1285.0343985180373 1394.082982307673,1285.0378580448535 L 1417.0,1307.0"/>
+  <path fill="none" stroke="#91ffe9" stroke-width="20" stroke-opacity="1" d="M 1417.0,1307.0 L 1464.9393398282202,1354.9393398282202 C 1464.9428753621262,1354.9428753621262 1467.495,1356.0 1467.5,1356.0 L 1588.5,1356.0 C 1588.505,1356.0 1591.0571246378738,1357.0571246378738 1591.0606601717798,1357.0606601717798 L 1639.0,1405.0"/>
+  <path fill="none" stroke="#75ffac" stroke-width="20" stroke-opacity="1" d="M 1639.0,1405.0 L 1656.1,1423.05 C 1656.103,1423.0531666666666 1657.0,1425.3042631487208 1657.0,1425.3086252328303 L 1657.0,1594.7272077938642 C 1657.0,1594.7314504345513 1657.897,1596.897 1657.9,1596.9 L 1675.0,1614.0"/>
+  <path fill="none" stroke="#59ff59" stroke-width="20" stroke-opacity="1" d="M 1675.0,1614.0 L 1701.9393398282202,1640.9393398282202 C 1701.9428753621262,1640.9428753621262 1703.0,1643.495 1703.0,1643.5 L 1703.0,1688.5 C 1703.0,1688.505 1704.076167221654,1691.0377326780235 1704.0797664431311,1691.0412033558764 L 1731.0,1717.0"/>
+  <path fill="none" stroke="#8aff3d" stroke-width="20" stroke-opacity="1" d="M 1731.0,1717.0 L 1685.0606601717798,1762.9393398282202 C 1685.0571246378738,1762.9428753621262 1684.0,1765.495 1684.0,1765.5 L 1684.0,1820.5 C 1684.0,1820.505 1682.9315701948397,1823.0456972561144 1682.9279968510098,1823.0491945713522 L 1637.0,1868.0"/>
+  <path fill="none" stroke="#d2fe21" stroke-width="20" stroke-opacity="1" d="M 1638.0,2031.0 L 1638.0,1869.0707106781188 C 1638.0,1869.0704749758584 1637.9501666666667,1868.9501666666667 1637.95,1868.95 L 1637.0,1868.0"/>
+  <path fill="none" stroke="#ffcd05" stroke-width="20" stroke-opacity="1" d="M 1347.0,1928.0 L 1357.45,1937.5 C 1357.4518333333333,1937.5016666666668 1358.0,1938.7408257592413 1358.0,1938.743303437366 L 1358.0,2028.256696562634 C 1358.0,2028.2591742407587 1358.4983333333332,2029.5481666666667 1358.5,2029.55 L 1368.0,2040.0"/>
+  <path fill="none" stroke="#e85c00" stroke-width="20" stroke-opacity="1" d="M 1638.0,2031.0 L 1683.9393398282202,2076.93933982822 C 1683.9428753621262,2076.942875362126 1685.0,2079.495 1685.0,2079.5 L 1685.0,2157.5 C 1685.0,2157.505 1686.0571246378738,2160.057124637874 1686.0606601717798,2160.06066017178 L 1732.0,2206.0"/>
+  <path fill="none" stroke="#cc0000" stroke-width="20" stroke-opacity="1" d="M 1347.0,1928.0 L 1397.9290926271055,1977.9496869996613 C 1397.9326623183485,1977.9531880429959 1400.495,1979.0 1400.5,1979.0 L 1584.5,1979.0 C 1584.505,1979.0 1587.0571246378738,1980.0571246378738 1587.0606601717798,1980.0606601717798 L 1638.0,2031.0"/>
+  <g>
+    <text fill="lightgrey" stroke="none" font-size="30.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="1387.0" y="1928">Colombo</text>
+  </g>
+  <g>
+    <circle r="22.360679774997898" fill="white" stroke="black" stroke-width="9.0" cx="1638" cy="2031"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="1708" y="2031">Kaduwela</text>
+  </g>
+  <g>
+    <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="1732" cy="2206"/>
+    <text fill="black" stroke="none" font-size="45.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="1787.0" y="2206">Homagama</text>
+  </g>
+  <g>
+    <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="1549" cy="2147"/>
+    <text fill="black" stroke="none" font-size="45.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="1604.0" y="2147">Maharagama</text>
+  </g>
+  <g>
+    <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="1368" cy="2040"/>
+    <text fill="black" stroke="none" font-size="45.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="1423.0" y="2040">Thimbirigasyaya</text>
+  </g>
+  <g>
+    <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="1305" cy="1260"/>
+    <text fill="black" stroke="none" font-size="45.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="1360.0" y="1260">Negombo</text>
+  </g>
+  <g>
+    <text fill="lightgrey" stroke="none" font-size="30.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="1457.0" y="1307">Katana</text>
+  </g>
+  <g>
+    <text fill="lightgrey" stroke="none" font-size="30.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="1679.0" y="1405">Minuwangoda</text>
+  </g>
+  <g>
+    <text fill="lightgrey" stroke="none" font-size="30.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="1715.0" y="1614">Gampaha</text>
+  </g>
+  <g>
+    <text fill="lightgrey" stroke="none" font-size="30.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="1771.0" y="1717">Mahara</text>
+  </g>
+  <g>
+    <text fill="lightgrey" stroke="none" font-size="30.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="1677.0" y="1868">Biyagama</text>
+  </g>
+</svg>

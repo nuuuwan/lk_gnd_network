@@ -1,3 +1,5 @@
+import os
+
 from gig import EntType
 from utils import Log
 
@@ -10,18 +12,19 @@ from lgn.utils import shape_utils
 log = Log('rail_network')
 
 
-def is_close_enough(centroid):
+def is_close_enough(centroid, max_distance):
     distance = shape_utils.compute_distance(centroid, [6.91, 79.86])
-    return distance < 3000
+    return distance < max_distance
 
 
 def build_single():
-    styler = Styler()
+    ent_type = EntType.DSD
     max_network_length = 1048 * 2
-    max_segments = 10
+    max_segments = 20
+    max_distance = 120
 
     network = Network.from_type(
-        EntType.DISTRICT, lambda ent: is_close_enough(ent.centroid)
+        ent_type, lambda ent: is_close_enough(ent.centroid, max_distance)
     )
     network = single_segments.rebuild_incr(
         network,
@@ -29,8 +32,13 @@ def build_single():
         max_segments=max_segments,
     )
 
-    draw = Draw(network, styler)
-    draw.draw(f'media/rail_network.{max_segments}.png')
+    draw = Draw(network, Styler())
+    draw.draw(
+        os.path.join(
+            'media',
+            f'rail_network.{ent_type.name}.{max_distance}km.{max_segments}.png',
+        )
+    )
 
 
 def build_animated_gif():

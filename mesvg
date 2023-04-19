@@ -1,0 +1,177 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="4000" height="4000" padding="500">
+  <text x="2000.0" y="125.0" fill="gray" stroke="none" font-size="60" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Sri Lanka</text>
+  <text x="2000.0" y="250.0" fill="gray" stroke="none" font-size="120" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Population Optimized Hypothetical Railway Network</text>
+  <text x="2000.0" y="3750.0" fill="gray" stroke="none" font-size="60" font-family="p22" text-anchor="middle" dominant-baseline="hanging">music by @bensound ~ visualization by @nuuuwan</text>
+  <text x="3000.0" y="1000.0" fill="lightgrey" stroke="none" font-size="180" font-family="p22" text-anchor="start" dominant-baseline="hanging">199km</text>
+  <path fill="none" stroke="#dae0fe" stroke-width="40" stroke-opacity="1" d="M 1338.0,2286.0 L 1358.9393398282202,2306.93933982822 C 1358.9428753621262,2306.942875362126 1360.0,2309.495 1360.0,2309.5 L 1360.0,2421.5 C 1360.0,2421.505 1361.0803495764358,2424.033377855721 1361.0839627857215,2424.036833968951 L 1383.0,2445.0"/>
+  <path fill="none" stroke="#cfdeff" stroke-width="40" stroke-opacity="1" d="M 2218.0,857.0 L 2194.0820809815464,879.9612022577154 C 2194.0784740449412,879.9646649168563 2193.0,882.495 2193.0,882.5 L 2193.0,1227.5 C 2193.0,1227.505 2191.942875362126,1230.0571246378738 2191.93933982822,1230.0606601717798 L 2169.0,1253.0"/>
+  <path fill="none" stroke="#c3e0ff" stroke-width="40" stroke-opacity="1" d="M 1346.0,1537.0 L 1394.9746951672796,1488.0253048327204 C 1394.9781128500551,1488.0218871499449 1396.0,1485.5548333333334 1396.0,1485.55 L 1396.0,1459.3775 C 1396.0,1459.3729083333333 1396.9707927924476,1457.0292072075524 1396.9740395910844,1457.0259604089156 L 1447.0,1407.0"/>
+  <path fill="none" stroke="#b8e5ff" stroke-width="40" stroke-opacity="1" d="M 1447.0,1407.0 L 1447.95,1407.95 C 1447.9501666666667,1407.9501666666667 1448.0704749758584,1408.0 1448.0707106781188,1408.0 L 1748.888196601125,1408.0 C 1748.8885692791212,1408.0 1749.0498333333333,1408.0996666666667 1749.05,1408.1 L 1750.0,1410.0"/>
+  <path fill="none" stroke="#adeeff" stroke-width="40" stroke-opacity="1" d="M 1800.0,753.0 L 1850.9393398282202,803.9393398282202 C 1850.9428753621262,803.9428753621261 1853.495,805.0 1853.5,805.0 L 2164.5,805.0 C 2164.505,805.0 2167.057124637874,806.0571246378739 2167.06066017178,806.0606601717798 L 2218.0,857.0"/>
+  <path fill="none" stroke="#a2fbff" stroke-width="40" stroke-opacity="1" d="M 1800.0,753.0 L 1750.0606601717798,802.9393398282202 C 1750.0571246378738,802.9428753621261 1749.0,805.495 1749.0,805.5 L 1749.0,1055.5 C 1749.0,1055.505 1747.9428753621262,1058.0571246378738 1747.9393398282202,1058.0606601717798 L 1697.0,1109.0"/>
+  <path fill="none" stroke="#96fff2" stroke-width="40" stroke-opacity="1" d="M 1471.0,1900.0 L 1461.5,1889.55 C 1461.4983333333332,1889.5481666666667 1461.0,1888.2591742407587 1461.0,1888.256696562634 L 1461.0,1782.743303437366 C 1461.0,1782.7408257592413 1460.4518333333333,1781.5016666666668 1460.45,1781.5 L 1450.0,1772.0"/>
+  <path fill="none" stroke="#8bffde" stroke-width="40" stroke-opacity="1" d="M 1471.0,1900.0 L 1442.0606601717798,1928.9393398282202 C 1442.0571246378738,1928.9428753621262 1441.0,1931.495 1441.0,1931.5 L 1441.0,2023.5 C 1441.0,2023.505 1439.9428753621262,2026.0571246378738 1439.9393398282202,2026.0606601717798 L 1410.0,2056.0"/>
+  <path fill="none" stroke="#80ffc7" stroke-width="40" stroke-opacity="1" d="M 1410.0,2056.0 L 1394.8,2040.8 C 1394.7973333333334,2040.7973333333334 1392.8724003862678,2040.0 1392.8686291501015,2040.0 L 1324.1672617529928,2040.0 C 1324.163370880483,2040.0 1322.2026666666666,2039.1528333333333 1322.2,2039.15 L 1307.0,2023.0"/>
+  <path fill="none" stroke="#75ffac" stroke-width="40" stroke-opacity="1" d="M 1673.0,3034.0 L 1730.9482900722794,3092.930464480284 C 1730.9517957720384,3092.934029598683 1732.0,3095.495 1732.0,3095.5 L 1732.0,3438.5 C 1732.0,3438.505 1733.0482042279616,3441.065970401317 1733.0517099277206,3441.069535519716 L 1791.0,3500.0"/>
+  <path fill="none" stroke="#6aff8d" stroke-width="40" stroke-opacity="1" d="M 1685.0,2674.0 L 1679.3,2679.7 C 1679.299,2679.701 1679.0,2680.4228498551497 1679.0,2680.424264068712 L 1679.0,3027.575735931288 C 1679.0,3027.5771501448503 1678.701,3028.299 1678.7,3028.3 L 1673.0,3034.0"/>
+  <path fill="none" stroke="#5efe6b" stroke-width="40" stroke-opacity="1" d="M 1498.0,2685.0 L 1502.75,2679.3 C 1502.7508333333333,2679.299 1503.389210775516,2679.0 1503.3905124837954,2679.0 L 1679.6464466094067,2679.0 C 1679.6476251207087,2679.0 1680.2491666666667,2678.7508333333335 1680.25,2678.75 L 1685.0,2674.0"/>
+  <path fill="none" stroke="#61ff53" stroke-width="40" stroke-opacity="1" d="M 1383.0,2445.0 L 1438.9486027097676,2501.930157143272 C 1438.9521073674016,2501.933723286128 1440.0,2504.495 1440.0,2504.5 L 1440.0,2626.5 C 1440.0,2626.505 1441.0662767138722,2629.0478926325986 1441.069842856728,2629.0513972902327 L 1498.0,2685.0"/>
+  <path fill="none" stroke="#74fe48" stroke-width="40" stroke-opacity="1" d="M 1383.0,2445.0 L 1418.9393398282202,2409.06066017178 C 1418.9428753621262,2409.057124637874 1421.495,2408.0 1421.5,2408.0 L 1477.5,2408.0 C 1477.505,2408.0 1480.0429369413162,2406.9288755737834 1480.046425024732,2406.925293217843 L 1516.0,2370.0"/>
+  <path fill="none" stroke="#8aff3d" stroke-width="40" stroke-opacity="1" d="M 1568.0,2178.0 L 1543.0606601717798,2202.93933982822 C 1543.0571246378738,2202.942875362126 1542.0,2205.495 1542.0,2205.5 L 1542.0,2343.5 C 1542.0,2343.505 1540.9223545679718,2346.0361975307965 1540.9187504026472,2346.0396630743776 L 1516.0,2370.0"/>
+  <path fill="none" stroke="#a4ff31" stroke-width="40" stroke-opacity="1" d="M 1696.0,2011.0 L 1633.0606601717798,2073.93933982822 C 1633.0571246378738,2073.942875362126 1632.0,2076.495 1632.0,2076.5 L 1632.0,2112.5 C 1632.0,2112.505 1630.9428753621262,2115.057124637874 1630.9393398282202,2115.06066017178 L 1568.0,2178.0"/>
+  <path fill="none" stroke="#c2ff26" stroke-width="40" stroke-opacity="1" d="M 1217.0,899.0 L 1249.9393398282202,931.9393398282202 C 1249.9428753621262,931.9428753621261 1252.495,933.0 1252.5,933.0 L 1341.5,933.0 C 1341.505,933.0 1344.0571246378738,934.0571246378739 1344.0606601717798,934.0606601717798 L 1377.0,967.0"/>
+  <path fill="none" stroke="#e3ff1b" stroke-width="40" stroke-opacity="1" d="M 1377.0,967.0 L 1446.9393398282202,1036.9393398282202 C 1446.9428753621262,1036.9428753621262 1449.495,1038.0 1449.5,1038.0 L 1625.5,1038.0 C 1625.505,1038.0 1628.0496009032634,1039.0645952018813 1628.0531112741774,1039.0681557209512 L 1697.0,1109.0"/>
+  <path fill="none" stroke="#fff510" stroke-width="40" stroke-opacity="1" d="M 1697.0,1109.0 L 1722.9195196797627,1133.959537469401 C 1722.9231212808302,1133.9630056778365 1724.0,1136.495 1724.0,1136.5 L 1724.0,1381.5 C 1724.0,1381.505 1725.0369943221635,1384.0768787191698 1725.040462530599,1384.0804803202373 L 1750.0,1410.0"/>
+  <path fill="none" stroke="#ffcd05" stroke-width="40" stroke-opacity="1" d="M 1750.0,1410.0 L 1788.9393398282202,1448.9393398282202 C 1788.9428753621262,1448.9428753621262 1790.0,1451.495 1790.0,1451.5 L 1790.0,1516.5 C 1790.0,1516.505 1791.0571246378738,1519.0571246378738 1791.0606601717798,1519.0606601717798 L 1830.0,1558.0"/>
+  <path fill="none" stroke="#f89f00" stroke-width="40" stroke-opacity="1" d="M 1830.0,1558.0 L 1763.0606601717798,1624.9393398282202 C 1763.0571246378738,1624.9428753621262 1762.0,1627.495 1762.0,1627.5 L 1762.0,1707.5 C 1762.0,1707.505 1760.9428753621262,1710.0571246378738 1760.9393398282202,1710.0606601717798 L 1695.0,1776.0"/>
+  <path fill="none" stroke="#ed7200" stroke-width="40" stroke-opacity="1" d="M 1696.0,2011.0 L 1695.05,2010.05 C 1695.0498333333333,2010.0498333333333 1695.0,2009.9295250241416 1695.0,2009.9292893218812 L 1695.0,1777.0 L 1695.0,1776.0"/>
+  <path fill="none" stroke="#e24800" stroke-width="40" stroke-opacity="1" d="M 1277.0,1862.0 L 1291.25,1876.25 C 1291.2525,1876.2525 1292.0,1878.0571246378738 1292.0,1878.0606601717798 L 1292.0,2006.9393398282202 C 1292.0,2006.9428753621262 1292.7475,2008.7475 1292.75,2008.75 L 1307.0,2023.0"/>
+  <path fill="none" stroke="#d72200" stroke-width="40" stroke-opacity="1" d="M 1696.0,2011.0 L 1762.9315123995937,2076.947225452541 C 1762.9350740249283,2076.950734701032 1764.0,2079.495 1764.0,2079.5 L 1764.0,2194.5 C 1764.0,2194.505 1765.0571246378738,2197.057124637874 1765.0606601717798,2197.06066017178 L 1831.0,2263.0"/>
+  <path fill="none" stroke="#cc0000" stroke-width="40" stroke-opacity="1" d="M 1277.0,1862.0 L 1349.9393398282202,1934.9393398282202 C 1349.9428753621262,1934.9428753621262 1352.495,1936.0 1352.5,1936.0 L 1619.5,1936.0 C 1619.505,1936.0 1622.0571246378738,1937.0571246378738 1622.0606601717798,1937.0606601717798 L 1696.0,2011.0"/>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1277" cy="1862"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1317" y="1862">Colombo</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1471" cy="1900"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1511" y="1900">Kolonnawa</text>
+  </g>
+  <g>
+    <circle r="44.721359549995796" fill="white" stroke="gray" stroke-width="10.0" cx="1696" cy="2011"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1736" y="2011">Kaduwela</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1871" y="2263">Homagama</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2342" y="1942">Seethawaka</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2252" y="2260">Padukka</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1568" cy="2178"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1608" y="2178">Maharagama</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1410" cy="2056"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1450" y="2056">Sri Jayawardanapura Kotte</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1307" cy="2023"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1347" y="2023">Thimbirigasyaya</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1367" y="2173">Dehiwala</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1378" y="2286">Ratmalana</text>
+  </g>
+  <g>
+    <circle r="40.0" fill="white" stroke="gray" stroke-width="10.0" cx="1383" cy="2445"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1423" y="2445">Moratuwa</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1516" cy="2370"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1556" y="2370">Kesbewa</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1257" y="899">Negombo</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1377" cy="967"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1417" y="967">Katana</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1800" cy="753"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1840" y="753">Divulapitiya</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="2218" cy="857"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2258" y="857">Mirigama</text>
+  </g>
+  <g>
+    <circle r="40.0" fill="white" stroke="gray" stroke-width="10.0" cx="1697" cy="1109"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1737" y="1109">Minuwangoda</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1386" y="1537">Wattala</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1447" cy="1407"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1487" y="1407">Ja-Ela</text>
+  </g>
+  <g>
+    <circle r="40.0" fill="white" stroke="gray" stroke-width="10.0" cx="1750" cy="1410"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1790" y="1410">Gampaha</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2209" y="1253">Attanagalla</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2169" y="1698">Dompe</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1830" cy="1558"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1870" y="1558">Mahara</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1490" y="1772">Kelaniya</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1695" cy="1776"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1735" y="1776">Biyagama</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1498" cy="2685"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1538" y="2685">Panadura</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1685" cy="2674"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1725" y="2674">Bandaragama</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2014" y="2540">Horana</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2359" y="2516">Ingiriya</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2443" y="2927">Bulathsinhala</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2158" y="2924">Madurawala</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1928" y="2891">Millaniya</text>
+  </g>
+  <g>
+    <circle r="34.64101615137754" fill="white" stroke="gray" stroke-width="10.0" cx="1673" cy="3034"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1713" y="3034">Kalutara</text>
+  </g>
+  <g>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1831" y="3500">Beruwala</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1979" y="3205">Dodangoda</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1292" y="500">Wennappuwa</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="1476" y="512">Dankotuwa</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2690" y="2243">Eheliyagoda</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2768" y="2522">Kiriella</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2599" y="1436">Ruwanwella</text>
+  </g>
+  <g>
+    <text fill="#ddd" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="central" x="2822" y="1884">Dehiovita</text>
+  </g>
+</svg>
