@@ -18,7 +18,7 @@ def is_close_enough(centroid):
 def build_single():
     styler = Styler()
     max_network_length = 1048 * 2
-    max_segments = 30
+    max_segments = 5
 
     network = Network.from_type(
         EntType.GND, lambda ent: is_close_enough(ent.centroid)

@@ -5,13 +5,10 @@ def _(dist, node1, node2):
     return dist[node1].get(node2, float('inf'))
 
 
-def _init_matrix(network):
-    dist = {}
-    nodes = network.node_list
+def _set_idem(dist, nodes):
     for node in nodes:
         dist[node] = {}
         dist[node][node] = 0
-    return dist
 
 
 def _set_edges(dist, network):
@@ -24,8 +21,7 @@ def _set_edges(dist, network):
         dist[node2][node1] = distance
 
 
-def _expand(dist, network):
-    nodes = network.node_list
+def _expand(dist, nodes):
     for node2 in nodes:
         for node1 in nodes:
             for node3 in nodes:
@@ -35,9 +31,11 @@ def _expand(dist, network):
     return dist
 
 
-def build_distance_matrix(network):
-    dist = _init_matrix(network)
+def build_distance_matrix_with_ford_warshall(network):
+    nodes = network.node_list
+    dist = {}
+    _set_idem(dist, nodes)
     _set_edges(dist, network)
-    _expand(dist, network)
+    _expand(dist, nodes)
 
     return dist

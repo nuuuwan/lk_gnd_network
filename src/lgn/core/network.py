@@ -8,6 +8,7 @@ from lgn.utils import distance_matrix, shape_utils
 
 log = Log('network')
 
+
 def build_node_idx(ent_list):
     node_idx = {}
     for i, ent in enumerate(ent_list):
@@ -71,7 +72,7 @@ class Network:
 
     @property
     def distance_matrix(self):
-        return distance_matrix.build_distance_matrix(self)
+        return distance_matrix.build_distance_matrix_with_ford_warshall(self)
 
     @property
     def network_length(self):
