@@ -32,7 +32,9 @@ def compute_average_meet_time(network):
     return average_meet_time
 
 
-def get_fitness_for_edge_pair(network, edge_pair, before_average_meet_time):
+def get_d_per_distance_for_edge_pair(
+    network, before_average_meet_time, edge_pair
+):
     node_i, node_j = edge_pair
 
     if [node_i, node_j] in network.edge_pair_list or [
@@ -56,16 +58,33 @@ def get_fitness_for_edge_pair(network, edge_pair, before_average_meet_time):
     return d_per_distance
 
 
+def get_edge_pair_and_d_per_distance_list(
+    network, before_average_meet_time, edge_pair_list
+):
+    return list(
+        map(
+            lambda edge_pair: (
+                edge_pair,
+                get_d_per_distance_for_edge_pair(
+                    network, before_average_meet_time, edge_pair
+                ),
+            ),
+            edge_pair_list,
+        )
+    )
+
+
 def get_best_incr(network):
     before_average_meet_time = compute_average_meet_time(network)
 
     best_d_per_distance = -float('inf')
     best_edge_pair = None
 
-    for edge_pair in network.all_node_pairs:
-        d_per_distance = get_fitness_for_edge_pair(
-            network, edge_pair, before_average_meet_time
-        )
+    edge_pair_and_d_per_distance_list = get_edge_pair_and_d_per_distance_list(
+        network, before_average_meet_time, network.all_node_pairs
+    )
+
+    for edge_pair, d_per_distance in edge_pair_and_d_per_distance_list:
         if d_per_distance is None:
             continue
 
