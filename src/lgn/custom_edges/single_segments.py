@@ -2,7 +2,7 @@ from utils import Log
 
 from lgn.utils import shape_utils
 from lgn.utils.console_utils import print_line, tab
-from lgn.utils.format_utils import format_time
+from lgn.utils.format_utils import format_time, format_distance
 
 log = Log('single_segments')
 
@@ -87,7 +87,7 @@ def rebuild_incr(network, max_network_length, max_segments):
             tab(
                 f'rebuild_incr: { n_segments})',
                 f'{format_time(average_meet_time)}',
-                f'{network_length:.1f}km',
+                f'{format_distance(network_length)}',
                 f'{best_edge_pair[0]} -> {best_edge_pair[1]}',
             )
         )

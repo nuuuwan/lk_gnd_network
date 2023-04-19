@@ -2,11 +2,14 @@ def format_time(t_hours_f):
     if t_hours_f < 0:
         return '(-' + format_time(-t_hours_f) + ')'
 
-    (int)(t_hours_f / 24)
-    t_hours = (int)(t_hours_f % 24)
-    t_minutes = (int)((t_hours_f % 1) * 60 + 0.5)
+    t_minutes = int(round((t_hours_f % 1) * 60,0))
 
-    if t_hours > 0:
-        return f'{t_hours}h{t_minutes}m'
+    if t_hours_f > 0:
+        return f'{t_hours_f:,.0f}h{t_minutes:02d}m'
 
     return f'{t_minutes}m'
+
+def format_distance(d_km):
+    if d_km < 2:
+        return f'{d_km * 1000:,.0f}m'
+    return f'{d_km:,.0f}km'
