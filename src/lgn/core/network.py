@@ -165,7 +165,7 @@ class Network:
             (node1, node2)
             for node1 in self.node_list
             for node2 in self.node_list
-            if node1 <= node2
+            if node1 < node2
         ]
 
     @property
@@ -174,6 +174,12 @@ class Network:
         distance_matrix = self.distance_matrix
         for node1, node2_to_distance in distance_matrix.items():
             for node2, distance in node2_to_distance.items():
-                if distance != 0 and distance != float('inf'):
+                if all(
+                    [
+                        node1 < node2,
+                        distance != 0,
+                        distance != float('inf'),
+                    ]
+                ):
                     node_pairs.append((node1, node2, distance))
         return node_pairs
