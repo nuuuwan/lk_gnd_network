@@ -15,11 +15,11 @@ class Styler:
     def __init__(
         self,
         RADIUS=10,
-        DIM=6000,
+        DIM=2000,
         OPACITY=1,
-        PADDING=500,
+        PADDING=200,
         FONT_FAMILY=DEFAULT_FONT_FAMILY,
-        FONT_SIZE=80,
+        FONT_SIZE=40,
     ):
         self.RADIUS = RADIUS
         self.DIM = DIM
@@ -41,7 +41,7 @@ class Styler:
         return dict(
             x=self.DIM / 2,
             y=self.PADDING * 0.5,
-            fill='gray',
+            fill='lightgrey',
             stroke='none',
             font_size=self.FONT_SIZE,
             font_family=self.FONT_FAMILY,
@@ -54,7 +54,7 @@ class Styler:
         return dict(
             x=self.DIM / 2,
             y=self.PADDING * 1,
-            fill='gray',
+            fill='lightgrey',
             stroke='none',
             font_size=self.FONT_SIZE * 2,
             font_family=self.FONT_FAMILY,
@@ -135,6 +135,6 @@ class Styler:
         return self.node_circle | dict(
             cx=self.DIM / 8,
             cy_offset=self.DIM / 8,
-            r=self.node_circle['r'] * 2,
+            r=self.node_circle['r'] * 1,
             stroke="none",
         )

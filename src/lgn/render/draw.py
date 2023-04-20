@@ -144,7 +144,10 @@ class Draw(DrawNode, DrawLine):
                     'text',
                     label,
                     self.styler.node_text
-                    | dict(x=style['cx'] + style['r'] * 2.2, y=cy),
+                    | dict(
+                        x=style['cx'] + style['r'] * 2.2,
+                        y=cy + style['r'] / 2,
+                    ),
                 )
             )
         return _('g', inner_list)

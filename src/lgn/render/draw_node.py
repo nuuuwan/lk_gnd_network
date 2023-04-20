@@ -30,7 +30,7 @@ class DrawNode:
             self.styler.node_text
             | dict(
                 font_size=font_size,
-                x=sx + self.styler.RADIUS + font_size,
+                x=sx + self.styler.RADIUS + font_size / 2,
                 y=sy,
                 fill=fill,
             ),
