@@ -9,7 +9,7 @@ from lgn.utils.parallel_utils import map_parallel
 
 log = Log('single_segments')
 
-MAX_DISTANCE = 20
+MAX_DISTANCE = 2
 
 
 def get_d_per_distance_for_edge_pair(

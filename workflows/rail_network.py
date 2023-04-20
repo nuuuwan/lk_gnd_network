@@ -18,10 +18,10 @@ def is_close_enough(centroid, max_distance):
 
 
 def build_single():
-    ent_type = EntType.DSD
+    ent_type = EntType.GND
     max_network_length = int(1048 * 2)
-    max_segments = 40
-    max_distance = 80
+    max_segments = 60
+    max_distance = 7
 
     network = Network.from_type(
         ent_type, lambda ent: is_close_enough(ent.centroid, max_distance)
