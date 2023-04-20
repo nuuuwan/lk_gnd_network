@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="6000" height="6000" padding="500">
+  <g>
+    <circle r="40" fill="#cc0000" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="750.0"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="750.0">Highest Priority</text>
+    <circle r="40" fill="#ffcd05" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="830.0"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="830.0"/>
+    <circle r="40" fill="#8aff3d" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="910.0"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="910.0"/>
+    <circle r="40" fill="#75ffac" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="990.0"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="990.0"/>
+    <circle r="40" fill="#adeeff" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="1070.0"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="1070.0"/>
+    <circle r="40" fill="#e5e5ff" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="1150.0"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="1150.0">Lowest Priority</text>
+  </g>
+  <text x="3000.0" y="250.0" fill="gray" stroke="none" font-size="80" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Hypothetical Railway Network</text>
+  <text x="3000.0" y="500" fill="gray" stroke="none" font-size="160" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Phase 1</text>
+  <text x="3000.0" y="5750.0" fill="gray" stroke="none" font-size="80" font-family="p22" text-anchor="middle" dominant-baseline="hanging">music by @bensound ~ visualization by @nuuuwan</text>
+  <text x="5250.0" y="590.0" fill="lightgrey" stroke="none" font-size="80.0" font-family="p22" text-anchor="end" dominant-baseline="hanging">Network Length</text>
+  <text x="5250.0" y="750.0" fill="lightgrey" stroke="none" font-size="160" font-family="p22" text-anchor="end" dominant-baseline="hanging">28km</text>
+  <text x="5250.0" y="990.0" fill="lightgrey" stroke="none" font-size="80.0" font-family="p22" text-anchor="end" dominant-baseline="hanging">Mean Travel Time</text>
+  <text x="5250.0" y="1150.0" fill="lightgrey" stroke="none" font-size="160" font-family="p22" text-anchor="end" dominant-baseline="hanging">29h12m</text>
+  <text x="5250.0" y="1390.0" fill="lightgrey" stroke="none" font-size="80.0" font-family="p22" text-anchor="end" dominant-baseline="hanging">MTT Reduction / Track Length</text>
+  <text x="5250.0" y="1550.0" fill="lightgrey" stroke="none" font-size="160" font-family="p22" text-anchor="end" dominant-baseline="hanging">22s/km</text>
+  <path fill="none" stroke="#59ff59" stroke-width="20" stroke-opacity="1" d="M 1996.0,4475.0 L 1995.05,4475.0 C 1995.0498333333333,4475.0 1995.0,4474.9501666666665 1995.0,4474.95 L 1995.0,4119.070710678118 C 1995.0,4119.070474975858 1994.9501666666667,4118.9501666666665 1994.95,4118.95 L 1994.0,4118.0"/>
+  <g>
+    <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="1996" cy="4475"/>
+    <text fill="gray" stroke="none" font-size="53.33333333333333" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2059.3333333333335" y="4475">Colombo</text>
+  </g>
+  <g>
+    <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="1994" cy="4118"/>
+    <text fill="gray" stroke="none" font-size="53.33333333333333" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2057.3333333333335" y="4118">Gampaha</text>
+  </g>
+</svg>

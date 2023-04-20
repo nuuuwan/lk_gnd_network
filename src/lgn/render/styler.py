@@ -19,7 +19,7 @@ class Styler:
         OPACITY=1,
         PADDING=500,
         FONT_FAMILY=DEFAULT_FONT_FAMILY,
-        FONT_SIZE=60,
+        FONT_SIZE=80,
     ):
         self.RADIUS = RADIUS
         self.DIM = DIM
@@ -40,7 +40,7 @@ class Styler:
     def text_supertitle(self):
         return dict(
             x=self.DIM / 2,
-            y=self.PADDING * 0.25,
+            y=self.PADDING * 0.5,
             fill='gray',
             stroke='none',
             font_size=self.FONT_SIZE,
@@ -53,7 +53,7 @@ class Styler:
     def text_title(self):
         return dict(
             x=self.DIM / 2,
-            y=self.PADDING * 0.5,
+            y=self.PADDING * 1,
             fill='gray',
             stroke='none',
             font_size=self.FONT_SIZE * 2,
@@ -66,10 +66,10 @@ class Styler:
     def text_network_length(self):
         return dict(
             x=self.DIM * 7 / 8,
-            y=self.DIM * 1 / 4,
+            y=self.DIM * 1 / 8,
             fill='lightgrey',
             stroke='none',
-            font_size=self.FONT_SIZE * 3,
+            font_size=self.FONT_SIZE * 2,
             font_family=self.FONT_FAMILY,
             text_anchor='end',
             dominant_baseline='hanging',

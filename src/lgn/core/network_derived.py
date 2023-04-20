@@ -66,12 +66,15 @@ class NetworkDerived:
         return sum([distance for _, distance in self.edge_and_distance_list])
 
     @cache
-    def get_close_node_pairs_and_distance_list(self, max_distance):
+    def get_close_node_pair_list(self, max_distance, include_edges=False):
         x_list = []
         for i, j in self.all_node_pairs:
+            if not include_edges and self.is_edge(i, j):
+                continue
             distance = self.get_distance(i, j)
             if distance <= max_distance:
-                x_list.append([[i, j], distance])
+                x_list.append([i, j])
+
         return x_list
 
     @cached_property

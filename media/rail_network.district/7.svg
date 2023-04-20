@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="6000" height="6000" padding="500">
+  <g>
+    <circle r="40" fill="#cc0000" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="750.0"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="750.0">Highest Priority</text>
+    <circle r="40" fill="#ffcd05" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="830.0"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="830.0"/>
+    <circle r="40" fill="#8aff3d" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="910.0"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="910.0"/>
+    <circle r="40" fill="#75ffac" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="990.0"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="990.0"/>
+    <circle r="40" fill="#adeeff" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="1070.0"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="1070.0"/>
+    <circle r="40" fill="#e5e5ff" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="1150.0"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="1150.0">Lowest Priority</text>
+  </g>
+  <text x="3000.0" y="250.0" fill="gray" stroke="none" font-size="80" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Hypothetical Railway Network</text>
+  <text x="3000.0" y="500" fill="gray" stroke="none" font-size="160" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Phase 7</text>
+  <text x="3000.0" y="5750.0" fill="gray" stroke="none" font-size="80" font-family="p22" text-anchor="middle" dominant-baseline="hanging">music by @bensound ~ visualization by @nuuuwan</text>
+  <text x="5250.0" y="590.0" fill="lightgrey" stroke="none" font-size="80.0" font-family="p22" text-anchor="end" dominant-baseline="hanging">Network Length</text>
+  <text x="5250.0" y="750.0" fill="lightgrey" stroke="none" font-size="160" font-family="p22" text-anchor="end" dominant-baseline="hanging">298km</text>
+  <text x="5250.0" y="990.0" fill="lightgrey" stroke="none" font-size="80.0" font-family="p22" text-anchor="end" dominant-baseline="hanging">Mean Travel Time</text>
+  <text x="5250.0" y="1150.0" fill="lightgrey" stroke="none" font-size="160" font-family="p22" text-anchor="end" dominant-baseline="hanging">24h20m</text>
+  <text x="5250.0" y="1390.0" fill="lightgrey" stroke="none" font-size="80.0" font-family="p22" text-anchor="end" dominant-baseline="hanging">MTT Reduction / Track Length</text>
+  <text x="5250.0" y="1550.0" fill="lightgrey" stroke="none" font-size="160" font-family="p22" text-anchor="end" dominant-baseline="hanging">61s/km</text>
+  <path fill="none" stroke="#e5e5ff" stroke-width="20" stroke-opacity="1" d="M 2148.0,4887.0 L 2153.7,4881.3 C 2153.701,4881.299 2154.4228498551497,4881.0 2154.424264068712,4881.0 L 2758.5050252531696,4881.0 C 2758.5066751689924,4881.0 2759.3488333333335,4880.6511666666665 2759.35,4880.65 L 2766.0,4874.0"/>
+  <path fill="none" stroke="#b6e6ff" stroke-width="20" stroke-opacity="1" d="M 2302.0,3355.0 L 2084.7087304413003,3138.7054793842303 C 2084.706368006496,3138.703127786283 2083.0033333333336,3138.0 2083.0,3138.0 L 2064.95,3138.0 C 2064.9468333333334,3138.0 2063.332028603031,3137.3289503938286 2063.3297945849813,3137.3267060807643 L 1847.0,2920.0"/>
+  <path fill="none" stroke="#88ffd7" stroke-width="20" stroke-opacity="1" d="M 2323.0,5387.0 L 2378.929995352728,5441.948767364083 C 2378.933562034885,5441.95227147287 2381.495,5443.0 2381.5,5443.0 L 2671.5,5443.0 C 2671.505,5443.0 2674.04772852713,5444.066437965114 2674.0512326359167,5444.070004647272 L 2729.0,5500.0"/>
+  <path fill="none" stroke="#59ff59" stroke-width="20" stroke-opacity="1" d="M 2148.0,4887.0 L 2233.945417961013,4973.9332963283805 C 2233.948933234476,4973.936852007287 2235.0,4976.495 2235.0,4976.5 L 2235.0,5297.5 C 2235.0,5297.505 2236.057124637874,5300.057124637874 2236.06066017178,5300.06066017178 L 2323.0,5387.0"/>
+  <path fill="none" stroke="#b8ff2a" stroke-width="20" stroke-opacity="1" d="M 1996.0,4475.0 L 2070.93933982822,4549.93933982822 C 2070.942875362126,4549.942875362126 2072.0,4552.495 2072.0,4552.5 L 2072.0,4809.5 C 2072.0,4809.505 2073.057124637874,4812.057124637874 2073.06066017178,4812.06066017178 L 2148.0,4887.0"/>
+  <path fill="none" stroke="#faa700" stroke-width="20" stroke-opacity="1" d="M 1994.0,4118.0 L 2146.93933982822,3965.06066017178 C 2146.942875362126,3965.057124637874 2148.0,3962.505 2148.0,3962.5 L 2148.0,3510.5 C 2148.0,3510.495 2149.057124637874,3507.942875362126 2149.06066017178,3507.93933982822 L 2302.0,3355.0"/>
+  <path fill="none" stroke="#cc0000" stroke-width="20" stroke-opacity="1" d="M 1996.0,4475.0 L 1995.05,4475.0 C 1995.0498333333333,4475.0 1995.0,4474.9501666666665 1995.0,4474.95 L 1995.0,4119.070710678118 C 1995.0,4119.070474975858 1994.9501666666667,4118.9501666666665 1994.95,4118.95 L 1994.0,4118.0"/>
+  <g>
+    <circle r="17.32050807568877" fill="white" stroke="black" stroke-width="9.0" cx="1996" cy="4475"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2086" y="4475">Colombo</text>
+  </g>
+  <g>
+    <circle r="17.32050807568877" fill="white" stroke="black" stroke-width="9.0" cx="1994" cy="4118"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2084" y="4118">Gampaha</text>
+  </g>
+  <g>
+    <circle r="20.0" fill="white" stroke="black" stroke-width="9.0" cx="2148" cy="4887"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2238" y="4887">Kalutara</text>
+  </g>
+  <g>
+    <circle r="17.32050807568877" fill="white" stroke="black" stroke-width="9.0" cx="2323" cy="5387"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2413" y="5387">Galle</text>
+  </g>
+  <g>
+    <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="2729" cy="5500"/>
+    <text fill="gray" stroke="none" font-size="53.33333333333333" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2792.3333333333335" y="5500">Matara</text>
+  </g>
+  <g>
+    <circle r="17.32050807568877" fill="white" stroke="black" stroke-width="9.0" cx="2302" cy="3355"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2392" y="3355">Kurunegala</text>
+  </g>
+  <g>
+    <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="1847" cy="2920"/>
+    <text fill="gray" stroke="none" font-size="53.33333333333333" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="1910.3333333333333" y="2920">Puttalam</text>
+  </g>
+  <g>
+    <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="2766" cy="4874"/>
+    <text fill="gray" stroke="none" font-size="53.33333333333333" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2829.3333333333335" y="4874">Ratnapura</text>
+  </g>
+</svg>

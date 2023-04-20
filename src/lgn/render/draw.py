@@ -45,11 +45,16 @@ class Draw(DrawNode, DrawLine):
         return lines
 
     def draw_text(self):
+        i_phase = self.network.n_edges
         return [
-            _('text', 'Sri Lanka', self.styler.text_supertitle),
             _(
                 'text',
-                'Population Optimized Hypothetical Railway Network',
+                'Hypothetical Railway Network',
+                self.styler.text_supertitle,
+            ),
+            _(
+                'text',
+                f'Phase {i_phase}',
                 self.styler.text_title,
             ),
             _(
@@ -60,6 +65,8 @@ class Draw(DrawNode, DrawLine):
         ]
 
     def draw_info_item(self, label, value, style):
+        if value is None:
+            return []
         return [
             _(
                 'text',
@@ -79,14 +86,14 @@ class Draw(DrawNode, DrawLine):
 
     def draw_info(self):
         BASE_MTT = 29.379542492563075
-        mttpkm_str = '-'
+        mttpkm_str = None
         if self.network.network_length > 0:
             mttpkm = (
-                60
+                3_600
                 * (BASE_MTT - self.network.average_travel_time)
                 / self.network.network_length
             )
-            mttpkm_str = f'{mttpkm:.0f} min/km'
+            mttpkm_str = f'{mttpkm:,.0f}s/km'
 
         item_list = []
         for label, value, style in [
@@ -116,9 +123,9 @@ class Draw(DrawNode, DrawLine):
         style = self.styler.legend_circle
         for i, p in enumerate(P_LIST):
             if i == 0:
-                label = 'Highest Priority'
+                label = 'Ealier'
             elif i == len(P_LIST) - 1:
-                label = 'Lowest Priority'
+                label = 'Later'
             else:
                 label = ''
 
@@ -154,7 +161,7 @@ class Draw(DrawNode, DrawLine):
         svg_path = png_path[:-3] + 'svg'
         svg.store(svg_path)
         log.debug(f'Saved {svg_path}')
-
+        self.network.n_edges
         png_path = Draw.convert_svg_to_png(svg_path)
         if do_open:
             webbrowser.open(os.path.abspath(png_path))
@@ -172,11 +179,6 @@ class Draw(DrawNode, DrawLine):
 
     @staticmethod
     def build_animated_gif(png_path_list, gif_path):
-        png_path_list.sort()
-        last_png_path = png_path_list[-1]
-        for i in range(0, 5):
-            png_path_list.append(last_png_path)
-
         images = []
         for png_path in png_path_list:
             images.append(imageio.imread(png_path))

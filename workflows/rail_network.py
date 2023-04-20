@@ -15,21 +15,24 @@ log = Log('rail_network')
 CONFIG_IDX = dict(
     district=dict(
         ent_type=EntType.DISTRICT,
-        max_network_length=2000,
-        max_segments=0,
+        max_network_length=4000,
+        max_segments=60,
         max_distance=10000,
+        max_inter_node_distance=200,
     ),
     dsd=dict(
         ent_type=EntType.DSD,
         max_network_length=500,
         max_segments=50,
         max_distance=60,
+        max_inter_node_distance=15,
     ),
     gnd=dict(
         ent_type=EntType.GND,
         max_network_length=2000,
         max_segments=20,
         max_distance=2,
+        max_inter_node_distance=2,
     ),
 )
 CONFIG_IDX['district_0'] = CONFIG_IDX['district'] | dict(max_segments=0)
@@ -50,33 +53,56 @@ def _init_network(ent_type, max_distance):
 
 
 def _build_helper(
-    ent_type, max_network_length, max_segments, max_distance, network
+    ent_type,
+    max_network_length,
+    max_segments,
+    max_distance,
+    max_inter_node_distance,
+    network,
 ):
     network = step_optimizer.build(
         network,
         max_network_length=max_network_length,
         max_segments=max_segments,
+        max_inter_node_distance=max_inter_node_distance,
     )
 
     draw = Draw(network, Styler())
     png_path = os.path.join(
         'media',
-        f'rail_network.{ent_type.name}'
-        + f'.{max_network_length}km.{max_segments}.png',
+        f'rail_network.{ent_type.name}',
+        f'{max_segments}.png',
     )
-    draw.draw(png_path, do_open=False)
+    draw.draw(png_path, do_open=max_segments % 10 == 0)
 
     return png_path, network
 
 
-def build_single(ent_type, max_network_length, max_segments, max_distance):
+def build_single(
+    ent_type,
+    max_network_length,
+    max_segments,
+    max_distance,
+    max_inter_node_distance,
+):
     network = _init_network(ent_type, max_distance)
     return _build_helper(
-        ent_type, max_network_length, max_segments, max_distance, network
+        ent_type,
+        max_network_length,
+        max_segments,
+        max_distance,
+        max_inter_node_distance,
+        network,
     )
 
 
-def build_multiple(ent_type, max_network_length, max_segments, max_distance):
+def build_multiple(
+    ent_type,
+    max_network_length,
+    max_segments,
+    max_distance,
+    max_inter_node_distance,
+):
     network = _init_network(ent_type, max_distance)
     png_path_list = []
     for max_segments_i in range(0, max_segments + 1):
@@ -85,19 +111,20 @@ def build_multiple(ent_type, max_network_length, max_segments, max_distance):
             max_network_length,
             max_segments_i,
             max_distance,
+            max_inter_node_distance,
             network,
         )
         png_path_list.append(png_path)
 
     gif_path = os.path.join(
         'media',
-        f'rail_network.{ent_type.name}'
-        + f'.{max_network_length}km.TIMELINE.gif',
+        f'rail_network.{ent_type.name}',
+        'TIMELINE.gif',
     )
 
     Draw.build_animated_gif(png_path_list, gif_path)
 
 
 if __name__ == '__main__':
-    config_key = 'district_3'
+    config_key = 'district'
     build_multiple(*CONFIG_IDX[config_key].values())

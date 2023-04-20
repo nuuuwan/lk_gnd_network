@@ -9,8 +9,8 @@ log = Log('random_optimizer')
 MAX_STEPS = 1000
 
 
-def optimize_step(network):
-    edge_list = network.all_non_edge_node_pairs
+def optimize_step(network, max_inter_node_distance):
+    edge_list = network.get_close_node_pair_list(max_inter_node_distance)
     random.shuffle(edge_list)
     # edge_list= edge_list[:40]
 
@@ -35,11 +35,11 @@ def optimize_step(network):
     return best_edge
 
 
-def build(network, max_network_length, max_segments):
+def build(network, max_network_length, max_segments, max_inter_node_distance):
     if network.n_edges >= max_segments:
         return network
     for i in range(0, MAX_STEPS):
-        best_edge = optimize_step(network)
+        best_edge = optimize_step(network, max_inter_node_distance)
 
         if best_edge is None:
             log.warning('Could not optimize further.')
