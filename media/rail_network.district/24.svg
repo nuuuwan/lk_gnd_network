@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="6000" height="6000" padding="500">
   <g>
     <circle r="40" fill="#cc0000" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="750.0"/>
-    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="750.0">Highest Priority</text>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="750.0">Ealier</text>
     <circle r="40" fill="#ffcd05" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="830.0"/>
     <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="830.0"/>
     <circle r="40" fill="#8aff3d" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="910.0"/>
@@ -12,25 +12,25 @@
     <circle r="40" fill="#adeeff" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="1070.0"/>
     <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="1070.0"/>
     <circle r="40" fill="#e5e5ff" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="1150.0"/>
-    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="1150.0">Lowest Priority</text>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="1150.0">Later</text>
   </g>
   <text x="3000.0" y="250.0" fill="gray" stroke="none" font-size="80" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Hypothetical Railway Network</text>
   <text x="3000.0" y="500" fill="gray" stroke="none" font-size="160" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Phase 24</text>
   <text x="3000.0" y="5750.0" fill="gray" stroke="none" font-size="80" font-family="p22" text-anchor="middle" dominant-baseline="hanging">music by @bensound ~ visualization by @nuuuwan</text>
   <text x="5250.0" y="590.0" fill="lightgrey" stroke="none" font-size="80.0" font-family="p22" text-anchor="end" dominant-baseline="hanging">Network Length</text>
-  <text x="5250.0" y="750.0" fill="lightgrey" stroke="none" font-size="160" font-family="p22" text-anchor="end" dominant-baseline="hanging">1,179km</text>
-  <text x="5250.0" y="990.0" fill="lightgrey" stroke="none" font-size="80.0" font-family="p22" text-anchor="end" dominant-baseline="hanging">Mean Travel Time</text>
+  <text x="5250.0" y="750.0" fill="lightgrey" stroke="none" font-size="160" font-family="p22" text-anchor="end" dominant-baseline="hanging">1,253km</text>
+  <text x="5250.0" y="990.0" fill="lightgrey" stroke="none" font-size="80.0" font-family="p22" text-anchor="end" dominant-baseline="hanging">Mean Travel Time (MTT)</text>
   <text x="5250.0" y="1150.0" fill="lightgrey" stroke="none" font-size="160" font-family="p22" text-anchor="end" dominant-baseline="hanging">3h00m</text>
   <text x="5250.0" y="1390.0" fill="lightgrey" stroke="none" font-size="80.0" font-family="p22" text-anchor="end" dominant-baseline="hanging">MTT Reduction / Track Length</text>
-  <text x="5250.0" y="1550.0" fill="lightgrey" stroke="none" font-size="160" font-family="p22" text-anchor="end" dominant-baseline="hanging">81s/km</text>
+  <text x="5250.0" y="1550.0" fill="lightgrey" stroke="none" font-size="160" font-family="p22" text-anchor="end" dominant-baseline="hanging">76s/km</text>
   <path fill="none" stroke="#e5e5ff" stroke-width="20" stroke-opacity="1" d="M 2093.0,1647.0 L 2110.1,1664.1 C 2110.103,1664.103 2112.2685495654487,1665.0 2112.272792206136,1665.0 L 2607.727207793864,1665.0 C 2607.7314504345513,1665.0 2609.897,1665.897 2609.9,1665.9 L 2627.0,1683.0"/>
-  <path fill="none" stroke="#d9dfff" stroke-width="20" stroke-opacity="1" d="M 2742.0,1238.0 L 2569.1414213562375,1065.1414213562373 C 2569.1409499517167,1065.1409499517165 2569.0,1064.8006666666668 2569.0,1064.8 L 2569.0,1061.19 C 2569.0,1061.1893666666667 2568.8660975458693,1060.8660975458693 2568.8656497115744,1060.8656497115746 L 2396.0,888.0"/>
-  <path fill="none" stroke="#cddeff" stroke-width="20" stroke-opacity="1" d="M 2107.0,500.0 L 2422.93933982822,815.9393398282202 C 2422.942875362126,815.9428753621261 2424.0,818.495 2424.0,818.5 L 2424.0,918.5 C 2424.0,918.505 2425.057124637874,921.0571246378739 2425.06066017178,921.0606601717798 L 2742.0,1238.0"/>
-  <path fill="none" stroke="#c0e1ff" stroke-width="20" stroke-opacity="1" d="M 2627.0,1683.0 L 2682.9486027097673,1626.069842856728 C 2682.9521073674014,1626.0662767138722 2684.0,1623.505 2684.0,1623.5 L 2684.0,1297.5 C 2684.0,1297.495 2685.057124637874,1294.9428753621262 2685.06066017178,1294.9393398282202 L 2742.0,1238.0"/>
-  <path fill="none" stroke="#b4e8ff" stroke-width="20" stroke-opacity="1" d="M 2627.0,1683.0 L 2657.93933982822,1713.9393398282202 C 2657.942875362126,1713.9428753621262 2659.0,1716.495 2659.0,1716.5 L 2659.0,2297.5 C 2659.0,2297.505 2660.057124637874,2300.057124637874 2660.06066017178,2300.06066017178 L 2691.0,2331.0"/>
-  <path fill="none" stroke="#a8f3ff" stroke-width="20" stroke-opacity="1" d="M 3506.0,2107.0 L 3461.06066017178,2151.93933982822 C 3461.057124637874,2151.942875362126 3460.0,2154.495 3460.0,2154.5 L 3460.0,2844.5 C 3460.0,2844.505 3458.942875362126,2847.057124637874 3458.93933982822,2847.06066017178 L 3414.0,2892.0"/>
-  <path fill="none" stroke="#9cfefa" stroke-width="20" stroke-opacity="1" d="M 2998.0,3351.0 L 3204.93933982822,3144.06066017178 C 3204.942875362126,3144.057124637874 3206.0,3141.505 3206.0,3141.5 L 3206.0,3101.5 C 3206.0,3101.495 3207.057124637874,3098.942875362126 3207.06066017178,3098.93933982822 L 3414.0,2892.0"/>
-  <path fill="none" stroke="#90fee6" stroke-width="20" stroke-opacity="1" d="M 2968.0,3907.0 L 2982.25,3892.75 C 2982.2525,3892.7475 2983.0,3890.942875362126 2983.0,3890.93933982822 L 2983.0,3367.06066017178 C 2983.0,3367.057124637874 2983.7475,3365.2525 2983.75,3365.25 L 2998.0,3351.0"/>
+  <path fill="none" stroke="#d9dfff" stroke-width="20" stroke-opacity="1" d="M 2627.0,1683.0 L 2682.9486027097673,1626.069842856728 C 2682.9521073674014,1626.0662767138722 2684.0,1623.505 2684.0,1623.5 L 2684.0,1297.5 C 2684.0,1297.495 2685.057124637874,1294.9428753621262 2685.06066017178,1294.9393398282202 L 2742.0,1238.0"/>
+  <path fill="none" stroke="#cddeff" stroke-width="20" stroke-opacity="1" d="M 2627.0,1683.0 L 2657.93933982822,1713.9393398282202 C 2657.942875362126,1713.9428753621262 2659.0,1716.495 2659.0,1716.5 L 2659.0,2297.5 C 2659.0,2297.505 2660.057124637874,2300.057124637874 2660.06066017178,2300.06066017178 L 2691.0,2331.0"/>
+  <path fill="none" stroke="#c0e1ff" stroke-width="20" stroke-opacity="1" d="M 2107.0,500.0 L 2249.93933982822,642.9393398282202 C 2249.942875362126,642.9428753621261 2251.0,645.495 2251.0,645.5 L 2251.0,742.5 C 2251.0,742.505 2252.0607761582564,745.0534604606131 2252.064323904605,745.0569837397455 L 2396.0,888.0"/>
+  <path fill="none" stroke="#b4e8ff" stroke-width="20" stroke-opacity="1" d="M 3506.0,2107.0 L 3461.06066017178,2151.93933982822 C 3461.057124637874,2151.942875362126 3460.0,2154.495 3460.0,2154.5 L 3460.0,2844.5 C 3460.0,2844.505 3458.942875362126,2847.057124637874 3458.93933982822,2847.06066017178 L 3414.0,2892.0"/>
+  <path fill="none" stroke="#a8f3ff" stroke-width="20" stroke-opacity="1" d="M 2998.0,3351.0 L 3204.93933982822,3144.06066017178 C 3204.942875362126,3144.057124637874 3206.0,3141.505 3206.0,3141.5 L 3206.0,3101.5 C 3206.0,3101.495 3207.057124637874,3098.942875362126 3207.06066017178,3098.93933982822 L 3414.0,2892.0"/>
+  <path fill="none" stroke="#9cfefa" stroke-width="20" stroke-opacity="1" d="M 2968.0,3907.0 L 2982.25,3892.75 C 2982.2525,3892.7475 2983.0,3890.942875362126 2983.0,3890.93933982822 L 2983.0,3367.06066017178 C 2983.0,3367.057124637874 2983.7475,3365.2525 2983.75,3365.25 L 2998.0,3351.0"/>
+  <path fill="none" stroke="#90fee6" stroke-width="20" stroke-opacity="1" d="M 2107.0,500.0 L 2397.93933982822,790.9393398282202 C 2397.942875362126,790.9428753621261 2399.0,793.495 2399.0,793.5 L 2399.0,2037.5 C 2399.0,2037.505 2400.057124637874,2040.0571246378738 2400.06066017178,2040.0606601717798 L 2691.0,2331.0"/>
   <path fill="none" stroke="#83fece" stroke-width="20" stroke-opacity="1" d="M 2729.0,5500.0 L 2809.94578743262,5418.067068818202 C 2809.9493014745112,5418.063511922141 2812.495,5417.0 2812.5,5417.0 L 3431.5,5417.0 C 3431.505,5417.0 3434.063511922141,5415.949301474511 3434.0670688182017,5415.94578743262 L 3516.0,5335.0"/>
   <path fill="none" stroke="#77feb2" stroke-width="20" stroke-opacity="1" d="M 3440.0,4187.0 L 3621.936437901535,4367.9422497162805 C 3621.9399831085298,4367.94577555056 3623.0,4370.495 3623.0,4370.5 L 3623.0,4407.5 C 3623.0,4407.505 3624.057124637874,4410.057124637874 3624.06066017178,4410.06066017178 L 3805.0,4591.0"/>
   <path fill="none" stroke="#6bff92" stroke-width="20" stroke-opacity="1" d="M 4062.0,3175.0 L 4105.93933982822,3218.93933982822 C 4105.942875362126,3218.942875362126 4107.0,3221.495 4107.0,3221.5 L 4107.0,3911.5 C 4107.0,3911.505 4108.057124637874,3914.057124637874 4108.06066017178,3914.06066017178 L 4152.0,3958.0"/>
@@ -84,8 +84,8 @@
     <text fill="gray" stroke="none" font-size="53.33333333333333" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="3579.3333333333335" y="5335">Hambantota</text>
   </g>
   <g>
-    <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="2107" cy="500"/>
-    <text fill="gray" stroke="none" font-size="53.33333333333333" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2170.3333333333335" y="500">Jaffna</text>
+    <circle r="17.32050807568877" fill="white" stroke="black" stroke-width="9.0" cx="2107" cy="500"/>
+    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2197" y="500">Jaffna</text>
   </g>
   <g>
     <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="2093" cy="1647"/>
@@ -96,8 +96,8 @@
     <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2717" y="1683">Vavuniya</text>
   </g>
   <g>
-    <circle r="20.0" fill="white" stroke="black" stroke-width="9.0" cx="2742" cy="1238"/>
-    <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2832" y="1238">Mullaitivu</text>
+    <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="2742" cy="1238"/>
+    <text fill="gray" stroke="none" font-size="53.33333333333333" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2805.3333333333335" y="1238">Mullaitivu</text>
   </g>
   <g>
     <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="2396" cy="888"/>
@@ -124,7 +124,7 @@
     <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="1937" y="2920">Puttalam</text>
   </g>
   <g>
-    <circle r="17.32050807568877" fill="white" stroke="black" stroke-width="9.0" cx="2691" cy="2331"/>
+    <circle r="20.0" fill="white" stroke="black" stroke-width="9.0" cx="2691" cy="2331"/>
     <text fill="black" stroke="none" font-size="80" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2781" y="2331">Anuradhapura</text>
   </g>
   <g>

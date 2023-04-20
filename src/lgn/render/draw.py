@@ -1,4 +1,5 @@
 import os
+import tempfile
 import webbrowser
 from functools import cache
 
@@ -103,7 +104,7 @@ class Draw(DrawNode, DrawLine):
                 self.styler.text_network_length,
             ],
             [
-                'Mean Travel Time',
+                'Mean Travel Time (MTT)',
                 format_time(self.network.average_travel_time),
                 self.styler.text_network_att,
             ],
@@ -158,14 +159,14 @@ class Draw(DrawNode, DrawLine):
             + self.draw_nodes(),
             self.styler.svg,
         )
-        svg_path = png_path[:-3] + 'svg'
+        svg_path = tempfile.NamedTemporaryFile(
+            prefix='lgn.', suffix='.svg'
+        ).name
         svg.store(svg_path)
-        log.debug(f'Saved {svg_path}')
-        self.network.n_edges
-        png_path = Draw.convert_svg_to_png(svg_path)
+
         if do_open:
             webbrowser.open(os.path.abspath(png_path))
-        return png_path
+        os.remove(svg_path)
 
     @staticmethod
     def convert_svg_to_png(svg_path):
@@ -182,7 +183,7 @@ class Draw(DrawNode, DrawLine):
         images = []
         for png_path in png_path_list:
             images.append(imageio.imread(png_path))
-        DURATION = 55.70 / 24
+        DURATION = 55.70 / 48
         imageio.mimwrite(gif_path, images, duration=DURATION)
         log.info(f'Built {gif_path} (from {len(png_path_list)} png files)')
         webbrowser.open(os.path.abspath(gif_path))
