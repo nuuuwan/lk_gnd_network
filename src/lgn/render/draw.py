@@ -57,6 +57,19 @@ class Draw(DrawNode, DrawLine):
                 'music by @bensound ~ visualization by @nuuuwan',
                 self.styler.text_footer,
             ),
+        ]
+
+    def draw_info(self):
+        BASE_MTT = 29.379542492563075
+        mttpkm_str = '-'
+        if self.network.network_length > 0:
+            mttpkm = (
+                60
+                * (BASE_MTT - self.network.average_travel_time)
+                / self.network.network_length
+            )
+            mttpkm_str = f'{mttpkm:.0f} min/km'
+        return [
             _(
                 'text',
                 'Network Length',
@@ -87,6 +100,22 @@ class Draw(DrawNode, DrawLine):
                 'text',
                 format_time(self.network.average_travel_time),
                 self.styler.text_network_att,
+            ),
+            _(
+                'text',
+                'MTT Reduction / Track Length',
+                self.styler.text_network_mttpkm
+                | dict(
+                    y=self.styler.text_network_mttpkm['y']
+                    - self.styler.text_network_mttpkm['font_size'],
+                    font_size=self.styler.text_network_mttpkm['font_size']
+                    * 0.5,
+                ),
+            ),
+            _(
+                'text',
+                mttpkm_str,
+                self.styler.text_network_mttpkm,
             ),
         ]
 
@@ -126,6 +155,7 @@ class Draw(DrawNode, DrawLine):
             'svg',
             [self.draw_legend()]
             + self.draw_text()
+            + self.draw_info()
             + self.draw_lines()
             + self.draw_nodes(),
             self.styler.svg,

@@ -78,7 +78,13 @@ class Styler:
     @cached_property
     def text_network_att(self):
         return self.text_network_length | dict(
-            y=self.DIM * 1 / 4 + self.FONT_SIZE * 5,
+            y=self.text_network_length['y'] + self.FONT_SIZE * 5,
+        )
+
+    @cached_property
+    def text_network_mttpkm(self):
+        return self.text_network_att | dict(
+            y=self.text_network_att['y'] + self.FONT_SIZE * 5,
         )
 
     @cached_property

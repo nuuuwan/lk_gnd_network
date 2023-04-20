@@ -16,14 +16,14 @@ CONFIG_IDX = dict(
     district=dict(
         ent_type=EntType.DISTRICT,
         max_network_length=2000,
-        max_segments=100,
+        max_segments=0,
         max_distance=10000,
     ),
     dsd=dict(
         ent_type=EntType.DSD,
-        max_network_length=1000,
-        max_segments=100,
-        max_distance=70,
+        max_network_length=500,
+        max_segments=50,
+        max_distance=60,
     ),
     gnd=dict(
         ent_type=EntType.GND,
@@ -32,7 +32,10 @@ CONFIG_IDX = dict(
         max_distance=2,
     ),
 )
+CONFIG_IDX['district_0'] = CONFIG_IDX['district'] | dict(max_segments=0)
 CONFIG_IDX['district_3'] = CONFIG_IDX['district'] | dict(max_segments=3)
+CONFIG_IDX['dsd_0'] = CONFIG_IDX['district_0'] | dict(ent_type=EntType.DSD)
+CONFIG_IDX['gnd_0'] = CONFIG_IDX['district_0'] | dict(ent_type=EntType.GND)
 
 
 def is_close_enough(centroid, max_distance):
@@ -44,6 +47,7 @@ def build_single(ent_type, max_network_length, max_segments, max_distance):
     network = Network.from_type(
         ent_type, lambda ent: is_close_enough(ent.centroid, max_distance)
     )
+    print(network.average_travel_time)
     network = step_optimizer.build(
         network,
         max_network_length=max_network_length,
@@ -61,5 +65,5 @@ def build_single(ent_type, max_network_length, max_segments, max_distance):
 
 
 if __name__ == '__main__':
-    config_key = 'dsd'
+    config_key = 'gnd_0'
     build_single(*CONFIG_IDX[config_key].values())

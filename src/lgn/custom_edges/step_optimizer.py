@@ -36,6 +36,8 @@ def optimize_step(network):
 
 
 def build(network, max_network_length, max_segments):
+    if network.n_edges >= max_segments:
+        return network
     for i in range(0, MAX_STEPS):
         best_edge = optimize_step(network)
 
@@ -43,21 +45,22 @@ def build(network, max_network_length, max_segments):
             log.warning('Could not optimize further.')
             break
 
-        network += [best_edge]
+        network_copy = network + [best_edge]
 
-        att = network.average_travel_time
-        network_length = network.network_length
-        segments = network.n_edges
+        att = network_copy.average_travel_time
+        network_length = network_copy.network_length
+        segments = network_copy.n_edges
         log.info(
             tab(
                 f'{segments})',
                 format_distance(network_length),
                 format_time(att),
-                network.format_edge(best_edge),
+                network_copy.format_edge(best_edge),
             )
         )
         if any(
             [network_length >= max_network_length, segments >= max_segments]
         ):
-            break
+            return network
+        network = network_copy
     return network
