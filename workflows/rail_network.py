@@ -36,7 +36,7 @@ CONFIG_IDX = dict(
     ),
 )
 CONFIG_IDX['district_0'] = CONFIG_IDX['district'] | dict(max_segments=0)
-CONFIG_IDX['district_3'] = CONFIG_IDX['district'] | dict(max_segments=3)
+CONFIG_IDX['district_3'] = CONFIG_IDX['district'] | dict(max_segments=10)
 CONFIG_IDX['dsd_0'] = CONFIG_IDX['district_0'] | dict(ent_type=EntType.DSD)
 CONFIG_IDX['gnd_0'] = CONFIG_IDX['district_0'] | dict(ent_type=EntType.GND)
 
@@ -126,5 +126,5 @@ def build_multiple(
 
 
 if __name__ == '__main__':
-    config_key = 'district'
+    config_key = 'district_3'
     build_multiple(*CONFIG_IDX[config_key].values())

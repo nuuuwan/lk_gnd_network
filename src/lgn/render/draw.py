@@ -163,20 +163,17 @@ class Draw(DrawNode, DrawLine):
             prefix='lgn.', suffix='.svg'
         ).name
         svg.store(svg_path)
+        log.debug(f'Saved {svg_path}')
 
+        Draw.convert_svg_to_png(svg_path, png_path)
         if do_open:
             webbrowser.open(os.path.abspath(png_path))
-        os.remove(svg_path)
 
     @staticmethod
-    def convert_svg_to_png(svg_path):
-        png_path = svg_path[:-3] + 'png'
-
+    def convert_svg_to_png(svg_path, png_path):
         drawing = svg2rlg(svg_path)
         renderPM.drawToFile(drawing, png_path, fmt="PNG")
         log.info(f'Saved {png_path}')
-
-        return png_path
 
     @staticmethod
     def build_animated_gif(png_path_list, gif_path):
