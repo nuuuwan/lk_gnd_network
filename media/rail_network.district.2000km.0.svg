@@ -3,20 +3,16 @@
   <g>
     <circle r="40" fill="#cc0000" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="750.0"/>
     <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="750.0">Highest Priority</text>
-    <circle r="40" fill="#e85c00" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="830.0"/>
+    <circle r="40" fill="#ffcd05" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="830.0"/>
     <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="830.0"/>
-    <circle r="40" fill="#ffcd05" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="910.0"/>
+    <circle r="40" fill="#8aff3d" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="910.0"/>
     <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="910.0"/>
-    <circle r="40" fill="#d2fe21" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="990.0"/>
+    <circle r="40" fill="#75ffac" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="990.0"/>
     <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="990.0"/>
-    <circle r="40" fill="#8aff3d" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="1070.0"/>
+    <circle r="40" fill="#adeeff" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="1070.0"/>
     <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="1070.0"/>
-    <circle r="40" fill="#59ff59" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="1150.0"/>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="1150.0"/>
-    <circle r="40" fill="#75ffac" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="1230.0"/>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="1230.0"/>
-    <circle r="40" fill="#91ffe9" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="1310.0"/>
-    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="1310.0">Lowest Priority</text>
+    <circle r="40" fill="#e5e5ff" stroke="none" stroke-width="9.0" cx="750.0" cy-offset="750.0" cy="1150.0"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="838.0" y="1150.0">Lowest Priority</text>
   </g>
   <text x="3000.0" y="125.0" fill="gray" stroke="none" font-size="60" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Sri Lanka</text>
   <text x="3000.0" y="250.0" fill="gray" stroke="none" font-size="120" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Population Optimized Hypothetical Railway Network</text>

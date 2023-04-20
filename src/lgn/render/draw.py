@@ -59,6 +59,24 @@ class Draw(DrawNode, DrawLine):
             ),
         ]
 
+    def draw_info_item(self, label, value, style):
+        return [
+            _(
+                'text',
+                label,
+                style
+                | dict(
+                    y=style['y'] - style['font_size'],
+                    font_size=style['font_size'] * 0.5,
+                ),
+            ),
+            _(
+                'text',
+                value,
+                style,
+            ),
+        ]
+
     def draw_info(self):
         BASE_MTT = 29.379542492563075
         mttpkm_str = '-'
@@ -69,59 +87,32 @@ class Draw(DrawNode, DrawLine):
                 / self.network.network_length
             )
             mttpkm_str = f'{mttpkm:.0f} min/km'
-        return [
-            _(
-                'text',
+
+        item_list = []
+        for label, value, style in [
+            [
                 'Network Length',
-                self.styler.text_network_length
-                | dict(
-                    y=self.styler.text_network_length['y']
-                    - self.styler.text_network_length['font_size'],
-                    font_size=self.styler.text_network_length['font_size']
-                    * 0.5,
-                ),
-            ),
-            _(
-                'text',
                 format_distance(self.network.network_length),
                 self.styler.text_network_length,
-            ),
-            _(
-                'text',
+            ],
+            [
                 'Mean Travel Time',
-                self.styler.text_network_att
-                | dict(
-                    y=self.styler.text_network_att['y']
-                    - self.styler.text_network_att['font_size'],
-                    font_size=self.styler.text_network_att['font_size'] * 0.5,
-                ),
-            ),
-            _(
-                'text',
                 format_time(self.network.average_travel_time),
                 self.styler.text_network_att,
-            ),
-            _(
-                'text',
+            ],
+            [
                 'MTT Reduction / Track Length',
-                self.styler.text_network_mttpkm
-                | dict(
-                    y=self.styler.text_network_mttpkm['y']
-                    - self.styler.text_network_mttpkm['font_size'],
-                    font_size=self.styler.text_network_mttpkm['font_size']
-                    * 0.5,
-                ),
-            ),
-            _(
-                'text',
                 mttpkm_str,
                 self.styler.text_network_mttpkm,
-            ),
-        ]
+            ],
+        ]:
+            item_list += self.draw_info_item(label, value, style)
+        return item_list
 
     def draw_legend(self):
         inner_list = []
-        P_LIST = [i / 10 for i in range(0, 7 + 1)]
+        N_LEGEND = 5
+        P_LIST = [i / N_LEGEND for i in range(0, N_LEGEND + 1)]
         style = self.styler.legend_circle
         for i, p in enumerate(P_LIST):
             if i == 0:

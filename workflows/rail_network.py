@@ -43,11 +43,15 @@ def is_close_enough(centroid, max_distance):
     return distance < max_distance
 
 
-def build_single(ent_type, max_network_length, max_segments, max_distance):
-    network = Network.from_type(
+def _init_network(ent_type, max_distance):
+    return Network.from_type(
         ent_type, lambda ent: is_close_enough(ent.centroid, max_distance)
     )
-    print(network.average_travel_time)
+
+
+def _build_helper(
+    ent_type, max_network_length, max_segments, max_distance, network
+):
     network = step_optimizer.build(
         network,
         max_network_length=max_network_length,
@@ -55,15 +59,45 @@ def build_single(ent_type, max_network_length, max_segments, max_distance):
     )
 
     draw = Draw(network, Styler())
-    draw.draw(
-        os.path.join(
-            'media',
-            f'rail_network.{ent_type.name}'
-            + f'.{max_network_length}km.{max_segments}.png',
-        )
+    png_path = os.path.join(
+        'media',
+        f'rail_network.{ent_type.name}'
+        + f'.{max_network_length}km.{max_segments}.png',
+    )
+    draw.draw(png_path, do_open=False)
+
+    return png_path, network
+
+
+def build_single(ent_type, max_network_length, max_segments, max_distance):
+    network = _init_network(ent_type, max_distance)
+    return _build_helper(
+        ent_type, max_network_length, max_segments, max_distance, network
     )
 
 
+def build_multiple(ent_type, max_network_length, max_segments, max_distance):
+    network = _init_network(ent_type, max_distance)
+    png_path_list = []
+    for max_segments_i in range(0, max_segments + 1):
+        png_path, network = _build_helper(
+            ent_type,
+            max_network_length,
+            max_segments_i,
+            max_distance,
+            network,
+        )
+        png_path_list.append(png_path)
+
+    gif_path = os.path.join(
+        'media',
+        f'rail_network.{ent_type.name}'
+        + f'.{max_network_length}km.TIMELINE.gif',
+    )
+
+    Draw.build_animated_gif(png_path_list, gif_path)
+
+
 if __name__ == '__main__':
-    config_key = 'gnd_0'
-    build_single(*CONFIG_IDX[config_key].values())
+    config_key = 'district_3'
+    build_multiple(*CONFIG_IDX[config_key].values())

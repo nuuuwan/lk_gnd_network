@@ -57,7 +57,11 @@ class DrawLine:
         d = elaborate_path(x1, y1, x2, y2, t)
         smoothed_d = smooth_path(d)
 
-        p = 1 - (i_edge + 1) / (n_edges)
+        if n_edges == 1:
+            p = 0.5
+        else:
+            p = 1 - (i_edge) / (n_edges - 1)
+
         color = color_utils.p_to_color(p)
 
         return _(

@@ -18,18 +18,23 @@
   <text x="3000.0" y="250.0" fill="gray" stroke="none" font-size="120" font-family="p22" text-anchor="middle" dominant-baseline="hanging">Population Optimized Hypothetical Railway Network</text>
   <text x="3000.0" y="5750.0" fill="gray" stroke="none" font-size="60" font-family="p22" text-anchor="middle" dominant-baseline="hanging">music by @bensound ~ visualization by @nuuuwan</text>
   <text x="5250.0" y="1320.0" fill="lightgrey" stroke="none" font-size="90.0" font-family="p22" text-anchor="end" dominant-baseline="hanging">Network Length</text>
-  <text x="5250.0" y="1500.0" fill="lightgrey" stroke="none" font-size="180" font-family="p22" text-anchor="end" dominant-baseline="hanging">28km</text>
+  <text x="5250.0" y="1500.0" fill="lightgrey" stroke="none" font-size="180" font-family="p22" text-anchor="end" dominant-baseline="hanging">92km</text>
   <text x="5250.0" y="1620.0" fill="lightgrey" stroke="none" font-size="90.0" font-family="p22" text-anchor="end" dominant-baseline="hanging">Mean Travel Time</text>
-  <text x="5250.0" y="1800.0" fill="lightgrey" stroke="none" font-size="180" font-family="p22" text-anchor="end" dominant-baseline="hanging">29h12m</text>
+  <text x="5250.0" y="1800.0" fill="lightgrey" stroke="none" font-size="180" font-family="p22" text-anchor="end" dominant-baseline="hanging">28h33m</text>
   <text x="5250.0" y="1920.0" fill="lightgrey" stroke="none" font-size="90.0" font-family="p22" text-anchor="end" dominant-baseline="hanging">MTT Reduction / Track Length</text>
-  <text x="5250.0" y="2100.0" fill="lightgrey" stroke="none" font-size="180" font-family="p22" text-anchor="end" dominant-baseline="hanging">0 min/km</text>
+  <text x="5250.0" y="2100.0" fill="lightgrey" stroke="none" font-size="180" font-family="p22" text-anchor="end" dominant-baseline="hanging">1 min/km</text>
+  <path fill="none" stroke="#e5e5ff" stroke-width="20" stroke-opacity="1" d="M 1994.0,4118.0 L 2146.93933982822,3965.06066017178 C 2146.942875362126,3965.057124637874 2148.0,3962.505 2148.0,3962.5 L 2148.0,3510.5 C 2148.0,3510.495 2149.057124637874,3507.942875362126 2149.06066017178,3507.93933982822 L 2302.0,3355.0"/>
   <path fill="none" stroke="#cc0000" stroke-width="20" stroke-opacity="1" d="M 1996.0,4475.0 L 1995.05,4475.0 C 1995.0498333333333,4475.0 1995.0,4474.9501666666665 1995.0,4474.95 L 1995.0,4119.070710678118 C 1995.0,4119.070474975858 1994.9501666666667,4118.9501666666665 1994.95,4118.95 L 1994.0,4118.0"/>
   <g>
     <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="1996" cy="4475"/>
     <text fill="gray" stroke="none" font-size="40.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2046.0" y="4475">Colombo</text>
   </g>
   <g>
-    <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="1994" cy="4118"/>
-    <text fill="gray" stroke="none" font-size="40.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2044.0" y="4118">Gampaha</text>
+    <circle r="17.32050807568877" fill="white" stroke="black" stroke-width="9.0" cx="1994" cy="4118"/>
+    <text fill="black" stroke="none" font-size="60" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2064" y="4118">Gampaha</text>
+  </g>
+  <g>
+    <circle r="14.142135623730951" fill="white" stroke="black" stroke-width="9.0" cx="2302" cy="3355"/>
+    <text fill="gray" stroke="none" font-size="40.0" font-family="p22" font-weight="100" text-anchor="start" dominant-baseline="middle" x="2352.0" y="3355">Kurunegala</text>
   </g>
 </svg>

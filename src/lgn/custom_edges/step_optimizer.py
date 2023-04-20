@@ -59,7 +59,7 @@ def build(network, max_network_length, max_segments):
             )
         )
         if any(
-            [network_length >= max_network_length, segments >= max_segments]
+            [network_length > max_network_length, segments > max_segments]
         ):
             return network
         network = network_copy
