@@ -8,8 +8,6 @@ log = Log(__name__)
 
 class DrawNode:
     def draw_node_circle(self, sx, sy, n_neighbors):
-        if n_neighbors in [0, 2]:
-            return None
         return _(
             'circle',
             None,
@@ -22,16 +20,10 @@ class DrawNode:
         )
 
     def draw_node_text(self, label, sx, sy, n_neighbors):
-        fill = self.styler.node_text['fill']
-        if n_neighbors in [0, 2]:
-            fill = 'lightgrey'
-        k_font_size = 0.75
-        if n_neighbors in [0, 2]:
-            k_font_size = 0.5
-        if n_neighbors > 2:
-            k_font_size = 1
-
-        font_size = k_font_size * self.styler.node_text['font_size']
+        font_size = (
+            min(1, (n_neighbors + 1) / 3) * self.styler.node_text['font_size']
+        )
+        fill = 'black' if n_neighbors > 1 else 'gray'
         return _(
             'text',
             label,

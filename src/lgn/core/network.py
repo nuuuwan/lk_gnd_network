@@ -12,7 +12,6 @@ class Network(NetworkBase, NetworkDerived, NetworkVector):
 
 
 if __name__ == '__main__':
-    import numpy as np
     from gig import EntType
 
     from lgn.utils.console_utils import print_line
@@ -45,6 +44,6 @@ if __name__ == '__main__':
     print(network.m_distance_railway)
     print(network.v_population)
     print(network.m_population_pairs)
-    
+
     print_line()
     print(network.average_travel_time)

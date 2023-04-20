@@ -11,7 +11,8 @@ from utils.xmlx import _
 from lgn.render.draw_line import DrawLine
 from lgn.render.draw_node import DrawNode
 from lgn.utils import shape_utils
-from lgn.utils.format_utils import format_distance
+from lgn.utils.color_utils import p_to_color
+from lgn.utils.format_utils import format_distance, format_time
 
 log = Log(__name__)
 
@@ -58,15 +59,75 @@ class Draw(DrawNode, DrawLine):
             ),
             _(
                 'text',
+                'Network Length',
+                self.styler.text_network_length
+                | dict(
+                    y=self.styler.text_network_length['y']
+                    - self.styler.text_network_length['font_size'],
+                    font_size=self.styler.text_network_length['font_size']
+                    * 0.5,
+                ),
+            ),
+            _(
+                'text',
                 format_distance(self.network.network_length),
-                self.styler.text_network_info,
+                self.styler.text_network_length,
+            ),
+            _(
+                'text',
+                'Mean Travel Time',
+                self.styler.text_network_att
+                | dict(
+                    y=self.styler.text_network_att['y']
+                    - self.styler.text_network_att['font_size'],
+                    font_size=self.styler.text_network_att['font_size'] * 0.5,
+                ),
+            ),
+            _(
+                'text',
+                format_time(self.network.average_travel_time),
+                self.styler.text_network_att,
             ),
         ]
+
+    def draw_legend(self):
+        inner_list = []
+        P_LIST = [i / 10 for i in range(0, 7 + 1)]
+        style = self.styler.legend_circle
+        for i, p in enumerate(P_LIST):
+            if i == 0:
+                label = 'Highest Priority'
+            elif i == len(P_LIST) - 1:
+                label = 'Lowest Priority'
+            else:
+                label = ''
+
+            color = p_to_color(p)
+            cy = style['cy_offset'] + i * style['r'] * 2
+            inner_list.append(
+                _(
+                    'circle',
+                    '',
+                    style | dict(cy=cy, fill=color),
+                )
+            )
+            inner_list.append(
+                _(
+                    'text',
+                    label,
+                    self.styler.node_text
+                    | dict(x=style['cx'] + style['r'] * 2.2, y=cy),
+                )
+            )
+        return _('g', inner_list)
 
     def draw(self, png_path, do_open=True):
         svg = _(
             'svg',
-            self.draw_text() + self.draw_lines() + self.draw_nodes(),
+            [self.draw_legend()]
+            + self.draw_text()
+            + self.draw_lines()
+            + self.draw_nodes(),
             self.styler.svg,
         )
         svg_path = png_path[:-3] + 'svg'

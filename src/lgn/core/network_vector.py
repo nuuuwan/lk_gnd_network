@@ -1,7 +1,9 @@
 from functools import cached_property
 
 import numpy as np
-SPEED_WALK, SPEED_TRAIN = 4, 60 
+
+SPEED_WALK, SPEED_TRAIN = 4, 60
+
 
 class NetworkVector:
     @cached_property
@@ -42,10 +44,10 @@ class NetworkVector:
             travel_time_walking,
             travel_time_railway,
         )
-      
+
         pop_pairs = self.m_population_pairs
-        pop_pairs_weighted_travel_time = np.multiply(pop_pairs , travel_time)
-        
+        pop_pairs_weighted_travel_time = np.multiply(pop_pairs, travel_time)
+
         average_meet_time = np.sum(pop_pairs_weighted_travel_time) / np.sum(
             pop_pairs
         )

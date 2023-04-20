@@ -63,29 +63,22 @@ class Styler:
         )
 
     @cached_property
-    def text_network_info(self):
+    def text_network_length(self):
         return dict(
-            x=self.DIM * 3 / 4,
+            x=self.DIM * 7 / 8,
             y=self.DIM * 1 / 4,
             fill='lightgrey',
             stroke='none',
             font_size=self.FONT_SIZE * 3,
             font_family=self.FONT_FAMILY,
-            text_anchor='start',
+            text_anchor='end',
             dominant_baseline='hanging',
         )
 
     @cached_property
-    def text_network_info2(self):
-        return dict(
-            x=self.DIM * 3 / 4,
-            y=self.DIM * 1 / 4 + self.FONT_SIZE * 2,
-            fill='lightgrey',
-            stroke='none',
-            font_size=self.FONT_SIZE * 1.5,
-            font_family=self.FONT_FAMILY,
-            text_anchor='start',
-            dominant_baseline='hanging',
+    def text_network_att(self):
+        return self.text_network_length | dict(
+            y=self.DIM * 1 / 4 + self.FONT_SIZE * 5,
         )
 
     @cached_property
@@ -129,4 +122,13 @@ class Styler:
             stroke='white',
             stroke_width=self.RADIUS * 2,
             stroke_opacity=self.OPACITY,
+        )
+
+    @cached_property
+    def legend_circle(self):
+        return self.node_circle | dict(
+            cx=self.DIM / 8,
+            cy_offset=self.DIM / 8,
+            r=self.node_circle['r'] * 2,
+            stroke="none",
         )

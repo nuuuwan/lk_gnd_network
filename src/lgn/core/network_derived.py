@@ -65,7 +65,6 @@ class NetworkDerived:
     def network_length(self):
         return sum([distance for _, distance in self.edge_and_distance_list])
 
-
     @cache
     def get_close_node_pairs_and_distance_list(self, max_distance):
         x_list = []
@@ -74,7 +73,7 @@ class NetworkDerived:
             if distance <= max_distance:
                 x_list.append([[i, j], distance])
         return x_list
-                   
+
     @cached_property
     def all_node_pairs(self):
         n = self.n_nodes
@@ -88,4 +87,12 @@ class NetworkDerived:
             for j, val in zip(row, dist_matrix.data[i]):
                 if val != float('inf') and i < j:
                     node_pairs.append(([i, j], val))
+        return node_pairs
+
+    @cached_property
+    def all_non_edge_node_pairs(self):
+        node_pairs = []
+        for i, j in self.all_node_pairs:
+            if not self.is_edge(i, j):
+                node_pairs.append([i, j])
         return node_pairs

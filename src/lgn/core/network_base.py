@@ -5,6 +5,7 @@ from gig import Ent
 from utils import Log
 
 from lgn.core.node import Node
+from lgn.utils.format_utils import format_distance
 
 log = Log('network')
 
@@ -61,12 +62,13 @@ class NetworkBase:
     @cache
     def get_node(self, i):
         return self.node_list[i]
-    
+
     def format_edge(self, edge):
         i, j = edge
         node_i = self.get_node(i)
         node_j = self.get_node(j)
-        return f'{node_i} ↔️ {node_j}'
+        distance = self.get_distance(i, j)
+        return f'{node_i} ↔️ {node_j} ({format_distance(distance)})'
 
     def __add__(self, edge_list):
         if not isinstance(edge_list, list):
